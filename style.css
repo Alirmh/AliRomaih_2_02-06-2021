@@ -1,7 +1,13 @@
 @font-face
 {
-    font-family: Raleway-Bold;
-    src: url('fonts/Raleway-ExtraBold.ttf');
+    font-family: Raleway-Regular;
+    src: url('fonts/Raleway-Regular.ttf');
+}
+
+@font-face
+{
+    font-family: Raleway-SemiBold;
+    src: url('fonts/Raleway-SemiBold.ttf');
 }
 
 nav
@@ -14,7 +20,7 @@ a[href="#section-hebergements"]
     text-decoration: overline;
     color: #0065FC;
     padding-right: 80px;
-    font-family: Raleway-Bold;
+    font-family: Raleway-SemiBold;
 }
 
 a[href="#section-activites"]
@@ -22,7 +28,7 @@ a[href="#section-activites"]
     color: black;
     padding-right: 80px;
     text-decoration: none;
-    font-family: Raleway-Bold;
+    font-family: Raleway-SemiBold;
 }
 
 a[href=""]
@@ -30,20 +36,21 @@ a[href=""]
     color: #0065FC;
     padding-right: 40px;
     text-decoration: none;
-    font-family: Raleway-Bold;
+    font-family: Raleway-SemiBold;
 }
 
 h1
 {
 	font-size: 20px;
     margin-bottom: 5px;
-    font-family: Raleway-Bold;
+    font-family: Raleway-SemiBold;
 }
 
 .para
 {
     font-size: 16px;
     margin-top: 2px;
+    font-family: Raleway-Regular;
 }
 
 mark
@@ -78,7 +85,7 @@ button
     padding-left: 12px;
     border-radius: 1px 10px 10px 1px;
     color: white;
-    font-family: Raleway-Bold;
+    font-family: Raleway-SemiBold;
 }
 
 #conteneur1
@@ -88,10 +95,9 @@ button
 
 .filtre
 {
-    font-size: 15px;
-    font-weight: bold;
     margin-top: 35px;
-    font-family: Raleway-Bold;
+    font-size: 18px;
+    font-family: Raleway-SemiBold;
 }
 
 .eco
@@ -99,12 +105,11 @@ button
     margin-top: 20px;
     margin-left: 20px;
     font-size: 17px;
-    font-weight: bold;
     border: 2px solid #F2F2F2;
     border-left-width: 0px;
     border-radius: 30px 30px 30px 30px;
     padding-right: 20px;
-    font-family: Raleway-Bold;
+    font-family: Raleway-SemiBold;
 }
 
 .eco:hover
@@ -132,12 +137,11 @@ button
     margin-top: 20px;
     margin-left: 20px;
     font-size: 17px;
-    font-weight: bold;
     border: 2px solid #F2F2F2;
     border-left-width: 0px;
     border-radius: 30px 30px 30px 30px;
     padding-right: 20px;
-    font-family: Raleway-Bold;
+    font-family: Raleway-SemiBold;
 }
 
 .fam:hover
@@ -165,12 +169,11 @@ button
     margin-top: 20px;
     margin-left: 20px;
     font-size: 17px;
-    font-weight: bold;
     border: 2px solid #F2F2F2;
     border-left-width: 0px;
     border-radius: 30px 30px 30px 30px;
     padding-right: 20px;
-    font-family: Raleway-Bold;
+    font-family: Raleway-SemiBold;
 }
 
 .rom:hover
@@ -198,12 +201,11 @@ button
     margin-top: 20px;
     margin-left: 20px;
     font-size: 17px;
-    font-weight: bold;
     border: 2px solid #F2F2F2;
     border-left-width: 0px;
     border-radius: 30px 30px 30px 30px;
     padding-right: 20px;
-    font-family: Raleway-Bold;
+    font-family: Raleway-SemiBold;
 }
 
 .ani:hover
@@ -228,7 +230,6 @@ button
 
 .fa-info
 {
-    margin-top: 10px;
     margin-right: 10px;
     font-size: 10px;
     color: #0065FC;
@@ -240,5 +241,8 @@ button
     padding-bottom: 4px;
 }
 
-
+.paraa
+{
+     font-family: Raleway-Regular
+}
 
