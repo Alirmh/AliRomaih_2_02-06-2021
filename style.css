@@ -10,69 +10,75 @@
     src: url('fonts/Raleway-SemiBold.ttf');
 }
 
-nav
+#conteneur1
 {
-    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 a[href="#section-hebergements"]
 {
     text-decoration: overline;
     color: #0065FC;
-    padding-right: 80px;
     font-family: Raleway-SemiBold;
+    margin-left: 700px;
+    font-size: 15px;
 }
 
 a[href="#section-activites"]
 {
     color: black;
-    padding-right: 80px;
     text-decoration: none;
     font-family: Raleway-SemiBold;
+    font-size: 15px;
 }
 
 a[href=""]
 {
     color: #0065FC;
-    padding-right: 40px;
     text-decoration: none;
     font-family: Raleway-SemiBold;
+    margin-right: 50px;
+    font-size: 15px;
 }
 
 h1
 {
-	font-size: 20px;
-    margin-bottom: 5px;
+	font-size: 18px;
     font-family: Raleway-SemiBold;
+    margin-top: 30px;
+    margin-bottom: 5px;
 }
 
 .para
 {
-    font-size: 16px;
-    margin-top: 2px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    margin-top: 10px;
     font-family: Raleway-Regular;
 }
 
 mark
 {
-    font-size: 14px;
+    font-size: 15px;
     background-color: #F2F2F2;
     padding-top: 12px;
     padding-bottom: 12px;
-    padding-left: 14px;
-    padding-right: 15px;
-    border-radius: 10px 1px 1px 10px;
+    padding-left: 15px;
+    padding-right: 13px;
+    border-radius: 13px 1px 1px 13px;
 }
 
 input
 {
     border: 1px #F2F2F2 solid;
-    font-size: 10px;
+    font-size: 8px;
     border-left-width: 0px;
     border-right-width: 0px;
-    padding-top: 14px;
+    padding-top: 17px;
     padding-bottom: 12px;
-    padding-right: 60px;
+    padding-right: 90px;
 }
 
 button
@@ -82,34 +88,36 @@ button
     padding-top: 11px;
     padding-bottom: 11px;
     padding-right: 12px;
-    padding-left: 12px;
-    border-radius: 1px 10px 10px 1px;
+    padding-left: 15px;
+    border-radius: 1px 13px 13px 1px;
     color: white;
     font-family: Raleway-SemiBold;
 }
 
-#conteneur1
+#conteneur2
 {
-   display: flex; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline; 
+    margin-top: 30px;
 }
 
 .filtre
 {
-    margin-top: 35px;
-    font-size: 18px;
+    font-size: 15px;
     font-family: Raleway-SemiBold;
+    margin-left: 5px;
 }
 
 .eco
 {
-    margin-top: 20px;
-    margin-left: 20px;
-    font-size: 17px;
+    font-size: 15px;
     border: 2px solid #F2F2F2;
     border-left-width: 0px;
-    border-radius: 30px 30px 30px 30px;
-    padding-right: 20px;
+    border-radius: 40px 40px 40px 40px;
+    padding-right: 15px;
     font-family: Raleway-SemiBold;
+    margin-left: 20px;
 }
 
 .eco:hover
@@ -121,27 +129,26 @@ button
 .fa-money-bill-wave
 {
     color: #0065FC;
-    margin-right: 20px;
+    margin-right: 10px;
     font-size: 15px;
     border: 10px solid #DEEBFF;
     border-radius: 30px 30px 30px 30px;
     background-color: #DEEBFF;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 3px;
-    padding-left: 3px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 2px;
+    padding-left: 2px;
 }
 
 .fam
 {
-    margin-top: 20px;
-    margin-left: 20px;
-    font-size: 17px;
+    font-size: 15px;
     border: 2px solid #F2F2F2;
     border-left-width: 0px;
-    border-radius: 30px 30px 30px 30px;
-    padding-right: 20px;
+    border-radius: 40px 40px 40px 40px;
+    padding-right: 15px;
     font-family: Raleway-SemiBold;
+    margin-left: 20px;
 }
 
 .fam:hover
@@ -153,27 +160,26 @@ button
 .fa-child
 {
     color: #0065FC;
-    margin-right: 20px;
+    margin-right: 10px;
     font-size: 15px;
     border: 10px solid #DEEBFF;
     border-radius: 30px 30px 30px 30px;
     background-color: #DEEBFF;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 8px;
-    padding-left: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 4px;
+    padding-left: 4px;
 }
 
 .rom
 {
-    margin-top: 20px;
-    margin-left: 20px;
-    font-size: 17px;
+    font-size: 15px;
     border: 2px solid #F2F2F2;
     border-left-width: 0px;
-    border-radius: 30px 30px 30px 30px;
-    padding-right: 20px;
+    border-radius: 40px 40px 40px 40px;
+    padding-right: 15px;
     font-family: Raleway-SemiBold;
+    margin-left: 20px;
 }
 
 .rom:hover
@@ -185,27 +191,26 @@ button
 .fa-heart
 {
     color: #0065FC;
-    margin-right: 20px;
+    margin-right: 10px;
     font-size: 15px;
     border: 10px solid #DEEBFF;
     border-radius: 30px 30px 30px 30px;
     background-color: #DEEBFF;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 6px;
-    padding-left: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 3px;
+    padding-left: 3px;
 }
 
 .ani
 {
-    margin-top: 20px;
-    margin-left: 20px;
-    font-size: 17px;
+    font-size: 15px;
     border: 2px solid #F2F2F2;
     border-left-width: 0px;
-    border-radius: 30px 30px 30px 30px;
-    padding-right: 20px;
+    border-radius: 40px 40px 40px 40px;
+    padding-right: 15px;
     font-family: Raleway-SemiBold;
+    margin-left: 20px; 
 }
 
 .ani:hover
@@ -217,15 +222,15 @@ button
 .fa-dog
 {
     color: #0065FC;
-    margin-right: 20px;
+    margin-right: 10px;
     font-size: 15px;
     border: 10px solid #DEEBFF;
     border-radius: 30px 30px 30px 30px;
     background-color: #DEEBFF;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 6px;
-    padding-left: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 3px;
+    padding-left: 3px;
 }
 
 .fa-info
@@ -243,6 +248,53 @@ button
 
 .paraa
 {
-     font-family: Raleway-Regular
+     font-family: Raleway-Regular;
+     font-size: 13px;
 }
+
+#conteneur3
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 810px;
+}
+
+img[src="images/hebergements/small/marcusloke.jpg"]
+{
+    width: 150px;
+    height: 80px;
+}
+
+img[src="images/hebergements/small/fredkleber.jpg"]
+{
+    width: 150px;
+    height: 80px;
+}
+
+img[src="images/hebergements/small/reisetopia.jpg"]
+{
+    width: 150px;
+    height: 80px;
+}
+
+img[src="images/hebergements/small/anniespratt.jpg"]
+{
+    width: 150px;
+    height: 80px;
+}
+
+img[src="images/hebergements/small/nicatelee.jpg"]
+{
+    width: 150px;
+    height: 80px;
+}
+
+img[src="images/hebergements/small/febrianzakaria.jpg"]
+{
+    width: 150px;
+    height: 80px;
+}
+
+
 
