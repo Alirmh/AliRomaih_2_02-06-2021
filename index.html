@@ -3,7 +3,7 @@
 	<head>
 		<!-- En-tête de la page -->
 		<meta charset="utf-8" />
-		<link rel="stylesheet" href="style.css" />
+		<link type="text/css" href="style.css" />
 		<script src="https://kit.fontawesome.com/0f1265c422.js" crossorigin="anonymous"></script><!-- origine logo -->
 		<title>P2_01_lienGithub</title>
 	</head>
@@ -11,28 +11,35 @@
 	<body><!--Corps de la page -->
 		
 		<header><!-- Tête de la page -->
-			<div id="conteneur1">
-			<img src="images/logo/Reservia.svg" alt="logoreservia"/>
-			<a href="#section-hebergements">Hébergements</a>
-			<a href="#section-activites">Activités</a>
-			<a href="inscription">S'inscrire</a>
+			<div id="header-conteneur">
+				<img src="images/logo/Reservia.svg" alt="logoreservia"/>
 			</div>
-			<h1 class="titre1">Trouvez votre hébergement pour des vacances de rêve</h1>
-			<p class="para">En plein centre ville ou pleine nature</p>
+			<nav>
+				<a href="#section-hebergements">Hébergements</a>
+				<a href="#section-activites">Activités</a>
+				<a href="inscription">S'inscrire</a>
+			</nav>
+		</header>
+
+		<section class="section-principale"></section>
+			<h1 class="section-titre">Trouvez votre hébergement pour des vacances de rêve</h1>
+			<p class="section-texte">En plein centre ville ou pleine nature</p>
 			<form>
   				<mark><i class="fas fa-map-marker-alt"></i></mark><input type="search" id="maRecherche" name="q"><button>Rechercher</button>
   			</form>		
     	
     		<div id="conteneur2">
-    		<div class="filtre">Filtres</div>	
-    		<div class="eco"><i class="fas fa-money-bill-wave"  ></i>&Eacute;conomique</div>
-    		<div class="fam"><i class="fas fa-child"></i>Familial</div>
-    		<div class="rom"><i class="fas fa-heart"></i>Romantique
+    			<div class="filtre">Filtres</div>	
+    			<div class="eco"><i class="fas fa-money-bill-wave"  ></i>&Eacute;conomique</div>
+    			<div class="fam"><i class="fas fa-child"></i>Familial</div>
+    			<div class="rom"><i class="fas fa-heart"></i>Romantique
     		</div>	
-    		<div class="ani"><i class="fas fa-dog"></i>Animaux autorisés</div>	
+    		<div class="ani">
+    			<i class="fas fa-dog"></i>Animaux autorisés
+    		</div>	
     		</div>
 			<p class="paraa"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
-		</header>
+		
 
 		<section><!-- Section1 de la page -->
 			<div id="conteneur3">
@@ -127,16 +134,24 @@
 		</section>
 
 		<footer><!-- Pied de la page -->
-			<h3>A propos</h3>
-				<p><a href="Fonctionnementdusite">Fonctionnement du site</a></p>
-				<p><a href="Conditionsgénéralesdevente">Conditions générales de vente</a></p>
-				<p><a href="Donnéesetconfidentialité">Données et confidentialité</a></p>
-			<h3>Nos hébergements</h3>
-				<p><a href="Chartequalité">Charte qualité</a></p>
-				<p><a href="Soumettrevotrehôtel">Soumettre votre hôtel</a></p>
-			<h3>Assistance</h3>
-				<p><a href="Centred'aide">Centre d'aide</a></p>
-				<p><a href="Nouscontacter">Nous contacter</a></p>
+			<div class="conteneur20">
+			<div class="conteneur21">	
+			<h3 class="apropos">A propos</h3>
+				<a href="Fonction">Fonctionnement du site</a>
+				<a href="Conditions">Conditions générales de vente</a>
+				<a href="Données">Données et confidentialité</a>
+			</div>
+			<div class="conteneur22">
+			<h3 class="heb">Nos hébergements</h3>
+				<a href="Charte">Charte qualité</a>
+				<a href="Soumettre">Soumettre votre hôtel</a>
+			</div>
+			<div class="conteneur23">
+			<h3 class="assist">Assistance</h3>
+				<a href="Centre">Centre d'aide</a>
+				<a href="Nous">Nous contacter</a>
+			</div>
+			</div>
 		</footer>
 	</body>
 </html>

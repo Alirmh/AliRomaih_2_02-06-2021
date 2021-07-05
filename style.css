@@ -18,41 +18,53 @@
 
 @font-face
 {
-    font-family: Raleway-ExtraBold;
-    src: url('fonts/Raleway-ExtraBold.ttf');
+    font-family: Raleway-Medium;
+    src: url('fonts/Raleway-Medium.ttf');
 }
 
-#conteneur1
+header
 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 200px;
+    margin: 30px 150px 0px 30px;
 }
 
-a[href="#section-hebergements"]
+nav a
 {
-    text-decoration: overline;
-    color: #0065FC;
-    font-family: Raleway-Semibold;
-    margin-left: 600px;
     font-size: 15px;
+    color: #0065FC;
+    font-family: Raleway-Medium;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+a[href="#section-hebergements"]:hover
+{   
+    border-top: 2px solid blue;
+    padding: 40px 30px 0px 30px;
 }
 
 a[href="#section-activites"]
 {
     color: black;
-    text-decoration: none;
-    font-family: Raleway-Regular;
-    font-size: 15px;
+}
+
+a[href="#section-activites"]:hover
+{
+    border-top: 2px solid blue;
+    padding: 40px 30px 0px 30px
 }
 
 a[href="inscription"]
 {
-    color: #0065FC;
-    text-decoration: none;
     font-family: Raleway-Bold;
-    font-size: 15px;
+}
+
+a[href="inscription"]:hover
+{
+    border-top: 2px solid blue;
+    padding: 40px 30px 0px 30px;
 }
 
 .titre1
@@ -881,7 +893,7 @@ a[href="fort"]
     border-radius: 20px;
     padding-bottom: 10px;
     margin-bottom: 0px;
-    box-shadow: 1px 1px 5px 5px #f2f2f2;
+    box-shadow: 1px 1px 5px 5px #F2F2F2;
 }
 
 img[src="images/activites/small/kevinhikari.jpg"]
@@ -968,7 +980,7 @@ a[href="dame"]
     border-radius: 20px;
     padding-bottom: 10px;
     margin-bottom: 0px;
-    box-shadow: 1px 1px 5px 5px #f2f2f2;
+    box-shadow: 1px 1px 5px 5px #F2F2F2;
 }
 
 img[src="images/activites/small/lenapaulin.jpg"]
@@ -986,4 +998,70 @@ a[href="longchamp"]
     margin-left: 15px;
     font-family: Raleway-Bold;
     font-size: 15px;
+}
+
+.conteneur20
+{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1px 1px 1px 1px;
+    margin-top: 50px;
+    margin-left: 5px;
+    background-color: #F2F2F2;
+    margin-right: 100px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.conteneur21
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.apropos
+{
+    font-family: Raleway-bold;
+    font-size: 18px;
+}
+
+a[href="Fonction"]
+{
+    margin-bottom: 10px;
+}
+
+a[href="Conditions"]
+{
+    margin-bottom: 10px;
+}
+
+a[href="Données"]
+{
+    margin-bottom: 10px;
+}
+
+.conteneur22
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.heb
+{
+    font-family: Raleway-bold;
+    font-size: 18px;
+}
+
+.conteneur23
+{
+    display: flex;
+    flex-direction: column;
+    margin-right: 350px;
+}
+
+.assist
+{
+    font-family: Raleway-bold;
+    font-size: 18px;
 }
