@@ -27,12 +27,12 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 30px 150px 0px 30px;
+    margin: 30px 150px 0px 20px;
 }
 
 nav a
 {
-    font-size: 15px;
+    font-size: 14px;
     color: #0065FC;
     font-family: Raleway-Medium;
     text-decoration: none;
@@ -67,7 +67,14 @@ a[href="inscription"]:hover
     padding: 40px 30px 0px 30px;
 }
 
-.titre1
+.section-principale
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.section-titre
 {
 	font-size: 18px;
     font-family: Raleway-Bold;
@@ -75,11 +82,11 @@ a[href="inscription"]:hover
     margin-bottom: 5px;
 }
 
-.para
+.section-texte
 {
     font-size: 14px;
     margin-bottom: 15px;
-    margin-top: 10px;
+    margin-top: 5px;
     font-family: Raleway-Regular;
 }
 
@@ -87,10 +94,7 @@ mark
 {
     font-size: 15px;
     background-color: #F2F2F2;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 15px;
-    padding-right: 13px;
+    padding: 12px 13px 12px 15px;
     border-radius: 13px 1px 1px 13px;
 }
 
@@ -100,52 +104,50 @@ input
     font-size: 8px;
     border-left-width: 0px;
     border-right-width: 0px;
-    padding-top: 17px;
-    padding-bottom: 12px;
-    padding-right: 90px;
+    padding: 17px 54px 12px 54px;
 }
 
 button
 {
     background-color: #0065FC;
     border: 1px #0065FC solid;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    padding-right: 12px;
-    padding-left: 15px;
+    padding: 11px 12px 11px 15px;
     border-radius: 1px 13px 13px 1px;
     color: white;
     font-family: Raleway-SemiBold;
 }
 
-#conteneur2
+#section-filtres
 {
     display: flex;
     justify-content: flex-start;
     align-items: baseline; 
     margin-top: 30px;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 
-.filtre
+.texte-filtre
 {
     font-size: 15px;
     font-family: Raleway-Bold;
     margin-left: 5px;
 }
 
-.eco
+.filtre-economique
 {
     font-size: 15px;
     border: 2px solid #F2F2F2;
     border-left-width: 0px;
-    border-radius: 40px 40px 40px 40px;
-    padding-right: 15px;
+    border-radius: 30px 30px 30px 30px;
+    padding-right: 10px;
     font-family: Raleway-Bold;
-    margin-left: 20px;
+    width: 150px;
+    height: 40px;
+    margin-left: 30px;
 }
 
-.eco:hover
+.filtre-economique:hover
 {
     text-decoration: underline;
     color: grey;
@@ -154,29 +156,27 @@ button
 .fa-money-bill-wave
 {
     color: #0065FC;
-    margin-right: 10px;
+    margin-right: 8px;
     font-size: 15px;
     border: 10px solid #DEEBFF;
     border-radius: 30px 30px 30px 30px;
     background-color: #DEEBFF;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-right: 2px;
-    padding-left: 2px;
+    padding: 3px 2px 3px 2px;
 }
 
-.fam
+.filtre-familial
 {
     font-size: 15px;
     border: 2px solid #F2F2F2;
     border-left-width: 0px;
-    border-radius: 40px 40px 40px 40px;
-    padding-right: 15px;
+    border-radius: 30px 30px 30px 30px;
     font-family: Raleway-Bold;
-    margin-left: 20px;
+    margin-left: 30px;
+    width: 120px;
+    height: 39px;
 }
 
-.fam:hover
+.filtre-familial:hover
 {
     text-decoration: underline;
     color: grey;
@@ -185,29 +185,26 @@ button
 .fa-child
 {
     color: #0065FC;
-    margin-right: 10px;
+    margin-right: 5px;
     font-size: 15px;
     border: 10px solid #DEEBFF;
     border-radius: 30px 30px 30px 30px;
     background-color: #DEEBFF;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-right: 4px;
-    padding-left: 4px;
+    padding: 2px 5px 2px 5px;
 }
 
-.rom
+.filtre-romantique
 {
     font-size: 15px;
     border: 2px solid #F2F2F2;
     border-left-width: 0px;
-    border-radius: 40px 40px 40px 40px;
+    border-radius: 30px 30px 30px 30px;
     padding-right: 15px;
     font-family: Raleway-Bold;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
-.rom:hover
+.filtre-romantique:hover
 {
     text-decoration: underline;
     color: grey;
@@ -216,29 +213,28 @@ button
 .fa-heart
 {
     color: #0065FC;
-    margin-right: 10px;
+    margin-right: 5px;
     font-size: 15px;
     border: 10px solid #DEEBFF;
     border-radius: 30px 30px 30px 30px;
     background-color: #DEEBFF;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-right: 3px;
-    padding-left: 3px;
+    padding: 2px 3px 2px 3px;
 }
 
-.ani
+.filtre-animauxautorisés
 {
     font-size: 15px;
     border: 2px solid #F2F2F2;
     border-left-width: 0px;
     border-radius: 40px 40px 40px 40px;
-    padding-right: 15px;
+    padding-right: 10px;
     font-family: Raleway-Bold;
-    margin-left: 20px; 
+    margin-left: 30px;
+    width: 190px;
+    height: 39px; 
 }
 
-.ani:hover
+.filtre-animauxautorisés:hover
 {
     text-decoration: underline;
     color: grey;
@@ -247,15 +243,12 @@ button
 .fa-dog
 {
     color: #0065FC;
-    margin-right: 10px;
+    margin-right: 5px;
     font-size: 15px;
     border: 10px solid #DEEBFF;
     border-radius: 30px 30px 30px 30px;
     background-color: #DEEBFF;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-right: 3px;
-    padding-left: 3px;
+    padding: 2px 3px 2px 3px;
 }
 
 .fa-info
@@ -265,16 +258,7 @@ button
     color: #0065FC;
     border: 1px #F2F2F2 solid;
     border-radius: 10px 10px 10px 10px;
-    padding-left: 7px;
-    padding-right: 7px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-}
-
-.paraa
-{
-     font-family: Raleway-Regular;
-     font-size: 13px;
+    padding: 4px 7px 4px 7px;
 }
 
 section
