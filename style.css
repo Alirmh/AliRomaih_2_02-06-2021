@@ -27,7 +27,7 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 30px 150px 0px 20px;
+    margin: 30px 150px 20px 50px;
 }
 
 nav a
@@ -71,23 +71,21 @@ a[href="inscription"]:hover
 {
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
+    margin-left: 50px;
 }
 
 .section-titre
 {
 	font-size: 18px;
     font-family: Raleway-Bold;
-    margin-top: 30px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
 }
 
 .section-texte
 {
     font-size: 14px;
-    margin-bottom: 15px;
-    margin-top: 5px;
     font-family: Raleway-Regular;
+    margin-top: 5px;
 }
 
 mark
@@ -102,8 +100,7 @@ input
 {
     border: 1px #F2F2F2 solid;
     font-size: 8px;
-    border-left-width: 0px;
-    border-right-width: 0px;
+    border-width: 1px 0px 1px 0px;
     padding: 17px 54px 12px 54px;
 }
 
@@ -117,21 +114,18 @@ button
     font-family: Raleway-SemiBold;
 }
 
-#section-filtres
+.section-filtres
 {
     display: flex;
     justify-content: flex-start;
     align-items: baseline; 
-    margin-top: 30px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    margin: 30px 20px 20px 0px;
 }
 
 .texte-filtre
 {
     font-size: 15px;
     font-family: Raleway-Bold;
-    margin-left: 5px;
 }
 
 .filtre-economique
@@ -144,7 +138,7 @@ button
     font-family: Raleway-Bold;
     width: 150px;
     height: 40px;
-    margin-left: 30px;
+    margin: 0px 20px 0px 30px;
 }
 
 .filtre-economique:hover
@@ -171,9 +165,9 @@ button
     border-left-width: 0px;
     border-radius: 30px 30px 30px 30px;
     font-family: Raleway-Bold;
-    margin-left: 30px;
     width: 120px;
     height: 39px;
+    margin-right: 20px;
 }
 
 .filtre-familial:hover
@@ -201,7 +195,7 @@ button
     border-radius: 30px 30px 30px 30px;
     padding-right: 15px;
     font-family: Raleway-Bold;
-    margin-left: 30px;
+    margin-right: 20px;
 }
 
 .filtre-romantique:hover
@@ -229,7 +223,6 @@ button
     border-radius: 40px 40px 40px 40px;
     padding-right: 10px;
     font-family: Raleway-Bold;
-    margin-left: 30px;
     width: 190px;
     height: 39px; 
 }
@@ -261,253 +254,220 @@ button
     padding: 4px 7px 4px 7px;
 }
 
-section
+.section-hébergements-les-plus-populaires
 {
     display: flex;
 }
 
-#conteneur3
+.section-hébergements
 {
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding-top: 20px;
-    padding-bottom: 100px;
-    padding-left: 26px;
-    padding-right: 26px;
-    margin-right: 25px;
-    width: 750px;
+    padding: 20px 10px 30px 10px;
+    margin: 20px 25px 0px 50px;
+    width: 700px;
     height: 460px;
-    padding-bottom: 40px;
 }
 
-.titre2
+.section-titre-hébergements-à-Marseille
 {
-    font-size: 18px;
     font-family: Raleway-Bold;
+    font-size: 18px;
+    margin-left: 20px;
 }
 
-#conteneur4
+.première-ligne-hébergements
 {
     display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
 }
 
-#conteneur5
+.case-auberge-la-cannebière
 {
-    padding-left: 3px;
-    padding-right: 4px;
-    padding-top: 3px;
+    padding: 2px 4px 2px 2px;
     border: 1px solid white;
     background-color: white;
     border-radius: 20px;
-    width: 190px;
+    width: 200px;
     height: 160px;
 }
 
 img[src="images/hebergements/small/marcusloke.jpg"]
 {
-    width: 190px;
+    width: 200px;
     height: 100px;
     border: 1px solid white;
     border-radius: 20px 20px 1px 1px;
 }
 
-.can
+.texte-auberge-la-cannebière
 {
-    margin-top: 0px;
-    margin-bottom: 0px;
     font-family: Raleway-Bold;
     font-size: 13px;
-    margin-left: 8px;
+    margin: 1px 0px 0px 8px;
 }
 
-a[href="can"]
+a[href="lien-auberge-la-cannebière"]
 {
     text-decoration: none;
     color: black;
 }
 
-.nuit25
+.texte-nuit-a-partir-de-25€
 {
-    margin-bottom: 0px;
     font-family: Raleway-Regular;
-    margin-top: 4px;
-    font-size: 12px;
-    margin-left: 8px;
-}
-
-.aub
-{
-    margin-top: 4px;
-    margin-bottom: 0px;
-    margin-left: 8px;
     font-size: 11px;
-    color: #0065FC;
+    margin: 4px 0px 5px 8px;
 }
 
-#conteneur6
+.logo-4-étoiles
 {
-    margin-left: 40px;
-    padding-left: 3px;
-    padding-right: 4px;
-    padding-top: 3px;
+    display: flex;
+    font-size: 10px;
+    color: #0065FC;
+    margin-left: 8px;
+}
+
+.logo-étoile-grise
+{
+    color: #F2F2F2;
+}
+
+.case-hôtel-du-port
+{
+    padding: 2px 4px 2px 2px;
     border: 1px solid white;
     background-color: white;
     border-radius: 20px;
-    width: 190px;
+    width: 200px;
     height: 160px;
 }
 
 img[src="images/hebergements/small/fredkleber.jpg"]
 {
-    width: 190px;
+    width: 200px;
     height: 100px;
     border: 1px solid white;
     border-radius: 20px 20px 1px 1px;
 }
 
-.port
+.texte-hôtel-du-port
 {
-    margin-top: 0px;
-    margin-bottom: 0px;
     font-family: Raleway-Bold;
     font-size: 13px;
-    margin-left: 8px;
+    margin: 1px 0px 0px 8px;
 }
 
-a[href="port"]
+a[href="lien-hôtel-du-port"]
 {
     text-decoration: none;
     color: black;
 }
 
-.nuit52
+.texte-nuit-a-partir-de-52€
 {
-    margin-bottom: 0px;
     font-family: Raleway-Regular;
-    margin-top: 4px;
-    font-size: 12px;
-    margin-left: 8px;
+    font-size: 11px;
+    margin: 4px 0px 5px 8px;
 }
 
-.leport
+.logo-5-étoiles
 {
-    margin-top: 4px;
-    margin-bottom: 0px;
+    display: flex;
     margin-left: 8px;
-    font-size: 11px;
+    font-size: 10px;
     color: #0065FC;
 }
 
-#conteneur7
+.case-hôtel-les-mouettes
 {
-    margin-left: 40px;
-    padding-left: 3px;
-    padding-right: 4px;
-    padding-top: 3px;
+    padding: 2px 4px 2px 2px;
     border: 1px solid white;
     background-color: white;
     border-radius: 20px;
-    width: 190px;
+    width: 200px;
     height: 160px;
 }
 
 img[src="images/hebergements/small/reisetopia.jpg"]
 {
-    width: 190px;
+    width: 200px;
     height: 100px;
     border: 1px solid white;
     border-radius: 20px 20px 1px 1px;
 }
 
-.mouettes
+.texte-hôtel-les-mouettes
 {
-    margin-top: 0px;
-    margin-bottom: 0px;
     font-family: Raleway-Bold;
     font-size: 13px;
-    margin-left: 8px;
+    margin: 1px 0px 0px 8px;
 }
 
-a[href="mouettes"]
+a[href="lien-hôtel-les-mouettes"]
 {
     text-decoration: none;
     color: black;
 }
 
-.nuit76
+.texte-nuit-à-partir-de-76€
 {
-    margin-bottom: 0px;
     font-family: Raleway-Regular;
-    margin-top: 4px;
-    font-size: 12px;
-    margin-left: 8px;
-}
-
-.lesmouettes
-{
-    margin-top: 4px;
-    margin-bottom: 0px;
-    margin-left: 8px;
     font-size: 11px;
-    color: #0065FC;
+    margin: 4px 0px 5px 8px;
 }
 
-#conteneur8
+.deuxième-ligne-hébergements
 {
     display: flex;
-    margin-top: 30px;
+    justify-content: space-evenly;
+    margin-top: 20px;
 }
 
-#conteneur9
+.case-hôtel-de-la-mer
 {
-    padding-left: 3px;
-    padding-right: 4px;
-    padding-top: 3px;
+    padding: 2px 4px 2px 2px;
     border: 1px solid white;
     background-color: white;
     border-radius: 20px;
-    width: 190px;
+    width: 200px;
     height: 160px;
 }
 
 img[src="images/hebergements/small/anniespratt.jpg"]
 {
-    width: 190px;
+    width: 200px;
     height: 100px;
     border: 1px solid white;
     border-radius: 20px 20px 1px 1px;
 }
 
-.mer
+.texte-hôtel-de-la-mer
 {
-    margin-top: 0px;
-    margin-bottom: 0px;
     font-family: Raleway-Bold;
     font-size: 13px;
-    margin-left: 8px;
+    margin: 1px 0px 0px 8px;
 }
 
-a[href="mer"]
+a[href="lien-hôtel-de-la-mer"]
 {
     text-decoration: none;
     color: black;
 }
 
-.nuit46
+.texte-nuit-à-partir-de-46€
 {
-    margin-bottom: 0px;
     font-family: Raleway-Regular;
-    margin-top: 4px;
-    font-size: 12px;
-    margin-left: 8px;
+    font-size: 11px;
+    margin: 4px 0px 5px 8px;
 }
 
-.lamer
+.logo-3-étoiles
 {
-    margin-top: 4px;
-    margin-bottom: 0px;
+    display: flex;
     margin-left: 8px;
-    font-size: 11px;
+    font-size: 10px;
     color: #0065FC;
 }
 
@@ -515,132 +475,102 @@ a[href="mer"]
 {
     font-family: Raleway-Bold;
     margin-top: 40px;
-    margin-bottom: 0px;
+    font-size: 14px;
 }
 
-#conteneur10
+.case-auberge-le-panier
 {
-    margin-left: 40px;
-    padding-left: 3px;
-    padding-right: 4px;
-    padding-top: 3px;
+    padding: 2px 4px 2px 2px;
     border: 1px solid white;
     background-color: white;
     border-radius: 20px;
-    width: 190px;
+    width: 200px;
     height: 160px;
 }
 
 img[src="images/hebergements/small/nicatelee.jpg"]
 {
-    width: 190px;
+    width: 200px;
     height: 100px;
     border: 1px solid white;
     border-radius: 20px 20px 1px 1px;
 }
 
-.panier
+.texte-auberge-le-panier
 {
-    margin-top: 0px;
-    margin-bottom: 0px;
     font-family: Raleway-Bold;
     font-size: 13px;
-    margin-left: 8px;
+    margin: 1px 0px 0px 8px;
 }
 
-a[href="panier"]
+a[href="lien-auberge-le-panier"]
 {
     text-decoration: none;
     color: black;
 }
 
-.nuit23
+.texte-nuit-à-partir-de-23€
 {
-    margin-bottom: 0px;
     font-family: Raleway-Regular;
-    margin-top: 4px;
-    font-size: 12px;
-    margin-left: 8px;
-}
-
-.lepanier
-{
-    margin-top: 4px;
-    margin-bottom: 0px;
-    margin-left: 8px;
     font-size: 11px;
-    color: #0065FC;
+    margin: 4px 0px 5px 8px;
 }
 
-#conteneur11
+.case-hôtel-chez-amina
 {
-    margin-left: 40px;
-    padding-left: 3px;
-    padding-right: 4px;
-    padding-top: 3px;
+    padding: 2px 4px 2px 2px;
     border: 1px solid white;
     background-color: white;
     border-radius: 20px;
-    width: 190px;
+    width: 200px;
     height: 160px;
 }
 
 img[src="images/hebergements/small/febrianzakaria.jpg"]
 {
-    width: 190px;
+    width: 200px;
     height: 100px;
     border: 1px solid white;
     border-radius: 20px 20px 1px 1px;
 }
 
-.amina
+.texte-hôtel-chez-amina
 {
-    margin-top: 0px;
-    margin-bottom: 0px;
     font-family: Raleway-Bold;
     font-size: 13px;
-    margin-left: 8px;
+    margin: 1px 0px 0px 8px;
 }
 
-a[href="amina"]
+a[href="lien-hôtel-chez-amina"]
 {
     text-decoration: none;
     color: black;
 }
 
-.nuit96
+.texte-nuit-a-partir-de-96€
 {
-    margin-bottom: 0px;
     font-family: Raleway-Regular;
-    margin-top: 4px;
-    font-size: 12px;
-    margin-left: 8px;
-}
-
-.chezamina
-{
-    margin-top: 4px;
-    margin-bottom: 0px;
-    margin-left: 8px;
     font-size: 11px;
-    color: #0065FC;
+    margin: 4px 0px 5px 8px;
 }
 
-#conteneur12
+.section-les-plus-populaires
 {
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding: 0px 20px 0px 20px;
+    height: 510px;
+    width: 300px;
+    margin-top: 20px;
 }
 
-.titre3
+.section-titre-les-plus-populaires
 {
     font-family: Raleway-Bold;
     font-size: 18px;
-    padding-top: 10px;
+    padding: 18px 0px 8px 0px;
 }
 
 .fa-chart-line
@@ -648,16 +578,14 @@ a[href="amina"]
     padding-left: 100px;
 }
 
-#conteneur13
+.case-hôtel-le-soleil-du-matin
 {
     display: flex;
-    padding-left: 2px;
-    padding-top: 2px;
+    padding: 2px 0px 2px 2px;
     border: 1px solid white;
     background-color: white;
     border-radius: 20px;
-    width: 290px;
-    height: 115px;
+    margin-bottom: 30px;
 }
 
 img[src="images/hebergements/small/emileguillemot.jpg"]
@@ -669,12 +597,12 @@ img[src="images/hebergements/small/emileguillemot.jpg"]
     margin-right: 15px;
 }
 
-.soleil
+.hôtel-le-soleil-du-matin
 {
     margin-top: 10px;
 }
 
-a[href="soleil"]
+a[href="lien-hôtel-le-soleil-du-matin"]
 {
     text-decoration: none;
     color: black;
@@ -682,32 +610,30 @@ a[href="soleil"]
     font-size: 13px;
 }
 
-.nuit128
+.texte-nuit-à-partir-de-128€
 {
     font-family: Raleway-Regular;
-    font-size: 12px;
+    font-size: 11px;
     margin-top: 5px;
 }
 
-.dusoleil
+.logo-5-étoiles-populaires
 {
+    display: flex;
     margin-top: 30px;
     margin-bottom: 0px;
-    font-size: 10px;
+    font-size: 9px;
     color: #0065FC;
 }
 
-#conteneur14
+.case-au-coeur-de-l-eau-chambres-d-hôtes
 {
     display: flex;
-    padding-left: 2px;
-    padding-top: 2px;
+    padding: 2px 0px 2px 2px;
     border: 1px solid white;
     background-color: white;
     border-radius: 20px;
-    width: 290px;
-    margin-top: 30px;
-    height: 115px;
+    margin-bottom: 30px;
 }
 
 img[src="images/hebergements/small/awcreative.jpg"]
@@ -719,12 +645,12 @@ img[src="images/hebergements/small/awcreative.jpg"]
     margin-right: 15px;
 }
 
-.coeur
+.au-coeur-de-l-eau-chambres-d-hôtes
 {
     margin-top: 10px;
 }
 
-a[href="coeur"]
+a[href="lien-au-coeur-de-l-eau-chambres-d-hôtes"]
 {
     text-decoration: none;
     color: black;
@@ -732,32 +658,29 @@ a[href="coeur"]
     font-size: 13px;
 }
 
-.nuit71
+.texte-nuit-a-partir-de-71€
 {
     font-family: Raleway-Regular;
-    font-size: 12px;
+    font-size: 11px;
     margin-top: 5px;
 }
 
-.coeurdeleau
+.logo-4-étoiles-populaires
 {
+    display: flex;
     margin-top: 30px;
     margin-bottom: 0px;
-    font-size: 10px;
+    font-size: 9px;
     color: #0065FC;
 }
 
-#conteneur15
+.case-hôtel-tout-bleu-et-blanc
 {
     display: flex;
-    padding-left: 2px;
-    padding-top: 2px;
+    padding: 2px 0px 2px 2px;
     border: 1px solid white;
     background-color: white;
     border-radius: 20px;
-    width: 290px;
-    margin-top: 30px;
-    height: 115px;
 }
 
 img[src="images/hebergements/small/febrianzakariaa.jpg"]
@@ -769,12 +692,12 @@ img[src="images/hebergements/small/febrianzakariaa.jpg"]
     margin-right: 15px;
 }
 
-.bleu
+.hôtel-tout-bleu-et-blanc
 {
     margin-top: 10px;
 }
 
-a[href="bleu"]
+a[href="lien-hôtel-tout-bleu-et-blanc"]
 {
     text-decoration: none;
     color: black;
@@ -782,19 +705,11 @@ a[href="bleu"]
     font-size: 13px;
 }
 
-.nuit68
+.texte-nuit-a-partir-de-68€
 {
     font-family: Raleway-Regular;
-    font-size: 12px;
+    font-size: 11px;
     margin-top: 5px;
-}
-
-.blanc
-{
-    margin-top: 30px;
-    margin-bottom: 0px;
-    font-size: 10px;
-    color: #0065FC;
 }
 
 .titre3
@@ -991,7 +906,7 @@ a[href="longchamp"]
     border-radius: 1px 1px 1px 1px;
     margin-top: 50px;
     background-color: #F2F2F2;
-    margin-right: 130px;
+    margin-right: 0px;
     padding-bottom: 50px;
     padding-left: 20px;
     padding-top: 20px;
