@@ -22,7 +22,7 @@
     src: url('fonts/Raleway-Medium.ttf');
 }
 
-.section-header-principale-hébergements-activités
+.section-principale-hébergements-activités
 {
     margin: 20px 150px 20px 100px;
 }
@@ -32,7 +32,7 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 0px 20px 0px;
+    margin: 0px 80px 20px 100px;
 }
 
 nav a
@@ -278,14 +278,14 @@ button
     font-size: 18px;
 }
 
-.première-ligne-hébergements
+.ligne-hébergements
 {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
 
-.case-auberge-la-cannebière
+.cases-hébergements
 {
     padding: 2px 4px 2px 2px;
     border: 1px solid white;
@@ -303,20 +303,20 @@ img[src="images/hebergements/small/marcusloke.jpg"]
     border-radius: 20px 20px 1px 1px;
 }
 
-.texte-auberge-la-cannebière
+.titres-hébergements
 {
     font-family: Raleway-Bold;
     font-size: 13px;
     margin: 1px 0px 0px 8px;
 }
 
-a[href="lien-auberge-la-cannebière"]
+a[href="liens-hébergements"]
 {
     text-decoration: none;
     color: black;
 }
 
-.texte-nuit-a-partir-de-25€
+.textes-hébergements
 {
     font-family: Raleway-Regular;
     font-size: 11px;
@@ -336,42 +336,12 @@ a[href="lien-auberge-la-cannebière"]
     color: #F2F2F2;
 }
 
-.case-hôtel-du-port
-{
-    padding: 2px 4px 2px 2px;
-    border: 1px solid white;
-    background-color: white;
-    border-radius: 20px;
-    width: 200px;
-    height: 160px;
-}
-
 img[src="images/hebergements/small/fredkleber.jpg"]
 {
     width: 200px;
     height: 100px;
     border: 1px solid white;
     border-radius: 20px 20px 1px 1px;
-}
-
-.texte-hôtel-du-port
-{
-    font-family: Raleway-Bold;
-    font-size: 13px;
-    margin: 1px 0px 0px 8px;
-}
-
-a[href="lien-hôtel-du-port"]
-{
-    text-decoration: none;
-    color: black;
-}
-
-.texte-nuit-a-partir-de-52€
-{
-    font-family: Raleway-Regular;
-    font-size: 11px;
-    margin: 4px 0px 5px 8px;
 }
 
 .logo-5-étoiles
@@ -382,16 +352,6 @@ a[href="lien-hôtel-du-port"]
     color: #0065FC;
 }
 
-.case-hôtel-les-mouettes
-{
-    padding: 2px 4px 2px 2px;
-    border: 1px solid white;
-    background-color: white;
-    border-radius: 20px;
-    width: 200px;
-    height: 160px;
-}
-
 img[src="images/hebergements/small/reisetopia.jpg"]
 {
     width: 200px;
@@ -400,69 +360,12 @@ img[src="images/hebergements/small/reisetopia.jpg"]
     border-radius: 20px 20px 1px 1px;
 }
 
-.texte-hôtel-les-mouettes
-{
-    font-family: Raleway-Bold;
-    font-size: 13px;
-    margin: 1px 0px 0px 8px;
-}
-
-a[href="lien-hôtel-les-mouettes"]
-{
-    text-decoration: none;
-    color: black;
-}
-
-.texte-nuit-à-partir-de-76€
-{
-    font-family: Raleway-Regular;
-    font-size: 11px;
-    margin: 4px 0px 5px 8px;
-}
-
-.deuxième-ligne-hébergements
-{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.case-hôtel-de-la-mer
-{
-    padding: 2px 4px 2px 2px;
-    border: 1px solid white;
-    background-color: white;
-    border-radius: 20px;
-    width: 200px;
-    height: 160px;
-}
-
 img[src="images/hebergements/small/anniespratt.jpg"]
 {
     width: 200px;
     height: 100px;
     border: 1px solid white;
     border-radius: 20px 20px 1px 1px;
-}
-
-.texte-hôtel-de-la-mer
-{
-    font-family: Raleway-Bold;
-    font-size: 13px;
-    margin: 1px 0px 0px 8px;
-}
-
-a[href="lien-hôtel-de-la-mer"]
-{
-    text-decoration: none;
-    color: black;
-}
-
-.texte-nuit-à-partir-de-46€
-{
-    font-family: Raleway-Regular;
-    font-size: 11px;
-    margin: 4px 0px 5px 8px;
 }
 
 .logo-3-étoiles
@@ -480,16 +383,6 @@ a[href="lien-hôtel-de-la-mer"]
     font-size: 14px;
 }
 
-.case-auberge-le-panier
-{
-    padding: 2px 4px 2px 2px;
-    border: 1px solid white;
-    background-color: white;
-    border-radius: 20px;
-    width: 200px;
-    height: 160px;
-}
-
 img[src="images/hebergements/small/nicatelee.jpg"]
 {
     width: 200px;
@@ -498,62 +391,12 @@ img[src="images/hebergements/small/nicatelee.jpg"]
     border-radius: 20px 20px 1px 1px;
 }
 
-.texte-auberge-le-panier
-{
-    font-family: Raleway-Bold;
-    font-size: 13px;
-    margin: 1px 0px 0px 8px;
-}
-
-a[href="lien-auberge-le-panier"]
-{
-    text-decoration: none;
-    color: black;
-}
-
-.texte-nuit-à-partir-de-23€
-{
-    font-family: Raleway-Regular;
-    font-size: 11px;
-    margin: 4px 0px 5px 8px;
-}
-
-.case-hôtel-chez-amina
-{
-    padding: 2px 4px 0px 2px;
-    border: 1px solid white;
-    background-color: white;
-    border-radius: 20px;
-    width: 200px;
-    height: 160px;
-}
-
 img[src="images/hebergements/small/febrianzakaria.jpg"]
 {
     width: 200px;
     height: 100px;
     border: 1px solid white;
     border-radius: 20px 20px 1px 1px;
-}
-
-.texte-hôtel-chez-amina
-{
-    font-family: Raleway-Bold;
-    font-size: 13px;
-    margin: 1px 0px 0px 8px;
-}
-
-a[href="lien-hôtel-chez-amina"]
-{
-    text-decoration: none;
-    color: black;
-}
-
-.texte-nuit-a-partir-de-96€
-{
-    font-family: Raleway-Regular;
-    font-size: 11px;
-    margin: 4px 0px 5px 8px;
 }
 
 .section-les-plus-populaires
@@ -580,7 +423,7 @@ a[href="lien-hôtel-chez-amina"]
     padding-left: 100px;
 }
 
-.case-hôtel-le-soleil-du-matin
+.cases-les-plus-populaires
 {
     display: flex;
     padding: 2px 0px 2px 2px;
@@ -596,15 +439,15 @@ img[src="images/hebergements/small/emileguillemot.jpg"]
     height: 120px;
     border: 1px solid white;
     border-radius: 20px 1px 1px 20px;
-    margin-right: 15px;
 }
 
-.hôtel-le-soleil-du-matin
+.bloc-texte-les-plus-populaires
 {
     margin-top: 10px;
+    margin-left: 10px;
 }
 
-a[href="lien-hôtel-le-soleil-du-matin"]
+a[href="liens-les-plus-populaires"]
 {
     text-decoration: none;
     color: black;
@@ -612,7 +455,7 @@ a[href="lien-hôtel-le-soleil-du-matin"]
     font-size: 13px;
 }
 
-.texte-nuit-à-partir-de-128€
+.textes-les-plus-populaires
 {
     font-family: Raleway-Regular;
     font-size: 11px;
@@ -622,20 +465,9 @@ a[href="lien-hôtel-le-soleil-du-matin"]
 .logo-5-étoiles-populaires
 {
     display: flex;
-    margin-top: 30px;
-    margin-bottom: 0px;
-    font-size: 9px;
+    margin-top: 40px;
+    font-size: 10px;
     color: #0065FC;
-}
-
-.case-au-coeur-de-l-eau-chambres-d-hôtes
-{
-    display: flex;
-    padding: 2px 0px 2px 2px;
-    border: 1px solid white;
-    background-color: white;
-    border-radius: 20px;
-    margin-bottom: 20px;
 }
 
 img[src="images/hebergements/small/awcreative.jpg"]
@@ -644,45 +476,14 @@ img[src="images/hebergements/small/awcreative.jpg"]
     height: 120px;
     border: 1px solid white;
     border-radius: 20px 1px 1px 20px;
-    margin-right: 15px;
-}
-
-.au-coeur-de-l-eau-chambres-d-hôtes
-{
-    margin-top: 10px;
-}
-
-a[href="lien-au-coeur-de-l-eau-chambres-d-hôtes"]
-{
-    text-decoration: none;
-    color: black;
-    font-family: Raleway-Bold;
-    font-size: 13px;
-}
-
-.texte-nuit-a-partir-de-71€
-{
-    font-family: Raleway-Regular;
-    font-size: 11px;
-    margin-top: 5px;
 }
 
 .logo-4-étoiles-populaires
 {
     display: flex;
-    margin-top: 30px;
-    margin-bottom: 0px;
-    font-size: 9px;
+    margin-top: 40px;
+    font-size: 10px;
     color: #0065FC;
-}
-
-.case-hôtel-tout-bleu-et-blanc
-{
-    display: flex;
-    padding: 2px 0px 2px 2px;
-    border: 1px solid white;
-    background-color: white;
-    border-radius: 20px;
 }
 
 img[src="images/hebergements/small/febrianzakariaa.jpg"]
@@ -691,27 +492,6 @@ img[src="images/hebergements/small/febrianzakariaa.jpg"]
     height: 120px;
     border: 1px solid white;
     border-radius: 20px 1px 1px 20px;
-    margin-right: 15px;
-}
-
-.hôtel-tout-bleu-et-blanc
-{
-    margin-top: 10px;
-}
-
-a[href="lien-hôtel-tout-bleu-et-blanc"]
-{
-    text-decoration: none;
-    color: black;
-    font-family: Raleway-Bold;
-    font-size: 13px;
-}
-
-.texte-nuit-a-partir-de-68€
-{
-    font-family: Raleway-Regular;
-    font-size: 11px;
-    margin-top: 5px;
 }
 
 .section-titre-activités-à-Marseille
