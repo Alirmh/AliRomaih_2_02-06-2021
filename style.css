@@ -22,12 +22,17 @@
     src: url('fonts/Raleway-Medium.ttf');
 }
 
+.section-header-principale-hébergements-activités
+{
+    margin: 20px 150px 20px 100px;
+}
+
 header
 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 30px 150px 20px 50px;
+    margin: 0px 0px 20px 0px;
 }
 
 nav a
@@ -71,7 +76,7 @@ a[href="inscription"]:hover
 {
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
+    margin-left: 0px;
 }
 
 .section-titre
@@ -265,7 +270,7 @@ button
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 20px 10px 30px 10px;
-    margin: 20px 25px 0px 50px;
+    margin: 20px 30px 0px 0px;
     width: 700px;
     height: 460px;
 }
@@ -717,14 +722,13 @@ a[href="lien-hôtel-tout-bleu-et-blanc"]
 {
     font-family: Raleway-Bold;
     font-size: 18px;
-    margin: 0px 0px 20px 50px;
+    margin: 0px 0px 20px 0px;
 }
 
 .ligne-horizontal-section-activités-à-Marseille
 {
     display: flex;
     justify-content: flex-start;
-    margin-left: 50px;
 }
 
 .case-vieux-port-et-parc-des-calanques
@@ -835,111 +839,29 @@ img[src="images/activites/small/lenapaulin.jpg"]
     margin-bottom: 8px;
 }
 
-.conteneur20
+.pied-de-la-page
 {
     display: flex;
     justify-content: space-between;
     border-radius: 1px 1px 1px 1px;
-    margin-top: 50px;
     background-color: #F2F2F2;
-    margin-right: 0px;
-    padding-bottom: 50px;
-    padding-left: 20px;
-    padding-top: 20px;
+    padding: 20px 310px 50px 50px;
+    margin: 0px 100px 0px 50px;
 }
 
-.conteneur21
+.sections-pied-de-la-page
 {
     display: flex;
     flex-direction: column;
 }
 
-.apropos
+.sections-titre-pied-de-la-page
 {
     font-family: Raleway-bold;
-    font-size: 18px;
+    font-size: 15px;
 }
 
-a[href="Fonction"]
-{
-    margin-bottom: 10px;
-    font-family: Raleway-Regular;
-    text-decoration: none;
-    color: black;
-    font-size: 12px;
-}
-
-a[href="Conditions"]
-{
-    margin-bottom: 10px;
-    font-family: Raleway-Regular;
-    text-decoration: none;
-    color: black;
-    font-size: 12px;
-}
-
-a[href="Données"]
-{
-    margin-bottom: 10px;
-    font-family: Raleway-Regular;
-    text-decoration: none;
-    color: black;
-    font-size: 12px;
-}
-
-.conteneur22
-{
-    display: flex;
-    flex-direction: column;
-}
-
-.heb
-{
-    font-family: Raleway-bold;
-    font-size: 18px;
-}
-
-a[href="Charte"]
-{
-    margin-bottom: 10px;
-    font-family: Raleway-Regular;
-    text-decoration: none;
-    color: black;
-    font-size: 12px;
-}
-
-a[href="votrehôtel"]
-{
-    margin-bottom: 10px;
-    font-family: Raleway-Regular;
-    text-decoration: none;
-    color: black;
-    font-size: 12px;
-}
-
-.conteneur23
-{
-    display: flex;
-    flex-direction: column;
-    margin-right: 300px;
-}
-
-.assist
-{
-    font-family: Raleway-bold;
-    font-size: 18px;
-}
-
-a[href="Centre"]
-{
-    margin-bottom: 10px;
-    font-family: Raleway-Regular;
-    text-decoration: none;
-    color: black;
-    font-size: 12px;
-}
-
-a[href="Nous"]
+a[href="liens-pied-de-la-page"]
 {
     margin-bottom: 10px;
     font-family: Raleway-Regular;
