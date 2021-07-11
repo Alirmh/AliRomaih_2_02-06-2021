@@ -24,7 +24,7 @@
 
 .section-principale-hébergements-activités
 {
-    margin: 20px 150px 20px 100px;
+    margin: 20px 130px 20px 120px;
 }
 
 header
@@ -32,30 +32,30 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 80px 20px 100px;
+    margin: 30px 100px 20px 120px;
 }
 
 nav a
 {
-    font-size: 14px;
+    font-size: 13px;
     color: #0065FC;
     font-family: Raleway-Medium;
     text-decoration: none;
-    margin-right: 50px;
+    margin-right: 45px;
 }
 
-a[href="#section-hebergements"]:hover
+a[href="#section-hébergements-les-plus-populaires"]:hover
 {    
     border-top: 2px solid blue;
     padding: 40px 30px 0px 30px;
 }
 
-a[href="#section-activites"]
+a[href="#section-activités-à-Marseille"]
 {
     color: black;
 }
 
-a[href="#section-activites"]:hover
+a[href="#section-activités-à-Marseille"]:hover
 {
     border-top: 2px solid blue;
     padding: 40px 30px 0px 30px
@@ -112,8 +112,8 @@ input
 button
 {
     background-color: #0065FC;
-    border: 1px #0065FC solid;
-    padding: 11px 12px 11px 15px;
+    border: 1px solid;
+    padding: 12px 12px 12px 15px;
     border-radius: 1px 13px 13px 1px;
     color: white;
     font-family: Raleway-SemiBold;
@@ -133,32 +133,37 @@ button
     font-family: Raleway-Bold;
 }
 
+a[href="liens-section-filtres"]
+{
+    text-decoration: none;
+    color: black;
+}
+
+a[href="liens-section-filtres"]:hover
+{
+    text-decoration: underline;
+    color: blue;
+}
+
 .filtre-economique
 {
     font-size: 15px;
     border: 2px solid #F2F2F2;
     border-left-width: 0px;
-    border-radius: 30px 30px 30px 30px;
+    border-radius: 99px 99px 99px 99px;
     padding-right: 20px;
     font-family: Raleway-Bold;
     margin: 0px 20px 0px 30px;
 }
 
-.filtre-economique:hover
-{
-    text-decoration: underline;
-    color: grey;
-}
-
 .fa-money-bill-wave
 {
     color: #0065FC;
-    margin-right: 8px;
+    margin-right: 5px;
     font-size: 15px;
-    border: 10px solid #DEEBFF;
-    border-radius: 30px 30px 30px 30px;
+    border-radius: 20px 20px 20px 20px;
     background-color: #DEEBFF;
-    padding: 3px 2px 3px 2px;
+    padding: 12px 11px 12px 11px;
 }
 
 .filtre-familial
@@ -166,16 +171,10 @@ button
     font-size: 15px;
     border: 2px solid #F2F2F2;
     border-left-width: 0px;
-    border-radius: 30px 30px 30px 30px;
+    border-radius: 99px 99px 99px 99px;
     font-family: Raleway-Bold;
     margin-right: 20px;
     padding-right: 20px;
-}
-
-.filtre-familial:hover
-{
-    text-decoration: underline;
-    color: grey;
 }
 
 .fa-child
@@ -183,10 +182,9 @@ button
     color: #0065FC;
     margin-right: 5px;
     font-size: 15px;
-    border: 10px solid #DEEBFF;
     border-radius: 30px 30px 30px 30px;
     background-color: #DEEBFF;
-    padding: 2px 5px 2px 5px;
+    padding: 12px 15px 12px 15px;
 }
 
 .filtre-romantique
@@ -200,21 +198,14 @@ button
     margin-right: 20px;
 }
 
-.filtre-romantique:hover
-{
-    text-decoration: underline;
-    color: grey;
-}
-
 .fa-heart
 {
     color: #0065FC;
     margin-right: 5px;
     font-size: 15px;
-    border: 10px solid #DEEBFF;
     border-radius: 30px 30px 30px 30px;
     background-color: #DEEBFF;
-    padding: 2px 3px 2px 3px;
+    padding: 12px 13px 12px 13px;
 }
 
 .filtre-animauxautorisés
@@ -223,16 +214,8 @@ button
     border: 2px solid #F2F2F2;
     border-left-width: 0px;
     border-radius: 40px 40px 40px 40px;
-    padding-right: 10px;
-    font-family: Raleway-Bold;
-    width: 190px;
-    height: 39px; 
-}
-
-.filtre-animauxautorisés:hover
-{
-    text-decoration: underline;
-    color: grey;
+    padding-right: 15px;
+    font-family: Raleway-Bold; 
 }
 
 .fa-dog
@@ -240,10 +223,9 @@ button
     color: #0065FC;
     margin-right: 5px;
     font-size: 15px;
-    border: 10px solid #DEEBFF;
     border-radius: 30px 30px 30px 30px;
     background-color: #DEEBFF;
-    padding: 2px 3px 2px 3px;
+    padding: 12px 13px 12px 13px;
 }
 
 .fa-info
@@ -256,7 +238,7 @@ button
     padding: 4px 7px 4px 7px;
 }
 
-.section-hébergements-les-plus-populaires
+#section-hébergements-les-plus-populaires
 {
     display: flex;
     margin-bottom: 50px;
@@ -288,7 +270,7 @@ button
 .cases-hébergements
 {
     padding: 2px 4px 2px 2px;
-    border: 1px solid white;
+    border: 1px solid #F2F2F2;
     background-color: white;
     border-radius: 20px;
     width: 200px;
@@ -427,7 +409,7 @@ img[src="images/hebergements/small/febrianzakaria.jpg"]
 {
     display: flex;
     padding: 2px 0px 2px 2px;
-    border: 1px solid white;
+    border: 1px solid #F2F2F2;
     background-color: white;
     border-radius: 20px;
     margin-bottom: 20px;
@@ -494,7 +476,7 @@ img[src="images/hebergements/small/febrianzakariaa.jpg"]
     border-radius: 20px 1px 1px 20px;
 }
 
-.section-titre-activités-à-Marseille
+#section-titre-activités-à-Marseille
 {
     font-family: Raleway-Bold;
     font-size: 18px;
@@ -622,7 +604,7 @@ img[src="images/activites/small/lenapaulin.jpg"]
     border-radius: 1px 1px 1px 1px;
     background-color: #F2F2F2;
     padding: 20px 310px 50px 50px;
-    margin: 0px 100px 0px 50px;
+    margin: 0px 80px 0px 70px;
 }
 
 .sections-pied-de-la-page
