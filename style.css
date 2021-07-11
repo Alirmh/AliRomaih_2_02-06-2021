@@ -22,11 +22,6 @@
     src: url('fonts/Raleway-Medium.ttf');
 }
 
-.section-principale-hébergements-activités
-{
-    margin: 20px 130px 20px 120px;
-}
-
 header
 {
     display: flex;
@@ -76,7 +71,7 @@ a[href="inscription"]:hover
 {
     display: flex;
     flex-direction: column;
-    margin-left: 0px;
+    margin: 20px 110px 0px 120px;
 }
 
 .section-titre
@@ -124,7 +119,7 @@ button
     display: flex;
     justify-content: flex-start;
     align-items: baseline; 
-    margin: 30px 20px 20px 0px;
+    margin: 30px 0px 30px 0px;
 }
 
 .texte-filtre
@@ -241,45 +236,53 @@ a[href="liens-section-filtres"]:hover
 #section-hébergements-les-plus-populaires
 {
     display: flex;
-    margin-bottom: 50px;
+    margin: 0px 120px 50px 120px;
 }
 
 .section-hébergements
 {
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 20px 30px 40px 30px;
-    margin: 20px 30px 0px 0px;
+    padding: 20px 10px 0px 30px;
+    margin: 20px 35px 0px 0px;
     width: 700px;
-    height: 460px;
+    height: 500px;
 }
 
 .section-titre-hébergements-à-Marseille
 {
     font-family: Raleway-Bold;
     font-size: 18px;
+    margin: 13px 0px 15px 0px;
 }
 
-.ligne-hébergements
+.première-ligne-hébergements
 {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+}
+
+.deuxième-ligne-hébergements
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
 }
 
 .cases-hébergements
 {
-    padding: 2px 4px 2px 2px;
+    padding: 3px 5px 2px 3px;
     border: 1px solid #F2F2F2;
     background-color: white;
     border-radius: 20px;
-    width: 200px;
+    width: 190px;
     height: 160px;
+    margin-right: 20px;
 }
 
 img[src="images/hebergements/small/marcusloke.jpg"]
 {
-    width: 200px;
+    width: 190px;
     height: 100px;
     border: 1px solid white;
     border-radius: 20px 20px 1px 1px;
@@ -320,7 +323,7 @@ a[href="liens-hébergements"]
 
 img[src="images/hebergements/small/fredkleber.jpg"]
 {
-    width: 200px;
+    width: 190px;
     height: 100px;
     border: 1px solid white;
     border-radius: 20px 20px 1px 1px;
@@ -336,7 +339,7 @@ img[src="images/hebergements/small/fredkleber.jpg"]
 
 img[src="images/hebergements/small/reisetopia.jpg"]
 {
-    width: 200px;
+    width: 190px;
     height: 100px;
     border: 1px solid white;
     border-radius: 20px 20px 1px 1px;
@@ -344,7 +347,7 @@ img[src="images/hebergements/small/reisetopia.jpg"]
 
 img[src="images/hebergements/small/anniespratt.jpg"]
 {
-    width: 200px;
+    width: 190px;
     height: 100px;
     border: 1px solid white;
     border-radius: 20px 20px 1px 1px;
@@ -361,13 +364,13 @@ img[src="images/hebergements/small/anniespratt.jpg"]
 .afficherplus
 {
     font-family: Raleway-Bold;
-    margin-top: 50px;
-    font-size: 14px;
+    margin-top: 45px;
+    font-size: 15px;
 }
 
 img[src="images/hebergements/small/nicatelee.jpg"]
 {
-    width: 200px;
+    width: 190px;
     height: 100px;
     border: 1px solid white;
     border-radius: 20px 20px 1px 1px;
@@ -375,7 +378,7 @@ img[src="images/hebergements/small/nicatelee.jpg"]
 
 img[src="images/hebergements/small/febrianzakaria.jpg"]
 {
-    width: 200px;
+    width: 190px;
     height: 100px;
     border: 1px solid white;
     border-radius: 20px 20px 1px 1px;
@@ -387,32 +390,37 @@ img[src="images/hebergements/small/febrianzakaria.jpg"]
     flex-direction: column;
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 0px 20px 12px 20px;
+    padding: 0px 40px 10px 30px;
     height: 510px;
-    width: 300px;
+    width: 290px;
     margin-top: 20px;
 }
 
 .section-titre-les-plus-populaires
 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-family: Raleway-Bold;
-    font-size: 18px;
-    padding: 18px 0px 8px 0px;
+    font-size: 12px;
+    margin: 18px 0px 4px 0px;
 }
 
 .fa-chart-line
 {
-    padding-left: 100px;
+    font-size: 17px;
 }
 
 .cases-les-plus-populaires
 {
     display: flex;
-    padding: 2px 0px 2px 2px;
-    border: 1px solid #F2F2F2;
     background-color: white;
     border-radius: 20px;
     margin-bottom: 20px;
+    margin: 0px 0px 20px 0px;
+    padding: 3px 10px 3px 3px;
+    width: 285px;
+    height: 125px;
 }
 
 img[src="images/hebergements/small/emileguillemot.jpg"]
@@ -425,8 +433,7 @@ img[src="images/hebergements/small/emileguillemot.jpg"]
 
 .bloc-texte-les-plus-populaires
 {
-    margin-top: 10px;
-    margin-left: 10px;
+    margin: 10px 0px 0px 10px;
 }
 
 a[href="liens-les-plus-populaires"]
@@ -476,10 +483,15 @@ img[src="images/hebergements/small/febrianzakariaa.jpg"]
     border-radius: 20px 1px 1px 20px;
 }
 
-#section-titre-activités-à-Marseille
+#section-activités-à-Marseille
+{
+    margin: 0px 0px 20px 120px;
+}
+
+.section-titre-activités-à-Marseille
 {
     font-family: Raleway-Bold;
-    font-size: 18px;
+    font-size: 19px;
     margin: 0px 0px 20px 0px;
 }
 
@@ -495,7 +507,7 @@ img[src="images/hebergements/small/febrianzakariaa.jpg"]
     box-shadow: 1px 1px 5px 5px #F2F2F2;
     width: 243px;
     height: 368px;
-    margin-right: 35px;
+    margin-right: 40px;
 }
 
 img[src="images/activites/small/renolaithienne.jpg"]
@@ -523,7 +535,7 @@ a[href="liens-section-activités-à-Marseille"]
 
 .case-Fort-de-Pomègues
 {
-    margin: 0px 35px 40px 0px;
+    margin: 0px 40px 40px 0px;
     border-radius: 20px;
     box-shadow: 1px 1px 5px 5px #F2F2F2;
     width: 245px;
@@ -603,8 +615,8 @@ img[src="images/activites/small/lenapaulin.jpg"]
     justify-content: space-between;
     border-radius: 1px 1px 1px 1px;
     background-color: #F2F2F2;
-    padding: 20px 310px 50px 50px;
-    margin: 0px 80px 0px 70px;
+    padding: 20px 320px 20px 50px;
+    margin: 0px 70px 30px 70px;
 }
 
 .sections-pied-de-la-page
