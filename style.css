@@ -22,12 +22,13 @@
     src: url('fonts/Raleway-Medium.ttf');
 }
 
-header
+#header-conteneur
 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 30px 100px 20px 120px;
+    margin: 40px 0px 20px 120px;
+    width: 1130px;
 }
 
 nav a
@@ -36,7 +37,7 @@ nav a
     color: #0065FC;
     font-family: Raleway-Medium;
     text-decoration: none;
-    margin-right: 45px;
+    margin-right: 50px;
 }
 
 a[href="#section-hébergements-les-plus-populaires"]:hover
@@ -132,6 +133,7 @@ a[href="liens-section-filtres"]
 {
     text-decoration: none;
     color: black;
+    margin-left: 10px;
 }
 
 a[href="liens-section-filtres"]:hover
@@ -142,6 +144,8 @@ a[href="liens-section-filtres"]:hover
 
 .filtre-economique
 {
+    display: flex;
+    align-items: center;
     font-size: 15px;
     border: 2px solid #F2F2F2;
     border-left-width: 0px;
@@ -154,7 +158,6 @@ a[href="liens-section-filtres"]:hover
 .fa-money-bill-wave
 {
     color: #0065FC;
-    margin-right: 5px;
     font-size: 15px;
     border-radius: 20px 20px 20px 20px;
     background-color: #DEEBFF;
@@ -163,6 +166,8 @@ a[href="liens-section-filtres"]:hover
 
 .filtre-familial
 {
+    display: flex;
+    align-items: center;
     font-size: 15px;
     border: 2px solid #F2F2F2;
     border-left-width: 0px;
@@ -175,7 +180,6 @@ a[href="liens-section-filtres"]:hover
 .fa-child
 {
     color: #0065FC;
-    margin-right: 5px;
     font-size: 15px;
     border-radius: 30px 30px 30px 30px;
     background-color: #DEEBFF;
@@ -184,6 +188,8 @@ a[href="liens-section-filtres"]:hover
 
 .filtre-romantique
 {
+    display: flex;
+    align-items: center;
     font-size: 15px;
     border: 2px solid #F2F2F2;
     border-left-width: 0px;
@@ -196,7 +202,6 @@ a[href="liens-section-filtres"]:hover
 .fa-heart
 {
     color: #0065FC;
-    margin-right: 5px;
     font-size: 15px;
     border-radius: 30px 30px 30px 30px;
     background-color: #DEEBFF;
@@ -205,6 +210,8 @@ a[href="liens-section-filtres"]:hover
 
 .filtre-animauxautorisés
 {
+    display: flex;
+    align-items: center;
     font-size: 15px;
     border: 2px solid #F2F2F2;
     border-left-width: 0px;
@@ -216,7 +223,6 @@ a[href="liens-section-filtres"]:hover
 .fa-dog
 {
     color: #0065FC;
-    margin-right: 5px;
     font-size: 15px;
     border-radius: 30px 30px 30px 30px;
     background-color: #DEEBFF;
@@ -225,7 +231,7 @@ a[href="liens-section-filtres"]:hover
 
 .fa-info
 {
-    margin-right: 10px;
+    margin-right: 5px;
     font-size: 10px;
     color: #0065FC;
     border: 1px #F2F2F2 solid;
@@ -236,7 +242,7 @@ a[href="liens-section-filtres"]:hover
 #section-hébergements-les-plus-populaires
 {
     display: flex;
-    margin: 0px 120px 50px 120px;
+    margin: 0px 200px 50px 120px;
 }
 
 .section-hébergements
@@ -286,6 +292,7 @@ img[src="images/hebergements/small/marcusloke.jpg"]
     height: 100px;
     border: 1px solid white;
     border-radius: 20px 20px 1px 1px;
+    object-fit: cover;
 }
 
 .titres-hébergements
@@ -327,6 +334,7 @@ img[src="images/hebergements/small/fredkleber.jpg"]
     height: 100px;
     border: 1px solid white;
     border-radius: 20px 20px 1px 1px;
+    object-fit: cover;
 }
 
 .logo-5-étoiles
@@ -343,6 +351,7 @@ img[src="images/hebergements/small/reisetopia.jpg"]
     height: 100px;
     border: 1px solid white;
     border-radius: 20px 20px 1px 1px;
+    object-fit: cover;
 }
 
 img[src="images/hebergements/small/anniespratt.jpg"]
@@ -351,6 +360,7 @@ img[src="images/hebergements/small/anniespratt.jpg"]
     height: 100px;
     border: 1px solid white;
     border-radius: 20px 20px 1px 1px;
+    object-fit: cover;
 }
 
 .logo-3-étoiles
@@ -374,6 +384,7 @@ img[src="images/hebergements/small/nicatelee.jpg"]
     height: 100px;
     border: 1px solid white;
     border-radius: 20px 20px 1px 1px;
+    object-fit: cover;
 }
 
 img[src="images/hebergements/small/febrianzakaria.jpg"]
@@ -382,6 +393,7 @@ img[src="images/hebergements/small/febrianzakaria.jpg"]
     height: 100px;
     border: 1px solid white;
     border-radius: 20px 20px 1px 1px;
+    object-fit: cover;
 }
 
 .section-les-plus-populaires
@@ -429,6 +441,7 @@ img[src="images/hebergements/small/emileguillemot.jpg"]
     height: 120px;
     border: 1px solid white;
     border-radius: 20px 1px 1px 20px;
+    object-fit: cover;
 }
 
 .bloc-texte-les-plus-populaires
@@ -465,6 +478,7 @@ img[src="images/hebergements/small/awcreative.jpg"]
     height: 120px;
     border: 1px solid white;
     border-radius: 20px 1px 1px 20px;
+    object-fit: cover;
 }
 
 .logo-4-étoiles-populaires
@@ -481,6 +495,7 @@ img[src="images/hebergements/small/febrianzakariaa.jpg"]
     height: 120px;
     border: 1px solid white;
     border-radius: 20px 1px 1px 20px;
+    object-fit: cover;
 }
 
 #section-activités-à-Marseille
@@ -504,7 +519,7 @@ img[src="images/hebergements/small/febrianzakariaa.jpg"]
 .case-vieux-port-et-parc-des-calanques
 {
     border-radius: 20px;
-    box-shadow: 1px 1px 5px 5px #F2F2F2;
+    box-shadow: 1px 1px 5px 4px #F2F2F2;
     width: 243px;
     height: 368px;
     margin-right: 40px;
@@ -516,6 +531,7 @@ img[src="images/activites/small/renolaithienne.jpg"]
     height: 325px;
     border-radius: 20px 20px 1px 1px;
     margin-bottom: 8px;
+    object-fit: cover;
 }
 
 a[href="liens-section-activités-à-Marseille"]
@@ -537,7 +553,7 @@ a[href="liens-section-activités-à-Marseille"]
 {
     margin: 0px 40px 40px 0px;
     border-radius: 20px;
-    box-shadow: 1px 1px 5px 5px #F2F2F2;
+    box-shadow: 1px 1px 5px 4px #F2F2F2;
     width: 245px;
     height: 188px;
 }
@@ -548,13 +564,14 @@ img[src="images/activites/small/paulhermann.jpg"]
     width: 245px;
     border-radius: 20px 20px 1px 1px;
     margin-bottom: 8px;
+    object-fit: cover;
 }
 
 .case-îles-du-Frioul
 {
     border-radius: 20px;
     padding-bottom: 10px;
-    box-shadow: 1px 1px 5px 5px #F2F2F2;
+    box-shadow: 1px 1px 5px 4px #F2F2F2;
     width: 245px;
     height: 129px;
 }
@@ -565,6 +582,7 @@ img[src="images/activites/small/kevinhikari.jpg"]
     height: 97px;
     border-radius: 20px 20px 1px 1px;
     margin-bottom: 8px;
+    object-fit: cover;
 }
 
 img[src="images/activites/small/kilyansockalingum.jpg"]
@@ -573,13 +591,14 @@ img[src="images/activites/small/kilyansockalingum.jpg"]
     height: 325px;
     border-radius: 20px 20px 1px 1px;
     margin-bottom: 8px;
+    object-fit: cover;
 }
 
 .case-notre-dame-de-la-garde
 {
     margin: 0px 35px 40px 0px;
     border-radius: 20px;
-    box-shadow: 1px 1px 5px 5px #F2F2F2;
+    box-shadow: 1px 1px 5px 4px #F2F2F2;
     width: 245px;
     height: 154px;
 }
@@ -590,13 +609,14 @@ img[src="images/activites/small/florianwehde.jpg"]
     width: 245px;
     border-radius: 20px 20px 1px 1px;
     margin-bottom: 8px;
+    object-fit: cover;
 }
 
 .case-parc-longchamp
 {
     margin: 0px 35px 40px 0px;
     border-radius: 20px;
-    box-shadow: 1px 1px 5px 5px #F2F2F2;
+    box-shadow: 1px 1px 5px 4px #F2F2F2;
     width: 245px;
     height: 174px;
 }
@@ -607,6 +627,7 @@ img[src="images/activites/small/lenapaulin.jpg"]
     height: 132px;
     border-radius: 20px 20px 1px 1px;
     margin-bottom: 8px;
+    object-fit: cover;
 }
 
 .pied-de-la-page
@@ -616,7 +637,7 @@ img[src="images/activites/small/lenapaulin.jpg"]
     border-radius: 1px 1px 1px 1px;
     background-color: #F2F2F2;
     padding: 20px 320px 20px 50px;
-    margin: 0px 70px 30px 70px;
+    margin: 0px 70px 30px 80px;
 }
 
 .sections-pied-de-la-page
@@ -639,3 +660,287 @@ a[href="liens-pied-de-la-page"]
     color: black;
     font-size: 12px;
 }
+
+@media all and (min-width: 320px) and (max-width: 437px)
+{
+    body
+    {
+        width: 100%;
+        margin: 0px;
+    }
+
+    #header-conteneur
+    {
+        margin: 20px 0px 20px 0px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    a[href="inscription"]
+    {
+        margin: 0px;
+    }
+
+    a[href="#section-hébergements-les-plus-populaires"]
+    {
+        margin: 0px;
+    }
+
+    a[href="#section-activités-à-Marseille"]
+    {
+        margin: 0px;
+    }
+
+    .section-principale
+    {
+        margin: 0px;
+    }
+
+    .section-titre
+    {
+        font-size: 21px;
+    }
+
+    form
+    {
+        display: flex;
+    }
+
+    button
+    {
+        padding: 0px;
+    }
+
+    .section-filtres
+    {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .filtre-economique
+    {
+        margin: 0px;
+    }
+
+    .filtre-familial
+    {
+        margin: 0px;
+    }
+
+    .filtre-romantique
+    {
+        margin: 0px;
+    }
+    
+    .filtre-animauxautorisés
+    {
+        flex: none;
+    }
+    
+    .section-texte
+    {
+        font-size: 15px;
+    }
+
+    #section-hébergements-les-plus-populaires
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0px;
+    }
+
+    .section-les-plus-populaires
+    {
+        padding: 0px 20px 10px 10px;
+        border-radius: 0px;
+    }
+
+    .section-titre-hébergements-à-Marseille
+    {
+        margin: 10px 0px 15px 20px;
+    }
+
+    .section-hébergements
+    {
+        width: 100%;
+        background-color: white;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .première-ligne-hébergements
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cases-hébergements
+    {
+        height: 180px;
+        width: 280px;
+        padding: 0px;
+        margin: 0px 0px 10px 15px;
+        padding: 3px 5px 5px 3px;
+        box-shadow: 1px 1px 5px 3px #F2F2F2;
+    }
+
+    img[src="images/hebergements/small/marcusloke.jpg"]
+    {
+        height: 120px;
+        width: 280px;
+    }
+
+    img[src="images/hebergements/small/fredkleber.jpg"]
+    {
+        height: 120px;
+        width: 280px;
+    }
+
+    img[src="images/hebergements/small/reisetopia.jpg"]
+    {
+        height: 120px;
+        width: 280px;
+    }
+
+    .deuxième-ligne-hébergements
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    img[src="images/hebergements/small/anniespratt.jpg"]
+    {
+        height: 120px;
+        width: 280px;
+    }
+
+    img[src="images/hebergements/small/nicatelee.jpg"]
+    {
+        height: 120px;
+        width: 280px;
+    }
+
+    img[src="images/hebergements/small/febrianzakaria.jpg"]
+    {
+        height: 120px;
+        width: 280px;
+    }
+
+    .afficherplus
+    {
+        margin: 20px 0px 0px 20px;
+    }
+
+    #section-activités-à-Marseille
+    {
+        margin: 820px 0px 20px 0px;
+    }
+
+    .section-titre-activités-à-Marseille
+    {
+        margin: 0px 0px 20px 15px;
+    }
+    
+    .ligne-horizontal-section-activités-à-Marseille
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .case-vieux-port-et-parc-des-calanques
+    {
+        margin: 0px 0px 20px 15px;
+        width: 290px;
+        height: 160px;
+    }
+
+    img[src="images/activites/small/renolaithienne.jpg"]
+    {
+        height: 120px;
+        width: 290px;
+    }
+
+    .case-Fort-de-Pomègues
+    {
+        margin: 0px 0px 20px 15px;
+        width: 290px;
+        height: 160px;
+    }
+
+    img[src="images/activites/small/paulhermann.jpg"]
+    {
+        height: 120px;
+        width: 290px;
+    }
+
+    .case-îles-du-Frioul
+    {
+        margin: 0px 0px 20px 15px;
+        width: 290px;
+        height: 160px;
+    }
+
+    img[src="images/activites/small/kevinhikari.jpg"]
+    {
+        height: 120px;
+        width: 290px;
+    }
+
+    img[src="images/activites/small/kilyansockalingum.jpg"]
+    {
+        height: 120px;
+        width: 290px;
+    }
+
+    .case-notre-dame-de-la-garde
+    {
+        margin: 0px 0px 20px 15px;
+        width: 290px;
+        height: 160px;
+    }
+
+    img[src="images/activites/small/florianwehde.jpg"]
+    {
+        height: 120px;
+        width: 290px;
+    }
+
+    .case-parc-longchamp
+    {
+        margin: 0px 0px 20px 15px;
+        width: 290px;
+        height: 160px;
+    }
+
+    img[src="images/activites/small/lenapaulin.jpg"]
+    {
+        height: 120px;
+        width: 290px;
+    }
+
+    .pied-de-la-page
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 20px 0px 0px 20px;
+    }
+
+    .sections-pied-de-la-page
+    {
+        padding-bottom: 20px;
+    }
+}
+
+@media all and (min-width: 438px) and (max-width: 686px)
