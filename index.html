@@ -10,8 +10,7 @@
 	</head>
 
 <body><!--Corps de la page -->
-	<header><!-- Tête de la page -->
-		<div id="header-conteneur">
+	<header id="header-conteneur"><!-- Tête de la page -->
 			<img src="images/logo/Reservia.svg" alt="logoreservia"/>
 		
 		<nav>
@@ -19,17 +18,19 @@
 			<a href="#section-activités-à-Marseille">Activités</a>
 			<a href="inscription">S'inscrire</a>
 		</nav>
-		</div>
 	</header>
 
 	<section class="section-principale">
 		<h1 class="section-titre">Trouvez votre hébergement pour des vacances de rêve</h1>
 		<p class="section-texte">En plein centre ville ou pleine nature</p>
 		<form>
-  			<mark><i class="fas fa-map-marker-alt"></i></mark><input type="search" id="maRecherche" name="q"><button>Rechercher</button>
+  			<mark><i class="fas fa-map-marker-alt"></i></mark>
+  			<input type="search" id="maRecherche" name="q">
+  			<button><div class="logoloupe"><i class="fas fa-search"></i></div><p class="textebouton">Rechercher</p></button></input>
   		</form>		
     	<div class="section-filtres">
     		<p class="texte-filtre">Filtres</p>	
+    		<div class="section-filtres-2">
     		<div class="filtre-economique">
     			<i class="fas fa-money-bill-wave"></i>
     			<a href="liens-section-filtres">&Eacute;conomique</a>
@@ -45,6 +46,7 @@
     		<div class="filtre-animauxautorisés">
     			<i class="fas fa-dog"></i>
     			<a href="liens-section-filtres">Animaux autorisés</a>
+    		</div>
     		</div>	
     	</div>
 		<p class="section-texte">

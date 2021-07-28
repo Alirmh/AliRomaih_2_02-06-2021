@@ -89,6 +89,11 @@ a[href="inscription"]:hover
     margin-top: 5px;
 }
 
+form
+{
+    display: flex;
+}
+
 mark
 {
     font-size: 15px;
@@ -100,19 +105,27 @@ mark
 input
 {
     border: 1px #F2F2F2 solid;
-    font-size: 8px;
     border-width: 1px 0px 1px 0px;
-    padding: 17px 54px 12px 54px;
 }
 
 button
 {
     background-color: #0065FC;
     border: 1px solid;
-    padding: 12px 12px 12px 15px;
+    padding: 0px 12px 0px 15px;
     border-radius: 1px 13px 13px 1px;
     color: white;
     font-family: Raleway-SemiBold;
+}
+
+.textebouton
+{
+    margin: 0px;
+}
+
+.logoloupe
+{
+    display: none;
 }
 
 .section-filtres
@@ -127,6 +140,11 @@ button
 {
     font-size: 15px;
     font-family: Raleway-Bold;
+}
+
+.section-filtres-2
+{
+    display: flex;
 }
 
 a[href="liens-section-filtres"]
@@ -661,7 +679,7 @@ a[href="liens-pied-de-la-page"]
     font-size: 12px;
 }
 
-@media all and (min-width: 320px) and (max-width: 330px)
+@media all and (min-width: 320px) and (max-width: 450px)
 {
     body
     {
@@ -671,21 +689,14 @@ a[href="liens-pied-de-la-page"]
 
     #header-conteneur
     {
-        margin: 20px 0px 20px 0px;
+        margin: 20px 0px 10px 0px;
         width: 100%;
-        display: flex;
-        justify-content: space-between;
+        display: block;
     }
 
     img[src="images/logo/Reservia.svg"]
     {
         margin-left: 15px;
-    }
-
-    nav
-    {
-        display: flex;
-        justify-content: space-between;
     }
 
     a[href="inscription"]
@@ -695,12 +706,26 @@ a[href="liens-pied-de-la-page"]
 
     a[href="#section-hébergements-les-plus-populaires"]
     {
-        margin: 0px;
+        padding-right: 30%;
+    }
+
+    a[href="#section-hébergements-les-plus-populaires"]:hover
+    {
+        border-bottom: 2px blue solid;
+        border-top: none;
+        padding: 30px 40px 0px 40px;
     }
 
     a[href="#section-activités-à-Marseille"]
     {
         margin: 0px;
+    }
+
+    a[href="#section-activités-à-Marseille"]:hover
+    {
+        border-bottom: 2px blue solid;
+        border-top: none;
+        padding: 30px 40px 0px 40px;
     }
 
     .section-principale
@@ -720,45 +745,69 @@ a[href="liens-pied-de-la-page"]
         margin-left: 15px;
     }
 
+    input
+    {
+        width: 200px
+    }
+
     button
     {
         padding: 0px;
+        border: 0px;
+        width: 40px;
+        border-radius: 10px;
+    }
+
+    .logoloupe
+    {
+        display: block;
+        padding-top: 10px;
+    }
+
+    .textebouton
+    {
+        visibility: hidden;
     }
 
     .section-filtres
     {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         margin-left: 15px;
     }
 
-    .texte-filtre
+    .section-filtres-2
     {
-        margin-right: 108px;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .filtre-economique
     {
+        padding: 0px;
         margin: 0px 10px 10px 0px;
-        padding-right: 10px;
+        width: 155px;
     }
 
     .filtre-familial
     {
-        margin: 0px;
-        padding-right: 10px;
+        padding: 0px;
+        margin: 0px 10px 10px 0px;
+        width: 120px;
     }
 
     .filtre-romantique
     {
+        padding: 0px;
+        margin: 0px 10px 10px 0px;
+        width: 150px;
+    }
+    
+    .filtre-animauxautorisés
+    {
+        padding: 0px;
+        width: 200px;
         margin: 0px 0px 10px 0px;
-        padding-right: 10px;
-    }
-    
-    .filtre-animauxautorisés
-    {
-        flex: none;
-        padding-right: 10px;
     }
     
     .section-texte
@@ -776,9 +825,22 @@ a[href="liens-pied-de-la-page"]
 
     .section-les-plus-populaires
     {
-        padding: 0px 20px 10px 10px;
+        padding: 0px;
         border-radius: 0px;
+        width: 111%;
     }
+
+    .section-titre-les-plus-populaires
+    {
+        margin: 0px 30px 0px 20px;
+    }
+
+    .cases-les-plus-populaires
+    {
+        width: 85%;
+        height: 122px;
+        margin: 0px 0px 20px 20px;
+    }   
 
     .section-titre-hébergements-à-Marseille
     {
@@ -804,9 +866,8 @@ a[href="liens-pied-de-la-page"]
     .cases-hébergements
     {
         height: 180px;
-        width: 280px;
-        padding: 0px;
-        margin: 0px 0px 10px 15px;
+        width: 97%;
+        margin: 0px 0px 10px 16px;
         padding: 3px 5px 5px 3px;
         box-shadow: 1px 1px 5px 3px #F2F2F2;
     }
@@ -814,19 +875,19 @@ a[href="liens-pied-de-la-page"]
     img[src="images/hebergements/small/marcusloke.jpg"]
     {
         height: 120px;
-        width: 280px;
+        width: 100%;
     }
 
     img[src="images/hebergements/small/fredkleber.jpg"]
     {
         height: 120px;
-        width: 280px;
+        width: 100%;
     }
 
     img[src="images/hebergements/small/reisetopia.jpg"]
     {
         height: 120px;
-        width: 280px;
+        width: 100%;
     }
 
     .deuxième-ligne-hébergements
@@ -839,19 +900,19 @@ a[href="liens-pied-de-la-page"]
     img[src="images/hebergements/small/anniespratt.jpg"]
     {
         height: 120px;
-        width: 280px;
+        width: 100%;
     }
 
     img[src="images/hebergements/small/nicatelee.jpg"]
     {
         height: 120px;
-        width: 280px;
+        width: 100%;
     }
 
     img[src="images/hebergements/small/febrianzakaria.jpg"]
     {
         height: 120px;
-        width: 280px;
+        width: 100%;
     }
 
     .afficherplus
@@ -861,7 +922,7 @@ a[href="liens-pied-de-la-page"]
 
     #section-activités-à-Marseille
     {
-        margin: 820px 0px 20px 0px;
+        margin: 880px 0px 20px 0px;
     }
 
     .section-titre-activités-à-Marseille
@@ -877,73 +938,73 @@ a[href="liens-pied-de-la-page"]
 
     .case-vieux-port-et-parc-des-calanques
     {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
+        margin: 0px 0px 20px 16px;
+        width: 100%;
+        height: 180px;
     }
 
     img[src="images/activites/small/renolaithienne.jpg"]
     {
-        height: 120px;
-        width: 290px;
+        height: 135px;
+        width: 100%;
     }
 
     .case-Fort-de-Pomègues
     {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
+        margin: 0px 0px 20px 16px;
+        width: 100%;
+        height: 180px;
     }
 
     img[src="images/activites/small/paulhermann.jpg"]
     {
-        height: 120px;
-        width: 290px;
+        height: 135px;
+        width: 100%;
     }
 
     .case-îles-du-Frioul
     {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
+        margin: 0px 0px 20px 16px;
+        width: 100%;
+        height: 170px;
     }
 
     img[src="images/activites/small/kevinhikari.jpg"]
     {
-        height: 120px;
-        width: 290px;
+        height: 135px;
+        width: 100%;
     }
 
     img[src="images/activites/small/kilyansockalingum.jpg"]
     {
-        height: 120px;
-        width: 290px;
+        height: 135px;
+        width: 100%;
     }
 
     .case-notre-dame-de-la-garde
     {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
+        margin: 0px 0px 20px 16px;
+        width: 100%;
+        height: 180px;
     }
 
     img[src="images/activites/small/florianwehde.jpg"]
     {
-        height: 120px;
-        width: 290px;
+        height: 135px;
+        width: 100%;
     }
 
     .case-parc-longchamp
     {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
+        margin: 0px 0px 20px 16px;
+        width: 100%;
+        height: 180px;
     }
 
     img[src="images/activites/small/lenapaulin.jpg"]
     {
-        height: 120px;
-        width: 290px;
+        height: 135px;
+        width: 100%;
     }
 
     .pied-de-la-page
@@ -952,6 +1013,7 @@ a[href="liens-pied-de-la-page"]
         flex-direction: column;
         margin: 0px;
         padding: 20px 0px 0px 20px;
+        width: 105%;
     }
 
     .sections-pied-de-la-page
@@ -959,8 +1021,8 @@ a[href="liens-pied-de-la-page"]
         padding-bottom: 20px;
     }
 }
-
-@media all and (min-width: 331px) and (max-width: 343px)
+ 
+@media all and (min-width: 451px) and (max-width: 768px)
 {  
     body
     {
@@ -970,21 +1032,14 @@ a[href="liens-pied-de-la-page"]
 
     #header-conteneur
     {
-        margin: 20px 0px 20px 0px;
+        margin: 20px 0px 10px 0px;
         width: 100%;
-        display: flex;
-        justify-content: space-between;
+        display: block;
     }
 
     img[src="images/logo/Reservia.svg"]
     {
         margin-left: 15px;
-    }
-
-    nav
-    {
-        display: flex;
-        justify-content: space-between;
     }
 
     a[href="inscription"]
@@ -994,12 +1049,26 @@ a[href="liens-pied-de-la-page"]
 
     a[href="#section-hébergements-les-plus-populaires"]
     {
-        margin: 0px;
+        padding-right: 30%;
+    }
+
+    a[href="#section-hébergements-les-plus-populaires"]:hover
+    {
+        border-bottom: 2px blue solid;
+        border-top: none;
+        padding: 30px 40px 0px 40px;
     }
 
     a[href="#section-activités-à-Marseille"]
     {
         margin: 0px;
+    }
+
+    a[href="#section-activités-à-Marseille"]:hover
+    {
+        border-bottom: 2px blue solid;
+        border-top: none;
+        padding: 30px 40px 0px 40px;
     }
 
     .section-principale
@@ -1009,63 +1078,96 @@ a[href="liens-pied-de-la-page"]
 
     .section-titre
     {
-        font-size: 21px;
+        font-size: 29px;
         margin-left: 15px;
+    }
+
+    .section-texte
+    {
+        margin: 10px 0px 20px 15px;
+        font-size: 22px;
     }
 
     form
     {
         display: flex;
-        margin-left: 15px;
+        margin: 20px 0px 0px 15px;
+    }
+
+    input
+    {
+        width: 280px;
     }
 
     button
     {
         padding: 0px;
+        border: 0px;
+        width: 40px;
+        border-radius: 10px;
+    }
+
+    .logoloupe
+    {
+        display: block;
+        padding-top: 10px;
+    }
+
+    .textebouton
+    {
+        visibility: hidden;
     }
 
     .section-filtres
     {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         margin-left: 15px;
     }
 
     .texte-filtre
     {
-        margin-right: 210px;
+        font-size: 20px;
+    }
+
+    .section-filtres-2
+    {
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .filtre-economique
     {
+        padding: 0px;
         margin: 0px 10px 10px 0px;
-        padding-right: 10px;
+        width: 160px;
+        font-size: 16px;
     }
 
     .filtre-familial
     {
-        margin: 0px;
-        padding-right: 10px;
+        padding: 0px;
+        margin: 0px 10px 10px 0px;
+        width: 125px;
+        font-size: 16px;
     }
 
     .filtre-romantique
     {
-        margin: 0px 65px 10px 0px;
-        padding-right: 10px;
+        padding: 0px;
+        margin: 0px 10px 10px 0px;
+        width: 155px;
+        font-size: 16px;
     }
     
     .filtre-animauxautorisés
     {
-        flex: none;
-        padding-right: 10px;
+        padding: 0px;
+        width: 205px;
+        margin: 0px 0px 10px 0px;
+        font-size: 16px;
     }
     
-    .section-texte
-    {
-        font-size: 15px;
-        margin-left: 15px;
-    }
-
     #section-hébergements-les-plus-populaires
     {
         display: flex;
@@ -1075,13 +1177,85 @@ a[href="liens-pied-de-la-page"]
 
     .section-les-plus-populaires
     {
-        padding: 0px 20px 10px 10px;
+        padding: 20px 0px 0px 0px;
         border-radius: 0px;
+        width: 118%;
+        height: 1100px;
     }
+
+    .section-titre-les-plus-populaires
+    {
+        margin: 0px 30px 0px 20px;
+        font-size: 15px;
+    }
+
+    .fa-chart-line
+    {
+        font-size: 20px;
+    }
+
+    .cases-les-plus-populaires
+    {
+        height: 315px;
+        width: 90%;
+        margin: 0px 0px 10px 20px;
+        padding: 3px 5px 5px 3px;
+        box-shadow: 1px 1px 5px 3px #f2f2f2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    img[src="images/hebergements/small/emileguillemot.jpg"]
+    {
+        height: 220px;
+        width: 100%;
+        border: 1px solid white;
+        border-radius: 20px 20px 1px 1px;
+    }
+
+    img[src="images/hebergements/small/awcreative.jpg"]
+    {
+        height: 220px;
+        width: 100%;
+        border: 1px solid white;
+        border-radius: 20px 20px 1px 1px;
+    }
+
+    img[src="images/hebergements/small/febrianzakariaa.jpg"]
+    {
+        height: 220px;
+        width: 100%;
+        border: 1px solid white;
+        border-radius: 20px 20px 1px 1px;
+    }
+
+    a[href="liens-les-plus-populaires"]
+    {
+        font-size: 16px;
+    }
+
+    .textes-les-plus-populaires
+    {
+        margin: 5px 0px 5px 0px;
+        font-size: 14px;
+    }
+
+    .logo-5-étoiles-populaires
+    {
+        margin: 0px;
+        font-size: 14px;
+    }
+
+    .logo-4-étoiles-populaires
+    {
+        margin: 0px;
+        font-size: 14px;
+    }   
 
     .section-titre-hébergements-à-Marseille
     {
         margin: 10px 0px 15px 20px;
+        font-size: 22px;
     }
 
     .section-hébergements
@@ -1102,30 +1276,55 @@ a[href="liens-pied-de-la-page"]
 
     .cases-hébergements
     {
-        height: 180px;
-        width: 280px;
-        padding: 0px;
-        margin: 0px 0px 10px 15px;
+        height: 280px;
+        width: 105%;
+        margin: 0px 0px 10px 20px;
         padding: 3px 5px 5px 3px;
         box-shadow: 1px 1px 5px 3px #F2F2F2;
     }
 
     img[src="images/hebergements/small/marcusloke.jpg"]
     {
-        height: 120px;
-        width: 280px;
+        height: 200px;
+        width: 100%;
     }
 
     img[src="images/hebergements/small/fredkleber.jpg"]
     {
-        height: 120px;
-        width: 280px;
+        height: 200px;
+        width: 100%;
     }
 
     img[src="images/hebergements/small/reisetopia.jpg"]
     {
-        height: 120px;
-        width: 280px;
+        height: 200px;
+        width: 100%;
+    }
+
+    .titres-hébergements
+    {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    .textes-hébergements
+    {
+        font-size: 14px;
+    }
+
+    .logo-4-étoiles
+    {
+        font-size: 14px;
+    }
+
+    .logo-5-étoiles
+    {
+        font-size: 14px;
+    }
+
+    .logo-3-étoiles
+    {
+        font-size: 14px;
     }
 
     .deuxième-ligne-hébergements
@@ -1137,35 +1336,37 @@ a[href="liens-pied-de-la-page"]
 
     img[src="images/hebergements/small/anniespratt.jpg"]
     {
-        height: 120px;
-        width: 280px;
+        height: 200px;
+        width: 100%;
     }
 
     img[src="images/hebergements/small/nicatelee.jpg"]
     {
-        height: 120px;
-        width: 280px;
+        height: 200px;
+        width: 100%;
     }
 
     img[src="images/hebergements/small/febrianzakaria.jpg"]
     {
-        height: 120px;
-        width: 280px;
+        height: 200px;
+        width: 100%;
     }
 
     .afficherplus
     {
         margin: 20px 0px 0px 20px;
+        font-size: 20px;
     }
 
     #section-activités-à-Marseille
     {
-        margin: 820px 0px 20px 0px;
+        margin: 1450px 0px 20px 0px;
     }
 
     .section-titre-activités-à-Marseille
     {
         margin: 0px 0px 20px 15px;
+        font-size: 22px;
     }
     
     .ligne-horizontal-section-activités-à-Marseille
@@ -1174,75 +1375,81 @@ a[href="liens-pied-de-la-page"]
         flex-direction: column;
     }
 
+    a[href="liens-section-activités-à-Marseille"]
+    {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
     .case-vieux-port-et-parc-des-calanques
     {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
+        margin: 0px 0px 20px 20px;
+        width: 106%;
+        height: 275px;
     }
 
     img[src="images/activites/small/renolaithienne.jpg"]
     {
-        height: 120px;
-        width: 290px;
+        height: 225px;
+        width: 100%;
     }
 
     .case-Fort-de-Pomègues
     {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
+        margin: 0px 0px 20px 20px;
+        width: 106%;
+        height: 275px;
     }
 
     img[src="images/activites/small/paulhermann.jpg"]
     {
-        height: 120px;
-        width: 290px;
+        height: 225px;
+        width: 100%;
     }
 
     .case-îles-du-Frioul
     {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
+        margin: 0px 0px 20px 20px;
+        width: 106%;
+        height: 265px;
     }
 
     img[src="images/activites/small/kevinhikari.jpg"]
     {
-        height: 120px;
-        width: 290px;
+        height: 225px;
+        width: 100%;
     }
 
     img[src="images/activites/small/kilyansockalingum.jpg"]
     {
-        height: 120px;
-        width: 290px;
+        height: 225px;
+        width: 100%;
     }
 
     .case-notre-dame-de-la-garde
     {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
+        margin: 0px 0px 20px 20px;
+        width: 106%;
+        height: 275px;
     }
 
     img[src="images/activites/small/florianwehde.jpg"]
     {
-        height: 120px;
-        width: 290px;
+        height: 225px;
+        width: 100%;
     }
 
     .case-parc-longchamp
     {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
+        margin: 0px 0px 20px 20px;
+        width: 106%;
+        height: 275px;
     }
 
     img[src="images/activites/small/lenapaulin.jpg"]
     {
-        height: 120px;
-        width: 290px;
+        height: 225px;
+        width: 100%;
     }
 
     .pied-de-la-page
@@ -1251,16 +1458,27 @@ a[href="liens-pied-de-la-page"]
         flex-direction: column;
         margin: 0px;
         padding: 20px 0px 0px 20px;
+        width: 113%;
     }
 
     .sections-pied-de-la-page
     {
         padding-bottom: 20px;
     }
+
+    .sections-titre-pied-de-la-page
+    {
+        font-size: 16px;
+    }
+
+    a[href="liens-pied-de-la-page"]
+    {
+        font-size: 14px;
+    }
 }
 
-@media all and (min-width: 344px) and (max-width: 359px)
-{  
+@media all and (min-width: 769px) and (max-width: 1084px)
+{
     body
     {
         width: 100%;
@@ -1269,21 +1487,14 @@ a[href="liens-pied-de-la-page"]
 
     #header-conteneur
     {
-        margin: 20px 0px 20px 0px;
+        margin: 20px 0px 10px 0px;
         width: 100%;
-        display: flex;
-        justify-content: space-between;
+        display: block;
     }
 
     img[src="images/logo/Reservia.svg"]
     {
         margin-left: 15px;
-    }
-
-    nav
-    {
-        display: flex;
-        justify-content: space-between;
     }
 
     a[href="inscription"]
@@ -1293,12 +1504,26 @@ a[href="liens-pied-de-la-page"]
 
     a[href="#section-hébergements-les-plus-populaires"]
     {
-        margin: 0px;
+        padding-right: 30%;
+    }
+
+    a[href="#section-hébergements-les-plus-populaires"]:hover
+    {
+        border-bottom: 2px blue solid;
+        border-top: none;
+        padding: 30px 40px 0px 40px;
     }
 
     a[href="#section-activités-à-Marseille"]
     {
         margin: 0px;
+    }
+
+    a[href="#section-activités-à-Marseille"]:hover
+    {
+        border-bottom: 2px blue solid;
+        border-top: none;
+        padding: 30px 40px 0px 40px;
     }
 
     .section-principale
@@ -1307,4266 +1532,639 @@ a[href="liens-pied-de-la-page"]
     }
 
     .section-titre
+    {
+        font-size: 29px;
+        margin-left: 15px;
+    }
+
+    .section-texte
+    {
+        margin: 10px 0px 20px 15px;
+        font-size: 22px;
+    }
+
+    form
+    {
+        display: flex;
+        margin: 20px 0px 0px 15px;
+    }
+
+    input
+    {
+        width: 280px;
+    }
+
+    button
+    {
+        padding: 0px;
+        border: 0px;
+        width: 40px;
+        border-radius: 10px;
+    }
+
+    .logoloupe
+    {
+        display: block;
+        padding-top: 10px;
+    }
+
+    .textebouton
+    {
+        visibility: hidden;
+    }
+
+    .section-filtres
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+    }
+
+    .texte-filtre
+    {
+        font-size: 20px;
+    }
+
+    .section-filtres-2
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .filtre-economique
+    {
+        padding: 0px;
+        margin: 0px 10px 10px 0px;
+        width: 160px;
+        font-size: 16px;
+    }
+
+    .filtre-familial
+    {
+        padding: 0px;
+        margin: 0px 10px 10px 0px;
+        width: 125px;
+        font-size: 16px;
+    }
+
+    .filtre-romantique
+    {
+        padding: 0px;
+        margin: 0px 10px 10px 0px;
+        width: 155px;
+        font-size: 16px;
+    }
+    
+    .filtre-animauxautorisés
+    {
+        padding: 0px;
+        width: 205px;
+        margin: 0px 0px 10px 0px;
+        font-size: 16px;
+    }
+    
+    #section-hébergements-les-plus-populaires
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0px;
+    }
+
+    .section-les-plus-populaires
+    {
+        padding: 20px 0px 0px 0px;
+        border-radius: 0px;
+        width: 118%;
+        height: 1400px;
+    }
+
+    .section-titre-les-plus-populaires
+    {
+        margin: 0px 30px 0px 20px;
+        font-size: 15px;
+    }
+
+    .fa-chart-line
+    {
+        font-size: 20px;
+    }
+
+    .cases-les-plus-populaires
+    {
+        height: 415px;
+        width: 94%;
+        margin: 0px 0px 10px 20px;
+        padding: 3px 5px 5px 3px;
+        box-shadow: 1px 1px 5px 3px #f2f2f2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    img[src="images/hebergements/small/emileguillemot.jpg"]
+    {
+        height: 320px;
+        width: 100%;
+        border: 1px solid white;
+        border-radius: 20px 20px 1px 1px;
+    }
+
+    img[src="images/hebergements/small/awcreative.jpg"]
+    {
+        height: 320px;
+        width: 100%;
+        border: 1px solid white;
+        border-radius: 20px 20px 1px 1px;
+    }
+
+    img[src="images/hebergements/small/febrianzakariaa.jpg"]
+    {
+        height: 320px;
+        width: 100%;
+        border: 1px solid white;
+        border-radius: 20px 20px 1px 1px;
+    }
+
+    a[href="liens-les-plus-populaires"]
+    {
+        font-size: 16px;
+    }
+
+    .textes-les-plus-populaires
+    {
+        margin: 5px 0px 5px 0px;
+        font-size: 14px;
+    }
+
+    .logo-5-étoiles-populaires
+    {
+        margin: 0px;
+        font-size: 14px;
+    }
+
+    .logo-4-étoiles-populaires
+    {
+        margin: 0px;
+        font-size: 14px;
+    }   
+
+    .section-titre-hébergements-à-Marseille
+    {
+        margin: 10px 0px 15px 20px;
+        font-size: 22px;
+    }
+
+    .section-hébergements
+    {
+        width: 100%;
+        background-color: white;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .première-ligne-hébergements
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cases-hébergements
+    {
+        height: 400px;
+        width: 111%;
+        margin: 0px 0px 10px 20px;
+        padding: 3px 5px 5px 3px;
+        box-shadow: 1px 1px 5px 3px #F2F2F2;
+    }
+
+    img[src="images/hebergements/small/marcusloke.jpg"]
+    {
+        height: 320px;
+        width: 100%;
+    }
+
+    img[src="images/hebergements/small/fredkleber.jpg"]
+    {
+        height: 320px;
+        width: 100%;
+    }
+
+    img[src="images/hebergements/small/reisetopia.jpg"]
+    {
+        height: 320px;
+        width: 100%;
+    }
+
+    .titres-hébergements
+    {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    .textes-hébergements
+    {
+        font-size: 14px;
+    }
+
+    .logo-4-étoiles
+    {
+        font-size: 14px;
+    }
+
+    .logo-5-étoiles
+    {
+        font-size: 14px;
+    }
+
+    .logo-3-étoiles
+    {
+        font-size: 14px;
+    }
+
+    .deuxième-ligne-hébergements
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    img[src="images/hebergements/small/anniespratt.jpg"]
+    {
+        height: 320px;
+        width: 100%;
+    }
+
+    img[src="images/hebergements/small/nicatelee.jpg"]
+    {
+        height: 320px;
+        width: 100%;
+    }
+
+    img[src="images/hebergements/small/febrianzakaria.jpg"]
+    {
+        height: 320px;
+        width: 100%;
+    }
+
+    .afficherplus
+    {
+        margin: 20px 0px 0px 20px;
+        font-size: 20px;
+    }
+
+    #section-activités-à-Marseille
+    {
+        margin: 2200px 0px 20px 0px;
+    }
+
+    .section-titre-activités-à-Marseille
+    {
+        margin: 0px 0px 20px 15px;
+        font-size: 22px;
+    }
+    
+    .ligne-horizontal-section-activités-à-Marseille
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    a[href="liens-section-activités-à-Marseille"]
+    {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .case-vieux-port-et-parc-des-calanques
+    {
+        margin: 0px 0px 20px 20px;
+        width: 112%;
+        height: 325px;
+    }
+
+    img[src="images/activites/small/renolaithienne.jpg"]
+    {
+        height: 275px;
+        width: 100%;
+    }
+
+    .case-Fort-de-Pomègues
+    {
+        margin: 0px 0px 20px 20px;
+        width: 112%;
+        height: 325px;
+    }
+
+    img[src="images/activites/small/paulhermann.jpg"]
+    {
+        height: 275px;
+        width: 100%;
+    }
+
+    .case-îles-du-Frioul
+    {
+        margin: 0px 0px 20px 20px;
+        width: 112%;
+        height: 315px;
+    }
+
+    img[src="images/activites/small/kevinhikari.jpg"]
+    {
+        height: 275px;
+        width: 100%;
+    }
+
+    img[src="images/activites/small/kilyansockalingum.jpg"]
+    {
+        height: 275px;
+        width: 100%;
+    }
+
+    .case-notre-dame-de-la-garde
+    {
+        margin: 0px 0px 20px 20px;
+        width: 112%;
+        height: 325px;
+    }
+
+    img[src="images/activites/small/florianwehde.jpg"]
+    {
+        height: 275px;
+        width: 100%;
+    }
+
+    .case-parc-longchamp
+    {
+        margin: 0px 0px 20px 20px;
+        width: 112%;
+        height: 325px;
+    }
+
+    img[src="images/activites/small/lenapaulin.jpg"]
+    {
+        height: 275px;
+        width: 100%;
+    }
+
+    .pied-de-la-page
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 20px 0px 0px 20px;
+        width: 116%;
+    }
+
+    .sections-pied-de-la-page
+    {
+        padding-bottom: 20px;
+    }
+
+    .sections-titre-pied-de-la-page
+    {
+        font-size: 16px;
+    }
+
+    a[href="liens-pied-de-la-page"]
+    {
+        font-size: 14px;
+    }
+}
+
+@media all and (min-width: 1085px) and (max-width: 1299px)
+{
+    body
+    {
+        width: 100%;
+        margin: 0px;
+    }
+
+    #header-conteneur
+    {
+        margin: 20px 0px 10px 0px;
+        width: 100%;
+        display: block;
+    }
+
+    img[src="images/logo/Reservia.svg"]
+    {
+        margin-left: 15px;
+    }
+
+    a[href="inscription"]
+    {
+        margin: 0px;
+    }
+
+    a[href="#section-hébergements-les-plus-populaires"]
+    {
+        padding-right: 30%;
+    }
+
+    a[href="#section-hébergements-les-plus-populaires"]:hover
+    {
+        border-bottom: 2px blue solid;
+        border-top: none;
+        padding: 30px 40px 0px 40px;
+    }
+
+    a[href="#section-activités-à-Marseille"]
+    {
+        margin: 0px;
+    }
+
+    a[href="#section-activités-à-Marseille"]:hover
+    {
+        border-bottom: 2px blue solid;
+        border-top: none;
+        padding: 30px 40px 0px 40px;
+    }
+
+    .section-principale
+    {
+        margin: 0px;
+    }
+
+    .section-titre
+    {
+        font-size: 29px;
+        margin-left: 15px;
+    }
+
+    .section-texte
+    {
+        margin: 10px 0px 20px 15px;
+        font-size: 22px;
+    }
+
+    form
+    {
+        display: flex;
+        margin: 20px 0px 0px 15px;
+    }
+
+    input
+    {
+        width: 280px;
+    }
+
+    button
+    {
+        padding: 0px;
+        border: 0px;
+        width: 40px;
+        border-radius: 10px;
+    }
+
+    .logoloupe
+    {
+        display: block;
+        padding-top: 10px;
+    }
+
+    .textebouton
+    {
+        visibility: hidden;
+    }
+
+    .section-filtres
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+    }
+
+    .texte-filtre
+    {
+        font-size: 20px;
+    }
+
+    .section-filtres-2
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .filtre-economique
+    {
+        padding: 0px;
+        margin: 0px 10px 10px 0px;
+        width: 160px;
+        font-size: 16px;
+    }
+
+    .filtre-familial
+    {
+        padding: 0px;
+        margin: 0px 10px 10px 0px;
+        width: 125px;
+        font-size: 16px;
+    }
+
+    .filtre-romantique
+    {
+        padding: 0px;
+        margin: 0px 10px 10px 0px;
+        width: 155px;
+        font-size: 16px;
+    }
+    
+    .filtre-animauxautorisés
+    {
+        padding: 0px;
+        width: 205px;
+        margin: 0px 0px 10px 0px;
+        font-size: 16px;
+    }
+    
+    #section-hébergements-les-plus-populaires
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0px;
+    }
+
+    .section-les-plus-populaires
+    {
+        padding: 20px 0px 0px 0px;
+        border-radius: 0px;
+        width: 118%;
+        height: 2000px;
+    }
+
+    .section-titre-les-plus-populaires
+    {
+        margin: 0px 30px 0px 20px;
+        font-size: 17px;
+    }
+
+    .fa-chart-line
     {
         font-size: 22px;
-        margin-left: 15px;
     }
 
-    form
+    .cases-les-plus-populaires
     {
+        height: 580px;
+        width: 94%;
+        margin: 0px 0px 10px 20px;
+        padding: 3px 5px 5px 3px;
+        box-shadow: 1px 1px 5px 3px #f2f2f2;
         display: flex;
-        margin-left: 15px;
+        flex-direction: column;
     }
 
-    button
+    img[src="images/hebergements/small/emileguillemot.jpg"]
     {
-        padding: 0px;
+        height: 470px;
+        width: 100%;
+        border: 1px solid white;
+        border-radius: 20px 20px 1px 1px;
     }
 
-    .section-filtres
+    img[src="images/hebergements/small/awcreative.jpg"]
     {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 15px;
+        height: 470px;
+        width: 100%;
+        border: 1px solid white;
+        border-radius: 20px 20px 1px 1px;
     }
 
-    .texte-filtre
+    img[src="images/hebergements/small/febrianzakariaa.jpg"]
     {
-        margin-right: 140px;
+        height: 470px;
+        width: 100%;
+        border: 1px solid white;
+        border-radius: 20px 20px 1px 1px;
     }
 
-    .filtre-economique
+    a[href="liens-les-plus-populaires"]
     {
-        margin: 0px 10px 10px 0px;
-        padding-right: 10px;
+        font-size: 18px;
     }
 
-    .filtre-familial
+    .textes-les-plus-populaires
+    {
+        margin: 5px 0px 5px 0px;
+        font-size: 16px;
+    }
+
+    .logo-5-étoiles-populaires
     {
         margin: 0px;
-        padding-right: 10px;
+        font-size: 16px;
     }
 
-    .filtre-romantique
+    .logo-4-étoiles-populaires
     {
-        margin: 0px 0px 10px 0px;
-        padding-right: 10px;
-    }
-    
-    .filtre-animauxautorisés
-    {
-        flex: none;
-        padding-right: 10px;
-    }
-    
-    .section-texte
-    {
-        font-size: 15px;
-        margin-left: 15px;
-    }
-
-    #section-hébergements-les-plus-populaires
-    {
-        display: flex;
-        flex-direction: column-reverse;
         margin: 0px;
-    }
-
-    .section-les-plus-populaires
-    {
-        padding: 0px 20px 10px 10px;
-        border-radius: 0px;
-    }
+        font-size: 16px;
+    }   
 
     .section-titre-hébergements-à-Marseille
     {
         margin: 10px 0px 15px 20px;
-    }
-
-    .section-hébergements
-    {
-        width: 100%;
-        background-color: white;
-        padding: 0px;
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .première-ligne-hébergements
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .cases-hébergements
-    {
-        height: 180px;
-        width: 280px;
-        padding: 0px;
-        margin: 0px 0px 10px 15px;
-        padding: 3px 5px 5px 3px;
-        box-shadow: 1px 1px 5px 3px #F2F2F2;
-    }
-
-    img[src="images/hebergements/small/marcusloke.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/fredkleber.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/reisetopia.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    .deuxième-ligne-hébergements
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-    }
-
-    img[src="images/hebergements/small/anniespratt.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/nicatelee.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/febrianzakaria.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    .afficherplus
-    {
-        margin: 20px 0px 0px 20px;
-    }
-
-    #section-activités-à-Marseille
-    {
-        margin: 820px 0px 20px 0px;
-    }
-
-    .section-titre-activités-à-Marseille
-    {
-        margin: 0px 0px 20px 15px;
-    }
-    
-    .ligne-horizontal-section-activités-à-Marseille
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .case-vieux-port-et-parc-des-calanques
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/renolaithienne.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-Fort-de-Pomègues
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/paulhermann.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-îles-du-Frioul
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/kevinhikari.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    img[src="images/activites/small/kilyansockalingum.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-notre-dame-de-la-garde
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/florianwehde.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-parc-longchamp
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/lenapaulin.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .pied-de-la-page
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-        padding: 20px 0px 0px 20px;
-    }
-
-    .sections-pied-de-la-page
-    {
-        padding-bottom: 20px;
-    }
-}
-
-@media all and (min-width: 360px) and (max-width: 362px)
-{  
-    body
-    {
-        width: 100%;
-        margin: 0px;
-    }
-
-    #header-conteneur
-    {
-        margin: 20px 0px 20px 0px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    img[src="images/logo/Reservia.svg"]
-    {
-        margin-left: 15px;
-    }
-
-    nav
-    {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    a[href="inscription"]
-    {
-        margin: 0px;
-    }
-
-    a[href="#section-hébergements-les-plus-populaires"]
-    {
-        margin: 0px;
-    }
-
-    a[href="#section-activités-à-Marseille"]
-    {
-        margin: 0px;
-    }
-
-    .section-principale
-    {
-        margin: 0px;
-    }
-
-    .section-titre
-    {
-        font-size: 23px;
-        margin-left: 15px;
-    }
-
-    form
-    {
-        display: flex;
-        margin-left: 15px;
-    }
-
-    button
-    {
-        padding: 0px;
-    }
-
-    .section-filtres
-    {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 15px;
-    }
-
-    .texte-filtre
-    {
-        margin-right: 140px;
-    }
-
-    .filtre-economique
-    {
-        margin: 0px 10px 10px 0px;
-        padding-right: 10px;
-    }
-
-    .filtre-familial
-    {
-        margin: 0px;
-        padding-right: 10px;
-    }
-
-    .filtre-romantique
-    {
-        margin: 0px 0px 10px 0px;
-        padding-right: 10px;
-    }
-    
-    .filtre-animauxautorisés
-    {
-        flex: none;
-        padding-right: 10px;
-    }
-    
-    .section-texte
-    {
-        font-size: 15px;
-        margin-left: 15px;
-    }
-
-    #section-hébergements-les-plus-populaires
-    {
-        display: flex;
-        flex-direction: column-reverse;
-        margin: 0px;
-    }
-
-    .section-les-plus-populaires
-    {
-        padding: 0px 20px 10px 10px;
-        border-radius: 0px;
-    }
-
-    .section-titre-hébergements-à-Marseille
-    {
-        margin: 10px 0px 15px 20px;
-    }
-
-    .section-hébergements
-    {
-        width: 100%;
-        background-color: white;
-        padding: 0px;
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .première-ligne-hébergements
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .cases-hébergements
-    {
-        height: 180px;
-        width: 280px;
-        padding: 0px;
-        margin: 0px 0px 10px 15px;
-        padding: 3px 5px 5px 3px;
-        box-shadow: 1px 1px 5px 3px #F2F2F2;
-    }
-
-    img[src="images/hebergements/small/marcusloke.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/fredkleber.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/reisetopia.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    .deuxième-ligne-hébergements
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-    }
-
-    img[src="images/hebergements/small/anniespratt.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/nicatelee.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/febrianzakaria.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    .afficherplus
-    {
-        margin: 20px 0px 0px 20px;
-    }
-
-    #section-activités-à-Marseille
-    {
-        margin: 820px 0px 20px 0px;
-    }
-
-    .section-titre-activités-à-Marseille
-    {
-        margin: 0px 0px 20px 15px;
-    }
-    
-    .ligne-horizontal-section-activités-à-Marseille
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .case-vieux-port-et-parc-des-calanques
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/renolaithienne.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-Fort-de-Pomègues
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/paulhermann.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-îles-du-Frioul
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/kevinhikari.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    img[src="images/activites/small/kilyansockalingum.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-notre-dame-de-la-garde
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/florianwehde.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-parc-longchamp
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/lenapaulin.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .pied-de-la-page
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-        padding: 20px 0px 0px 20px;
-    }
-
-    .sections-pied-de-la-page
-    {
-        padding-bottom: 20px;
-    }
-}
-
-@media all and (min-width: 363px) and (max-width: 363px)
-{  
-    body
-    {
-        width: 100%;
-        margin: 0px;
-    }
-
-    #header-conteneur
-    {
-        margin: 20px 0px 20px 0px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    img[src="images/logo/Reservia.svg"]
-    {
-        margin-left: 15px;
-    }
-
-    nav
-    {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    a[href="inscription"]
-    {
-        margin: 0px;
-    }
-
-    a[href="#section-hébergements-les-plus-populaires"]
-    {
-        margin: 0px;
-    }
-
-    a[href="#section-activités-à-Marseille"]
-    {
-        margin: 0px;
-    }
-
-    .section-principale
-    {
-        margin: 0px;
-    }
-
-    .section-titre
-    {
-        font-size: 23px;
-        margin-left: 15px;
-    }
-
-    form
-    {
-        display: flex;
-        margin-left: 15px;
-    }
-
-    button
-    {
-        padding: 0px;
-    }
-
-    .section-filtres
-    {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 15px;
-    }
-
-    .texte-filtre
-    {
-        margin-right: 150px;
-    }
-
-    .filtre-economique
-    {
-        margin: 0px 10px 10px 0px;
-        padding-right: 10px;
-    }
-
-    .filtre-familial
-    {
-        margin: 0px;
-        padding-right: 10px;
-    }
-
-    .filtre-romantique
-    {
-        margin: 0px 0px 10px 0px;
-        padding-right: 10px;
-    }
-    
-    .filtre-animauxautorisés
-    {
-        flex: none;
-        padding-right: 10px;
-    }
-    
-    .section-texte
-    {
-        font-size: 15px;
-        margin-left: 15px;
-    }
-
-    #section-hébergements-les-plus-populaires
-    {
-        display: flex;
-        flex-direction: column-reverse;
-        margin: 0px;
-    }
-
-    .section-les-plus-populaires
-    {
-        padding: 0px 20px 10px 10px;
-        border-radius: 0px;
-    }
-
-    .section-titre-hébergements-à-Marseille
-    {
-        margin: 10px 0px 15px 20px;
-    }
-
-    .section-hébergements
-    {
-        width: 100%;
-        background-color: white;
-        padding: 0px;
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .première-ligne-hébergements
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .cases-hébergements
-    {
-        height: 180px;
-        width: 280px;
-        padding: 0px;
-        margin: 0px 0px 10px 15px;
-        padding: 3px 5px 5px 3px;
-        box-shadow: 1px 1px 5px 3px #F2F2F2;
-    }
-
-    img[src="images/hebergements/small/marcusloke.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/fredkleber.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/reisetopia.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    .deuxième-ligne-hébergements
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-    }
-
-    img[src="images/hebergements/small/anniespratt.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/nicatelee.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/febrianzakaria.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    .afficherplus
-    {
-        margin: 20px 0px 0px 20px;
-    }
-
-    #section-activités-à-Marseille
-    {
-        margin: 820px 0px 20px 0px;
-    }
-
-    .section-titre-activités-à-Marseille
-    {
-        margin: 0px 0px 20px 15px;
-    }
-    
-    .ligne-horizontal-section-activités-à-Marseille
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .case-vieux-port-et-parc-des-calanques
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/renolaithienne.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-Fort-de-Pomègues
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/paulhermann.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-îles-du-Frioul
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/kevinhikari.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    img[src="images/activites/small/kilyansockalingum.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-notre-dame-de-la-garde
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/florianwehde.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-parc-longchamp
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/lenapaulin.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .pied-de-la-page
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-        padding: 20px 0px 0px 20px;
-    }
-
-    .sections-pied-de-la-page
-    {
-        padding-bottom: 20px;
-    }
-}
-
-@media all and (min-width: 364px) and (max-width: 364px)
-{  
-    body
-    {
-        width: 100%;
-        margin: 0px;
-    }
-
-    #header-conteneur
-    {
-        margin: 20px 0px 20px 0px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    img[src="images/logo/Reservia.svg"]
-    {
-        margin-left: 15px;
-    }
-
-    nav
-    {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    a[href="inscription"]
-    {
-        margin: 0px;
-    }
-
-    a[href="#section-hébergements-les-plus-populaires"]
-    {
-        margin: 0px;
-    }
-
-    a[href="#section-activités-à-Marseille"]
-    {
-        margin: 0px;
-    }
-
-    .section-principale
-    {
-        margin: 0px;
-    }
-
-    .section-titre
-    {
-        font-size: 23px;
-        margin-left: 15px;
-    }
-
-    form
-    {
-        display: flex;
-        margin-left: 15px;
-    }
-
-    button
-    {
-        padding: 0px;
-    }
-
-    .section-filtres
-    {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 15px;
-    }
-
-    .texte-filtre
-    {
-        margin-right: 150px;
-    }
-
-    .filtre-economique
-    {
-        margin: 0px 10px 10px 0px;
-        padding-right: 10px;
-    }
-
-    .filtre-familial
-    {
-        margin: 0px;
-        padding-right: 10px;
-    }
-
-    .filtre-romantique
-    {
-        margin: 0px 1px 10px 0px;
-        padding-right: 10px;
-    }
-    
-    .filtre-animauxautorisés
-    {
-        flex: none;
-        padding-right: 10px;
-    }
-    
-    .section-texte
-    {
-        font-size: 15px;
-        margin-left: 15px;
-    }
-
-    #section-hébergements-les-plus-populaires
-    {
-        display: flex;
-        flex-direction: column-reverse;
-        margin: 0px;
-    }
-
-    .section-les-plus-populaires
-    {
-        padding: 0px 20px 10px 10px;
-        border-radius: 0px;
-    }
-
-    .section-titre-hébergements-à-Marseille
-    {
-        margin: 10px 0px 15px 20px;
-    }
-
-    .section-hébergements
-    {
-        width: 100%;
-        background-color: white;
-        padding: 0px;
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .première-ligne-hébergements
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .cases-hébergements
-    {
-        height: 180px;
-        width: 280px;
-        padding: 0px;
-        margin: 0px 0px 10px 15px;
-        padding: 3px 5px 5px 3px;
-        box-shadow: 1px 1px 5px 3px #F2F2F2;
-    }
-
-    img[src="images/hebergements/small/marcusloke.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/fredkleber.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/reisetopia.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    .deuxième-ligne-hébergements
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-    }
-
-    img[src="images/hebergements/small/anniespratt.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/nicatelee.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/febrianzakaria.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    .afficherplus
-    {
-        margin: 20px 0px 0px 20px;
-    }
-
-    #section-activités-à-Marseille
-    {
-        margin: 820px 0px 20px 0px;
-    }
-
-    .section-titre-activités-à-Marseille
-    {
-        margin: 0px 0px 20px 15px;
-    }
-    
-    .ligne-horizontal-section-activités-à-Marseille
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .case-vieux-port-et-parc-des-calanques
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/renolaithienne.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-Fort-de-Pomègues
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/paulhermann.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-îles-du-Frioul
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/kevinhikari.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    img[src="images/activites/small/kilyansockalingum.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-notre-dame-de-la-garde
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/florianwehde.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-parc-longchamp
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/lenapaulin.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .pied-de-la-page
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-        padding: 20px 0px 0px 20px;
-    }
-
-    .sections-pied-de-la-page
-    {
-        padding-bottom: 20px;
-    }
-}
-
-@media all and (min-width: 366px) and (max-width: 374px)
-{  
-    body
-    {
-        width: 100%;
-        margin: 0px;
-    }
-
-    #header-conteneur
-    {
-        margin: 20px 0px 20px 0px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    img[src="images/logo/Reservia.svg"]
-    {
-        margin-left: 15px;
-    }
-
-    nav
-    {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    a[href="inscription"]
-    {
-        margin: 0px;
-    }
-
-    a[href="#section-hébergements-les-plus-populaires"]
-    {
-        margin: 0px;
-    }
-
-    a[href="#section-activités-à-Marseille"]
-    {
-        margin: 0px;
-    }
-
-    .section-principale
-    {
-        margin: 0px;
-    }
-
-    .section-titre
-    {
-        font-size: 23px;
-        margin-left: 15px;
-    }
-
-    form
-    {
-        display: flex;
-        margin-left: 15px;
-    }
-
-    button
-    {
-        padding: 0px;
-    }
-
-    .section-filtres
-    {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 15px;
-    }
-
-    .texte-filtre
-    {
-        margin-right: 150px;
-    }
-
-    .filtre-economique
-    {
-        margin: 0px 10px 10px 0px;
-        padding-right: 10px;
-    }
-
-    .filtre-familial
-    {
-        margin: 0px;
-        padding-right: 10px;
-    }
-
-    .filtre-romantique
-    {
-        margin: 0px 3px 10px 0px;
-        padding-right: 10px;
-    }
-    
-    .filtre-animauxautorisés
-    {
-        flex: none;
-        padding-right: 10px;
-    }
-    
-    .section-texte
-    {
-        font-size: 15px;
-        margin-left: 15px;
-    }
-
-    #section-hébergements-les-plus-populaires
-    {
-        display: flex;
-        flex-direction: column-reverse;
-        margin: 0px;
-    }
-
-    .section-les-plus-populaires
-    {
-        padding: 0px 20px 10px 10px;
-        border-radius: 0px;
-    }
-
-    .section-titre-hébergements-à-Marseille
-    {
-        margin: 10px 0px 15px 20px;
-    }
-
-    .section-hébergements
-    {
-        width: 100%;
-        background-color: white;
-        padding: 0px;
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .première-ligne-hébergements
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .cases-hébergements
-    {
-        height: 180px;
-        width: 280px;
-        padding: 0px;
-        margin: 0px 0px 10px 15px;
-        padding: 3px 5px 5px 3px;
-        box-shadow: 1px 1px 5px 3px #F2F2F2;
-    }
-
-    img[src="images/hebergements/small/marcusloke.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/fredkleber.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/reisetopia.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    .deuxième-ligne-hébergements
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-    }
-
-    img[src="images/hebergements/small/anniespratt.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/nicatelee.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/febrianzakaria.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    .afficherplus
-    {
-        margin: 20px 0px 0px 20px;
-    }
-
-    #section-activités-à-Marseille
-    {
-        margin: 820px 0px 20px 0px;
-    }
-
-    .section-titre-activités-à-Marseille
-    {
-        margin: 0px 0px 20px 15px;
-    }
-    
-    .ligne-horizontal-section-activités-à-Marseille
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .case-vieux-port-et-parc-des-calanques
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/renolaithienne.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-Fort-de-Pomègues
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/paulhermann.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-îles-du-Frioul
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/kevinhikari.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    img[src="images/activites/small/kilyansockalingum.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-notre-dame-de-la-garde
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/florianwehde.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-parc-longchamp
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/lenapaulin.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .pied-de-la-page
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-        padding: 20px 0px 0px 20px;
-    }
-
-    .sections-pied-de-la-page
-    {
-        padding-bottom: 20px;
-    }
-}
-
-@media all and (min-width: 365px) and (max-width: 365px)
-{  
-    body
-    {
-        width: 100%;
-        margin: 0px;
-    }
-
-    #header-conteneur
-    {
-        margin: 20px 0px 20px 0px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    img[src="images/logo/Reservia.svg"]
-    {
-        margin-left: 15px;
-    }
-
-    nav
-    {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    a[href="inscription"]
-    {
-        margin: 0px;
-    }
-
-    a[href="#section-hébergements-les-plus-populaires"]
-    {
-        margin: 0px;
-    }
-
-    a[href="#section-activités-à-Marseille"]
-    {
-        margin: 0px;
-    }
-
-    .section-principale
-    {
-        margin: 0px;
-    }
-
-    .section-titre
-    {
-        font-size: 23px;
-        margin-left: 15px;
-    }
-
-    form
-    {
-        display: flex;
-        margin-left: 15px;
-    }
-
-    button
-    {
-        padding: 0px;
-    }
-
-    .section-filtres
-    {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 15px;
-    }
-
-    .texte-filtre
-    {
-        margin-right: 150px;
-    }
-
-    .filtre-economique
-    {
-        margin: 0px 10px 10px 0px;
-        padding-right: 10px;
-    }
-
-    .filtre-familial
-    {
-        margin: 0px;
-        padding-right: 10px;
-    }
-
-    .filtre-romantique
-    {
-        margin: 0px 2px 10px 0px;
-        padding-right: 10px;
-    }
-    
-    .filtre-animauxautorisés
-    {
-        flex: none;
-        padding-right: 10px;
-    }
-    
-    .section-texte
-    {
-        font-size: 15px;
-        margin-left: 15px;
-    }
-
-    #section-hébergements-les-plus-populaires
-    {
-        display: flex;
-        flex-direction: column-reverse;
-        margin: 0px;
-    }
-
-    .section-les-plus-populaires
-    {
-        padding: 0px 20px 10px 10px;
-        border-radius: 0px;
-    }
-
-    .section-titre-hébergements-à-Marseille
-    {
-        margin: 10px 0px 15px 20px;
-    }
-
-    .section-hébergements
-    {
-        width: 100%;
-        background-color: white;
-        padding: 0px;
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .première-ligne-hébergements
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .cases-hébergements
-    {
-        height: 180px;
-        width: 280px;
-        padding: 0px;
-        margin: 0px 0px 10px 15px;
-        padding: 3px 5px 5px 3px;
-        box-shadow: 1px 1px 5px 3px #F2F2F2;
-    }
-
-    img[src="images/hebergements/small/marcusloke.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/fredkleber.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/reisetopia.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    .deuxième-ligne-hébergements
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-    }
-
-    img[src="images/hebergements/small/anniespratt.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/nicatelee.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/febrianzakaria.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    .afficherplus
-    {
-        margin: 20px 0px 0px 20px;
-    }
-
-    #section-activités-à-Marseille
-    {
-        margin: 820px 0px 20px 0px;
-    }
-
-    .section-titre-activités-à-Marseille
-    {
-        margin: 0px 0px 20px 15px;
-    }
-    
-    .ligne-horizontal-section-activités-à-Marseille
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .case-vieux-port-et-parc-des-calanques
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/renolaithienne.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-Fort-de-Pomègues
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/paulhermann.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-îles-du-Frioul
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/kevinhikari.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    img[src="images/activites/small/kilyansockalingum.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-notre-dame-de-la-garde
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/florianwehde.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-parc-longchamp
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/lenapaulin.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .pied-de-la-page
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-        padding: 20px 0px 0px 20px;
-    }
-
-    .sections-pied-de-la-page
-    {
-        padding-bottom: 20px;
-    }
-}
-
-@media all and (min-width: 367px) and (max-width: 367px)
-{  
-    body
-    {
-        width: 100%;
-        margin: 0px;
-    }
-
-    #header-conteneur
-    {
-        margin: 20px 0px 20px 0px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    img[src="images/logo/Reservia.svg"]
-    {
-        margin-left: 15px;
-    }
-
-    nav
-    {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    a[href="inscription"]
-    {
-        margin: 0px;
-    }
-
-    a[href="#section-hébergements-les-plus-populaires"]
-    {
-        margin: 0px;
-    }
-
-    a[href="#section-activités-à-Marseille"]
-    {
-        margin: 0px;
-    }
-
-    .section-principale
-    {
-        margin: 0px;
-    }
-
-    .section-titre
-    {
-        font-size: 23px;
-        margin-left: 15px;
-    }
-
-    form
-    {
-        display: flex;
-        margin-left: 15px;
-    }
-
-    button
-    {
-        padding: 0px;
-    }
-
-    .section-filtres
-    {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 15px;
-    }
-
-    .texte-filtre
-    {
-        margin-right: 150px;
-    }
-
-    .filtre-economique
-    {
-        margin: 0px 10px 10px 0px;
-        padding-right: 10px;
-    }
-
-    .filtre-familial
-    {
-        margin: 0px;
-        padding-right: 10px;
-    }
-
-    .filtre-romantique
-    {
-        margin: 0px 4px 10px 0px;
-        padding-right: 10px;
-    }
-    
-    .filtre-animauxautorisés
-    {
-        flex: none;
-        padding-right: 10px;
-    }
-    
-    .section-texte
-    {
-        font-size: 15px;
-        margin-left: 15px;
-    }
-
-    #section-hébergements-les-plus-populaires
-    {
-        display: flex;
-        flex-direction: column-reverse;
-        margin: 0px;
-    }
-
-    .section-les-plus-populaires
-    {
-        padding: 0px 20px 10px 10px;
-        border-radius: 0px;
-    }
-
-    .section-titre-hébergements-à-Marseille
-    {
-        margin: 10px 0px 15px 20px;
-    }
-
-    .section-hébergements
-    {
-        width: 100%;
-        background-color: white;
-        padding: 0px;
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .première-ligne-hébergements
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .cases-hébergements
-    {
-        height: 180px;
-        width: 280px;
-        padding: 0px;
-        margin: 0px 0px 10px 15px;
-        padding: 3px 5px 5px 3px;
-        box-shadow: 1px 1px 5px 3px #F2F2F2;
-    }
-
-    img[src="images/hebergements/small/marcusloke.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/fredkleber.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/reisetopia.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    .deuxième-ligne-hébergements
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-    }
-
-    img[src="images/hebergements/small/anniespratt.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/nicatelee.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/febrianzakaria.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    .afficherplus
-    {
-        margin: 20px 0px 0px 20px;
-    }
-
-    #section-activités-à-Marseille
-    {
-        margin: 820px 0px 20px 0px;
-    }
-
-    .section-titre-activités-à-Marseille
-    {
-        margin: 0px 0px 20px 15px;
-    }
-    
-    .ligne-horizontal-section-activités-à-Marseille
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .case-vieux-port-et-parc-des-calanques
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/renolaithienne.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-Fort-de-Pomègues
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/paulhermann.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-îles-du-Frioul
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/kevinhikari.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    img[src="images/activites/small/kilyansockalingum.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-notre-dame-de-la-garde
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/florianwehde.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-parc-longchamp
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/lenapaulin.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .pied-de-la-page
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-        padding: 20px 0px 0px 20px;
-    }
-
-    .sections-pied-de-la-page
-    {
-        padding-bottom: 20px;
-    }
-}
-
-@media all and (min-width: 368px) and (max-width: 368px)
-{  
-    body
-    {
-        width: 100%;
-        margin: 0px;
-    }
-
-    #header-conteneur
-    {
-        margin: 20px 0px 20px 0px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    img[src="images/logo/Reservia.svg"]
-    {
-        margin-left: 15px;
-    }
-
-    nav
-    {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    a[href="inscription"]
-    {
-        margin: 0px;
-    }
-
-    a[href="#section-hébergements-les-plus-populaires"]
-    {
-        margin: 0px;
-    }
-
-    a[href="#section-activités-à-Marseille"]
-    {
-        margin: 0px;
-    }
-
-    .section-principale
-    {
-        margin: 0px;
-    }
-
-    .section-titre
-    {
-        font-size: 23px;
-        margin-left: 15px;
-    }
-
-    form
-    {
-        display: flex;
-        margin-left: 15px;
-    }
-
-    button
-    {
-        padding: 0px;
-    }
-
-    .section-filtres
-    {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 15px;
-    }
-
-    .texte-filtre
-    {
-        margin-right: 150px;
-    }
-
-    .filtre-economique
-    {
-        margin: 0px 10px 10px 0px;
-        padding-right: 10px;
-    }
-
-    .filtre-familial
-    {
-        margin: 0px;
-        padding-right: 10px;
-    }
-
-    .filtre-romantique
-    {
-        margin: 0px 5px 10px 0px;
-        padding-right: 10px;
-    }
-    
-    .filtre-animauxautorisés
-    {
-        flex: none;
-        padding-right: 10px;
-    }
-    
-    .section-texte
-    {
-        font-size: 15px;
-        margin-left: 15px;
-    }
-
-    #section-hébergements-les-plus-populaires
-    {
-        display: flex;
-        flex-direction: column-reverse;
-        margin: 0px;
-    }
-
-    .section-les-plus-populaires
-    {
-        padding: 0px 20px 10px 10px;
-        border-radius: 0px;
-    }
-
-    .section-titre-hébergements-à-Marseille
-    {
-        margin: 10px 0px 15px 20px;
-    }
-
-    .section-hébergements
-    {
-        width: 100%;
-        background-color: white;
-        padding: 0px;
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .première-ligne-hébergements
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .cases-hébergements
-    {
-        height: 180px;
-        width: 280px;
-        padding: 0px;
-        margin: 0px 0px 10px 15px;
-        padding: 3px 5px 5px 3px;
-        box-shadow: 1px 1px 5px 3px #F2F2F2;
-    }
-
-    img[src="images/hebergements/small/marcusloke.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/fredkleber.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/reisetopia.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    .deuxième-ligne-hébergements
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-    }
-
-    img[src="images/hebergements/small/anniespratt.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/nicatelee.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/febrianzakaria.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    .afficherplus
-    {
-        margin: 20px 0px 0px 20px;
-    }
-
-    #section-activités-à-Marseille
-    {
-        margin: 820px 0px 20px 0px;
-    }
-
-    .section-titre-activités-à-Marseille
-    {
-        margin: 0px 0px 20px 15px;
-    }
-    
-    .ligne-horizontal-section-activités-à-Marseille
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .case-vieux-port-et-parc-des-calanques
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/renolaithienne.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-Fort-de-Pomègues
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/paulhermann.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-îles-du-Frioul
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/kevinhikari.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    img[src="images/activites/small/kilyansockalingum.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-notre-dame-de-la-garde
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/florianwehde.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-parc-longchamp
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/lenapaulin.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .pied-de-la-page
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-        padding: 20px 0px 0px 20px;
-    }
-
-    .sections-pied-de-la-page
-    {
-        padding-bottom: 20px;
-    }
-}
-
-@media all and (min-width: 369px) and (max-width: 369px)
-{  
-    body
-    {
-        width: 100%;
-        margin: 0px;
-    }
-
-    #header-conteneur
-    {
-        margin: 20px 0px 20px 0px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    img[src="images/logo/Reservia.svg"]
-    {
-        margin-left: 15px;
-    }
-
-    nav
-    {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    a[href="inscription"]
-    {
-        margin: 0px;
-    }
-
-    a[href="#section-hébergements-les-plus-populaires"]
-    {
-        margin: 0px;
-    }
-
-    a[href="#section-activités-à-Marseille"]
-    {
-        margin: 0px;
-    }
-
-    .section-principale
-    {
-        margin: 0px;
-    }
-
-    .section-titre
-    {
-        font-size: 23px;
-        margin-left: 15px;
-    }
-
-    form
-    {
-        display: flex;
-        margin-left: 15px;
-    }
-
-    button
-    {
-        padding: 0px;
-    }
-
-    .section-filtres
-    {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 15px;
-    }
-
-    .texte-filtre
-    {
-        margin-right: 150px;
-    }
-
-    .filtre-economique
-    {
-        margin: 0px 10px 10px 0px;
-        padding-right: 10px;
-    }
-
-    .filtre-familial
-    {
-        margin: 0px;
-        padding-right: 10px;
-    }
-
-    .filtre-romantique
-    {
-        margin: 0px 6px 10px 0px;
-        padding-right: 10px;
-    }
-    
-    .filtre-animauxautorisés
-    {
-        flex: none;
-        padding-right: 10px;
-    }
-    
-    .section-texte
-    {
-        font-size: 15px;
-        margin-left: 15px;
-    }
-
-    #section-hébergements-les-plus-populaires
-    {
-        display: flex;
-        flex-direction: column-reverse;
-        margin: 0px;
-    }
-
-    .section-les-plus-populaires
-    {
-        padding: 0px 20px 10px 10px;
-        border-radius: 0px;
-    }
-
-    .section-titre-hébergements-à-Marseille
-    {
-        margin: 10px 0px 15px 20px;
-    }
-
-    .section-hébergements
-    {
-        width: 100%;
-        background-color: white;
-        padding: 0px;
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .première-ligne-hébergements
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .cases-hébergements
-    {
-        height: 180px;
-        width: 280px;
-        padding: 0px;
-        margin: 0px 0px 10px 15px;
-        padding: 3px 5px 5px 3px;
-        box-shadow: 1px 1px 5px 3px #F2F2F2;
-    }
-
-    img[src="images/hebergements/small/marcusloke.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/fredkleber.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/reisetopia.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    .deuxième-ligne-hébergements
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-    }
-
-    img[src="images/hebergements/small/anniespratt.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/nicatelee.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/febrianzakaria.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    .afficherplus
-    {
-        margin: 20px 0px 0px 20px;
-    }
-
-    #section-activités-à-Marseille
-    {
-        margin: 820px 0px 20px 0px;
-    }
-
-    .section-titre-activités-à-Marseille
-    {
-        margin: 0px 0px 20px 15px;
-    }
-    
-    .ligne-horizontal-section-activités-à-Marseille
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .case-vieux-port-et-parc-des-calanques
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/renolaithienne.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-Fort-de-Pomègues
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/paulhermann.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-îles-du-Frioul
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/kevinhikari.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    img[src="images/activites/small/kilyansockalingum.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-notre-dame-de-la-garde
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/florianwehde.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-parc-longchamp
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/lenapaulin.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .pied-de-la-page
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-        padding: 20px 0px 0px 20px;
-    }
-
-    .sections-pied-de-la-page
-    {
-        padding-bottom: 20px;
-    }
-}
-
-@media all and (min-width: 370px) and (max-width: 370px)
-{  
-    body
-    {
-        width: 100%;
-        margin: 0px;
-    }
-
-    #header-conteneur
-    {
-        margin: 20px 0px 20px 0px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    img[src="images/logo/Reservia.svg"]
-    {
-        margin-left: 15px;
-    }
-
-    nav
-    {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    a[href="inscription"]
-    {
-        margin: 0px;
-    }
-
-    a[href="#section-hébergements-les-plus-populaires"]
-    {
-        margin: 0px;
-    }
-
-    a[href="#section-activités-à-Marseille"]
-    {
-        margin: 0px;
-    }
-
-    .section-principale
-    {
-        margin: 0px;
-    }
-
-    .section-titre
-    {
-        font-size: 23px;
-        margin-left: 15px;
-    }
-
-    form
-    {
-        display: flex;
-        margin-left: 15px;
-    }
-
-    button
-    {
-        padding: 0px;
-    }
-
-    .section-filtres
-    {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 15px;
-    }
-
-    .texte-filtre
-    {
-        margin-right: 150px;
-    }
-
-    .filtre-economique
-    {
-        margin: 0px 10px 10px 0px;
-        padding-right: 10px;
-    }
-
-    .filtre-familial
-    {
-        margin: 0px;
-        padding-right: 10px;
-    }
-
-    .filtre-romantique
-    {
-        margin: 0px 7px 10px 0px;
-        padding-right: 10px;
-    }
-    
-    .filtre-animauxautorisés
-    {
-        flex: none;
-        padding-right: 10px;
-    }
-    
-    .section-texte
-    {
-        font-size: 15px;
-        margin-left: 15px;
-    }
-
-    #section-hébergements-les-plus-populaires
-    {
-        display: flex;
-        flex-direction: column-reverse;
-        margin: 0px;
-    }
-
-    .section-les-plus-populaires
-    {
-        padding: 0px 20px 10px 10px;
-        border-radius: 0px;
-    }
-
-    .section-titre-hébergements-à-Marseille
-    {
-        margin: 10px 0px 15px 20px;
-    }
-
-    .section-hébergements
-    {
-        width: 100%;
-        background-color: white;
-        padding: 0px;
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .première-ligne-hébergements
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .cases-hébergements
-    {
-        height: 180px;
-        width: 280px;
-        padding: 0px;
-        margin: 0px 0px 10px 15px;
-        padding: 3px 5px 5px 3px;
-        box-shadow: 1px 1px 5px 3px #F2F2F2;
-    }
-
-    img[src="images/hebergements/small/marcusloke.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/fredkleber.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/reisetopia.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    .deuxième-ligne-hébergements
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-    }
-
-    img[src="images/hebergements/small/anniespratt.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/nicatelee.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/febrianzakaria.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    .afficherplus
-    {
-        margin: 20px 0px 0px 20px;
-    }
-
-    #section-activités-à-Marseille
-    {
-        margin: 820px 0px 20px 0px;
-    }
-
-    .section-titre-activités-à-Marseille
-    {
-        margin: 0px 0px 20px 15px;
-    }
-    
-    .ligne-horizontal-section-activités-à-Marseille
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .case-vieux-port-et-parc-des-calanques
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/renolaithienne.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-Fort-de-Pomègues
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/paulhermann.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-îles-du-Frioul
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/kevinhikari.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    img[src="images/activites/small/kilyansockalingum.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-notre-dame-de-la-garde
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/florianwehde.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-parc-longchamp
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/lenapaulin.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .pied-de-la-page
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-        padding: 20px 0px 0px 20px;
-    }
-
-    .sections-pied-de-la-page
-    {
-        padding-bottom: 20px;
-    }
-}
-
-@media all and (min-width: 371px) and (max-width: 371px)
-{  
-    body
-    {
-        width: 100%;
-        margin: 0px;
-    }
-
-    #header-conteneur
-    {
-        margin: 20px 0px 20px 0px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    img[src="images/logo/Reservia.svg"]
-    {
-        margin-left: 15px;
-    }
-
-    nav
-    {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    a[href="inscription"]
-    {
-        margin: 0px;
-    }
-
-    a[href="#section-hébergements-les-plus-populaires"]
-    {
-        margin: 0px;
-    }
-
-    a[href="#section-activités-à-Marseille"]
-    {
-        margin: 0px;
-    }
-
-    .section-principale
-    {
-        margin: 0px;
-    }
-
-    .section-titre
-    {
-        font-size: 23px;
-        margin-left: 15px;
-    }
-
-    form
-    {
-        display: flex;
-        margin-left: 15px;
-    }
-
-    button
-    {
-        padding: 0px;
-    }
-
-    .section-filtres
-    {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 15px;
-    }
-
-    .texte-filtre
-    {
-        margin-right: 150px;
-    }
-
-    .filtre-economique
-    {
-        margin: 0px 10px 10px 0px;
-        padding-right: 10px;
-    }
-
-    .filtre-familial
-    {
-        margin: 0px;
-        padding-right: 10px;
-    }
-
-    .filtre-romantique
-    {
-        margin: 0px 8px 10px 0px;
-        padding-right: 10px;
-    }
-    
-    .filtre-animauxautorisés
-    {
-        flex: none;
-        padding-right: 10px;
-    }
-    
-    .section-texte
-    {
-        font-size: 15px;
-        margin-left: 15px;
-    }
-
-    #section-hébergements-les-plus-populaires
-    {
-        display: flex;
-        flex-direction: column-reverse;
-        margin: 0px;
-    }
-
-    .section-les-plus-populaires
-    {
-        padding: 0px 20px 10px 10px;
-        border-radius: 0px;
-    }
-
-    .section-titre-hébergements-à-Marseille
-    {
-        margin: 10px 0px 15px 20px;
-    }
-
-    .section-hébergements
-    {
-        width: 100%;
-        background-color: white;
-        padding: 0px;
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .première-ligne-hébergements
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .cases-hébergements
-    {
-        height: 180px;
-        width: 280px;
-        padding: 0px;
-        margin: 0px 0px 10px 15px;
-        padding: 3px 5px 5px 3px;
-        box-shadow: 1px 1px 5px 3px #F2F2F2;
-    }
-
-    img[src="images/hebergements/small/marcusloke.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/fredkleber.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/reisetopia.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    .deuxième-ligne-hébergements
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-    }
-
-    img[src="images/hebergements/small/anniespratt.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/nicatelee.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/febrianzakaria.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    .afficherplus
-    {
-        margin: 20px 0px 0px 20px;
-    }
-
-    #section-activités-à-Marseille
-    {
-        margin: 820px 0px 20px 0px;
-    }
-
-    .section-titre-activités-à-Marseille
-    {
-        margin: 0px 0px 20px 15px;
-    }
-    
-    .ligne-horizontal-section-activités-à-Marseille
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .case-vieux-port-et-parc-des-calanques
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/renolaithienne.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-Fort-de-Pomègues
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/paulhermann.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-îles-du-Frioul
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/kevinhikari.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    img[src="images/activites/small/kilyansockalingum.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-notre-dame-de-la-garde
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/florianwehde.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-parc-longchamp
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/lenapaulin.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .pied-de-la-page
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-        padding: 20px 0px 0px 20px;
-    }
-
-    .sections-pied-de-la-page
-    {
-        padding-bottom: 20px;
-    }
-}
-
-@media all and (min-width: 372px) and (max-width: 372px)
-{  
-    body
-    {
-        width: 100%;
-        margin: 0px;
-    }
-
-    #header-conteneur
-    {
-        margin: 20px 0px 20px 0px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    img[src="images/logo/Reservia.svg"]
-    {
-        margin-left: 15px;
-    }
-
-    nav
-    {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    a[href="inscription"]
-    {
-        margin: 0px;
-    }
-
-    a[href="#section-hébergements-les-plus-populaires"]
-    {
-        margin: 0px;
-    }
-
-    a[href="#section-activités-à-Marseille"]
-    {
-        margin: 0px;
-    }
-
-    .section-principale
-    {
-        margin: 0px;
-    }
-
-    .section-titre
-    {
-        font-size: 23px;
-        margin-left: 15px;
-    }
-
-    form
-    {
-        display: flex;
-        margin-left: 15px;
-    }
-
-    button
-    {
-        padding: 0px;
-    }
-
-    .section-filtres
-    {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 15px;
-    }
-
-    .texte-filtre
-    {
-        margin-right: 150px;
-    }
-
-    .filtre-economique
-    {
-        margin: 0px 10px 10px 0px;
-        padding-right: 10px;
-    }
-
-    .filtre-familial
-    {
-        margin: 0px;
-        padding-right: 10px;
-    }
-
-    .filtre-romantique
-    {
-        margin: 0px 9px 10px 0px;
-        padding-right: 10px;
-    }
-    
-    .filtre-animauxautorisés
-    {
-        flex: none;
-        padding-right: 10px;
-    }
-    
-    .section-texte
-    {
-        font-size: 15px;
-        margin-left: 15px;
-    }
-
-    #section-hébergements-les-plus-populaires
-    {
-        display: flex;
-        flex-direction: column-reverse;
-        margin: 0px;
-    }
-
-    .section-les-plus-populaires
-    {
-        padding: 0px 20px 10px 10px;
-        border-radius: 0px;
-    }
-
-    .section-titre-hébergements-à-Marseille
-    {
-        margin: 10px 0px 15px 20px;
-    }
-
-    .section-hébergements
-    {
-        width: 100%;
-        background-color: white;
-        padding: 0px;
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .première-ligne-hébergements
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .cases-hébergements
-    {
-        height: 180px;
-        width: 280px;
-        padding: 0px;
-        margin: 0px 0px 10px 15px;
-        padding: 3px 5px 5px 3px;
-        box-shadow: 1px 1px 5px 3px #F2F2F2;
-    }
-
-    img[src="images/hebergements/small/marcusloke.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/fredkleber.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/reisetopia.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    .deuxième-ligne-hébergements
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-    }
-
-    img[src="images/hebergements/small/anniespratt.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/nicatelee.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/febrianzakaria.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    .afficherplus
-    {
-        margin: 20px 0px 0px 20px;
-    }
-
-    #section-activités-à-Marseille
-    {
-        margin: 820px 0px 20px 0px;
-    }
-
-    .section-titre-activités-à-Marseille
-    {
-        margin: 0px 0px 20px 15px;
-    }
-    
-    .ligne-horizontal-section-activités-à-Marseille
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .case-vieux-port-et-parc-des-calanques
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/renolaithienne.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-Fort-de-Pomègues
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/paulhermann.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-îles-du-Frioul
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/kevinhikari.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    img[src="images/activites/small/kilyansockalingum.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-notre-dame-de-la-garde
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/florianwehde.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-parc-longchamp
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/lenapaulin.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .pied-de-la-page
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-        padding: 20px 0px 0px 20px;
-    }
-
-    .sections-pied-de-la-page
-    {
-        padding-bottom: 20px;
-    }
-}
-
-@media all and (min-width: 373px) and (max-width: 373px)
-{  
-    body
-    {
-        width: 100%;
-        margin: 0px;
-    }
-
-    #header-conteneur
-    {
-        margin: 20px 0px 20px 0px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    img[src="images/logo/Reservia.svg"]
-    {
-        margin-left: 15px;
-    }
-
-    nav
-    {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    a[href="inscription"]
-    {
-        margin: 0px;
-    }
-
-    a[href="#section-hébergements-les-plus-populaires"]
-    {
-        margin: 0px;
-    }
-
-    a[href="#section-activités-à-Marseille"]
-    {
-        margin: 0px;
-    }
-
-    .section-principale
-    {
-        margin: 0px;
-    }
-
-    .section-titre
-    {
-        font-size: 23px;
-        margin-left: 15px;
-    }
-
-    form
-    {
-        display: flex;
-        margin-left: 15px;
-    }
-
-    button
-    {
-        padding: 0px;
-    }
-
-    .section-filtres
-    {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 15px;
-    }
-
-    .texte-filtre
-    {
-        margin-right: 160px;
-    }
-
-    .filtre-economique
-    {
-        margin: 0px 10px 10px 0px;
-        padding-right: 10px;
-    }
-
-    .filtre-familial
-    {
-        margin: 0px;
-        padding-right: 10px;
-    }
-
-    .filtre-romantique
-    {
-        margin: 0px 10px 10px 0px;
-        padding-right: 10px;
-    }
-    
-    .filtre-animauxautorisés
-    {
-        flex: none;
-        padding-right: 10px;
-    }
-    
-    .section-texte
-    {
-        font-size: 15px;
-        margin-left: 15px;
-    }
-
-    #section-hébergements-les-plus-populaires
-    {
-        display: flex;
-        flex-direction: column-reverse;
-        margin: 0px;
-    }
-
-    .section-les-plus-populaires
-    {
-        padding: 0px 20px 10px 10px;
-        border-radius: 0px;
-    }
-
-    .section-titre-hébergements-à-Marseille
-    {
-        margin: 10px 0px 15px 20px;
-    }
-
-    .section-hébergements
-    {
-        width: 100%;
-        background-color: white;
-        padding: 0px;
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .première-ligne-hébergements
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .cases-hébergements
-    {
-        height: 180px;
-        width: 280px;
-        padding: 0px;
-        margin: 0px 0px 10px 15px;
-        padding: 3px 5px 5px 3px;
-        box-shadow: 1px 1px 5px 3px #F2F2F2;
-    }
-
-    img[src="images/hebergements/small/marcusloke.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/fredkleber.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/reisetopia.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    .deuxième-ligne-hébergements
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-    }
-
-    img[src="images/hebergements/small/anniespratt.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/nicatelee.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/febrianzakaria.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    .afficherplus
-    {
-        margin: 20px 0px 0px 20px;
-    }
-
-    #section-activités-à-Marseille
-    {
-        margin: 820px 0px 20px 0px;
-    }
-
-    .section-titre-activités-à-Marseille
-    {
-        margin: 0px 0px 20px 15px;
-    }
-    
-    .ligne-horizontal-section-activités-à-Marseille
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .case-vieux-port-et-parc-des-calanques
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/renolaithienne.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-Fort-de-Pomègues
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/paulhermann.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-îles-du-Frioul
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/kevinhikari.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    img[src="images/activites/small/kilyansockalingum.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-notre-dame-de-la-garde
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/florianwehde.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-parc-longchamp
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/lenapaulin.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .pied-de-la-page
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-        padding: 20px 0px 0px 20px;
-    }
-
-    .sections-pied-de-la-page
-    {
-        padding-bottom: 20px;
-    }
-}
-
-@media all and (min-width: 374px) and (max-width: 374px)
-{  
-    body
-    {
-        width: 100%;
-        margin: 0px;
-    }
-
-    #header-conteneur
-    {
-        margin: 20px 0px 20px 0px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    img[src="images/logo/Reservia.svg"]
-    {
-        margin-left: 15px;
-    }
-
-    nav
-    {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    a[href="inscription"]
-    {
-        margin: 0px;
-    }
-
-    a[href="#section-hébergements-les-plus-populaires"]
-    {
-        margin: 0px;
-    }
-
-    a[href="#section-activités-à-Marseille"]
-    {
-        margin: 0px;
-    }
-
-    .section-principale
-    {
-        margin: 0px;
-    }
-
-    .section-titre
-    {
-        font-size: 23px;
-        margin-left: 15px;
-    }
-
-    form
-    {
-        display: flex;
-        margin-left: 15px;
-    }
-
-    button
-    {
-        padding: 0px;
-    }
-
-    .section-filtres
-    {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 15px;
-    }
-
-    .texte-filtre
-    {
-        margin-right: 160px;
-    }
-
-    .filtre-economique
-    {
-        margin: 0px 10px 10px 0px;
-        padding-right: 10px;
-    }
-
-    .filtre-familial
-    {
-        margin: 0px;
-        padding-right: 10px;
-    }
-
-    .filtre-romantique
-    {
-        margin: 0px 11px 10px 0px;
-        padding-right: 10px;
-    }
-    
-    .filtre-animauxautorisés
-    {
-        flex: none;
-        padding-right: 10px;
-    }
-    
-    .section-texte
-    {
-        font-size: 15px;
-        margin-left: 15px;
-    }
-
-    #section-hébergements-les-plus-populaires
-    {
-        display: flex;
-        flex-direction: column-reverse;
-        margin: 0px;
-    }
-
-    .section-les-plus-populaires
-    {
-        padding: 0px 20px 10px 10px;
-        border-radius: 0px;
-    }
-
-    .section-titre-hébergements-à-Marseille
-    {
-        margin: 10px 0px 15px 20px;
-    }
-
-    .section-hébergements
-    {
-        width: 100%;
-        background-color: white;
-        padding: 0px;
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .première-ligne-hébergements
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .cases-hébergements
-    {
-        height: 180px;
-        width: 280px;
-        padding: 0px;
-        margin: 0px 0px 10px 15px;
-        padding: 3px 5px 5px 3px;
-        box-shadow: 1px 1px 5px 3px #F2F2F2;
-    }
-
-    img[src="images/hebergements/small/marcusloke.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/fredkleber.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/reisetopia.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    .deuxième-ligne-hébergements
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-    }
-
-    img[src="images/hebergements/small/anniespratt.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/nicatelee.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    img[src="images/hebergements/small/febrianzakaria.jpg"]
-    {
-        height: 120px;
-        width: 280px;
-    }
-
-    .afficherplus
-    {
-        margin: 20px 0px 0px 20px;
-    }
-
-    #section-activités-à-Marseille
-    {
-        margin: 820px 0px 20px 0px;
-    }
-
-    .section-titre-activités-à-Marseille
-    {
-        margin: 0px 0px 20px 15px;
-    }
-    
-    .ligne-horizontal-section-activités-à-Marseille
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .case-vieux-port-et-parc-des-calanques
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/renolaithienne.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-Fort-de-Pomègues
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/paulhermann.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-îles-du-Frioul
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/kevinhikari.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    img[src="images/activites/small/kilyansockalingum.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-notre-dame-de-la-garde
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/florianwehde.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .case-parc-longchamp
-    {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
-    }
-
-    img[src="images/activites/small/lenapaulin.jpg"]
-    {
-        height: 120px;
-        width: 290px;
-    }
-
-    .pied-de-la-page
-    {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-        padding: 20px 0px 0px 20px;
-    }
-
-    .sections-pied-de-la-page
-    {
-        padding-bottom: 20px;
-    }
-}
-
-@media all and (min-width: 375px) and (max-width: 375px)
-{  
-    body
-    {
-        width: 100%;
-        margin: 0px;
-    }
-
-    #header-conteneur
-    {
-        margin: 20px 0px 20px 0px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    img[src="images/logo/Reservia.svg"]
-    {
-        margin-left: 15px;
-    }
-
-    nav
-    {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    a[href="inscription"]
-    {
-        margin: 0px;
-    }
-
-    a[href="#section-hébergements-les-plus-populaires"]
-    {
-        margin: 0px;
-    }
-
-    a[href="#section-activités-à-Marseille"]
-    {
-        margin: 0px;
-    }
-
-    .section-principale
-    {
-        margin: 0px;
-    }
-
-    .section-titre
-    {
         font-size: 24px;
-        margin-left: 15px;
-    }
-
-    form
-    {
-        display: flex;
-        margin-left: 15px;
-    }
-
-    button
-    {
-        padding: 0px;
-    }
-
-    .section-filtres
-    {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 15px;
-    }
-
-    .texte-filtre
-    {
-        margin-right: 160px;
-    }
-
-    .filtre-economique
-    {
-        margin: 0px 10px 10px 0px;
-        padding-right: 10px;
-    }
-
-    .filtre-familial
-    {
-        margin: 0px;
-        padding-right: 10px;
-    }
-
-    .filtre-romantique
-    {
-        margin: 0px 12px 10px 0px;
-        padding-right: 10px;
-    }
-    
-    .filtre-animauxautorisés
-    {
-        flex: none;
-        padding-right: 10px;
-    }
-    
-    .section-texte
-    {
-        font-size: 15px;
-        margin-left: 15px;
-    }
-
-    #section-hébergements-les-plus-populaires
-    {
-        display: flex;
-        flex-direction: column-reverse;
-        margin: 0px;
-    }
-
-    .section-les-plus-populaires
-    {
-        padding: 0px 20px 10px 10px;
-        border-radius: 0px;
-    }
-
-    .section-titre-hébergements-à-Marseille
-    {
-        margin: 10px 0px 15px 20px;
     }
 
     .section-hébergements
@@ -5578,7 +2176,6 @@ a[href="liens-pied-de-la-page"]
         flex-direction: column;
     }
 
-
     .première-ligne-hébergements
     {
         display: flex;
@@ -5587,30 +2184,55 @@ a[href="liens-pied-de-la-page"]
 
     .cases-hébergements
     {
-        height: 180px;
-        width: 280px;
-        padding: 0px;
-        margin: 0px 0px 10px 15px;
+        height: 545px;
+        width: 111%;
+        margin: 0px 0px 10px 20px;
         padding: 3px 5px 5px 3px;
         box-shadow: 1px 1px 5px 3px #F2F2F2;
     }
 
     img[src="images/hebergements/small/marcusloke.jpg"]
     {
-        height: 120px;
-        width: 280px;
+        height: 460px;
+        width: 100%;
     }
 
     img[src="images/hebergements/small/fredkleber.jpg"]
     {
-        height: 120px;
-        width: 280px;
+        height: 460px;
+        width: 100%;
     }
 
     img[src="images/hebergements/small/reisetopia.jpg"]
     {
-        height: 120px;
-        width: 280px;
+        height: 460px;
+        width: 100%;
+    }
+
+    .titres-hébergements
+    {
+        font-size: 18px;
+        margin-top: 5px;
+    }
+
+    .textes-hébergements
+    {
+        font-size: 16px;
+    }
+
+    .logo-4-étoiles
+    {
+        font-size: 16px;
+    }
+
+    .logo-5-étoiles
+    {
+        font-size: 16px;
+    }
+
+    .logo-3-étoiles
+    {
+        font-size: 16px;
     }
 
     .deuxième-ligne-hébergements
@@ -5622,35 +2244,37 @@ a[href="liens-pied-de-la-page"]
 
     img[src="images/hebergements/small/anniespratt.jpg"]
     {
-        height: 120px;
-        width: 280px;
+        height: 460px;
+        width: 100%;
     }
 
     img[src="images/hebergements/small/nicatelee.jpg"]
     {
-        height: 120px;
-        width: 280px;
+        height: 460px;
+        width: 100%;
     }
 
     img[src="images/hebergements/small/febrianzakaria.jpg"]
     {
-        height: 120px;
-        width: 280px;
+        height: 460px;
+        width: 100%;
     }
 
     .afficherplus
     {
         margin: 20px 0px 0px 20px;
+        font-size: 22px;
     }
 
     #section-activités-à-Marseille
     {
-        margin: 820px 0px 20px 0px;
+        margin: 3100px 0px 20px 0px;
     }
 
     .section-titre-activités-à-Marseille
     {
         margin: 0px 0px 20px 15px;
+        font-size: 24px;
     }
     
     .ligne-horizontal-section-activités-à-Marseille
@@ -5659,75 +2283,81 @@ a[href="liens-pied-de-la-page"]
         flex-direction: column;
     }
 
+    a[href="liens-section-activités-à-Marseille"]
+    {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
     .case-vieux-port-et-parc-des-calanques
     {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
+        margin: 0px 0px 20px 20px;
+        width: 112%;
+        height: 510px;
     }
 
     img[src="images/activites/small/renolaithienne.jpg"]
     {
-        height: 120px;
-        width: 290px;
+        height: 460px;
+        width: 100%;
     }
 
     .case-Fort-de-Pomègues
     {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
+        margin: 0px 0px 20px 20px;
+        width: 112%;
+        height: 510px;
     }
 
     img[src="images/activites/small/paulhermann.jpg"]
     {
-        height: 120px;
-        width: 290px;
+        height: 460px;
+        width: 100%;
     }
 
     .case-îles-du-Frioul
     {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
+        margin: 0px 0px 20px 20px;
+        width: 112%;
+        height: 480px;
     }
 
     img[src="images/activites/small/kevinhikari.jpg"]
     {
-        height: 120px;
-        width: 290px;
+        height: 440px;
+        width: 100%;
     }
 
     img[src="images/activites/small/kilyansockalingum.jpg"]
     {
-        height: 120px;
-        width: 290px;
+        height: 460px;
+        width: 100%;
     }
 
     .case-notre-dame-de-la-garde
     {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
+        margin: 0px 0px 20px 20px;
+        width: 112%;
+        height: 510px;
     }
 
     img[src="images/activites/small/florianwehde.jpg"]
     {
-        height: 120px;
-        width: 290px;
+        height: 460px;
+        width: 100%;
     }
 
     .case-parc-longchamp
     {
-        margin: 0px 0px 20px 15px;
-        width: 290px;
-        height: 160px;
+        margin: 0px 0px 20px 20px;
+        width: 112%;
+        height: 510px;
     }
 
     img[src="images/activites/small/lenapaulin.jpg"]
     {
-        height: 120px;
-        width: 290px;
+        height: 460px;
+        width: 100%;
     }
 
     .pied-de-la-page
@@ -5736,10 +2366,979 @@ a[href="liens-pied-de-la-page"]
         flex-direction: column;
         margin: 0px;
         padding: 20px 0px 0px 20px;
+        width: 116%;
     }
 
     .sections-pied-de-la-page
     {
         padding-bottom: 20px;
     }
+
+    .sections-titre-pied-de-la-page
+    {
+        font-size: 18px;
+    }
+
+    a[href="liens-pied-de-la-page"]
+    {
+        font-size: 16px;
+    }
 }
+/*
+@media all and (min-width: 1300px) and (max-width: 1900px)
+{
+    body
+    {
+        width: 100%;
+        margin: 0px;
+    }
+
+    #header-conteneur
+    {
+        margin: 20px 0px 10px 0px;
+        width: 100%;
+        display: block;
+    }
+
+    img[src="images/logo/Reservia.svg"]
+    {
+        margin-left: 15px;
+    }
+
+    a[href="inscription"]
+    {
+        margin: 0px;
+    }
+
+    a[href="#section-hébergements-les-plus-populaires"]
+    {
+        padding-right: 30%;
+    }
+
+    a[href="#section-hébergements-les-plus-populaires"]:hover
+    {
+        border-bottom: 2px blue solid;
+        border-top: none;
+        padding: 30px 40px 0px 40px;
+    }
+
+    a[href="#section-activités-à-Marseille"]
+    {
+        margin: 0px;
+    }
+
+    a[href="#section-activités-à-Marseille"]:hover
+    {
+        border-bottom: 2px blue solid;
+        border-top: none;
+        padding: 30px 40px 0px 40px;
+    }
+
+    .section-principale
+    {
+        margin: 0px;
+    }
+
+    .section-titre
+    {
+        font-size: 32px;
+        margin-left: 15px;
+    }
+
+    .section-texte
+    {
+        margin: 10px 0px 20px 15px;
+        font-size: 25px;
+    }
+
+    form
+    {
+        display: flex;
+        margin: 20px 0px 0px 15px;
+    }
+
+    input
+    {
+        width: 280px;
+    }
+
+    button
+    {
+        padding: 0px;
+        border: 0px;
+        width: 40px;
+        border-radius: 10px;
+    }
+
+    .logoloupe
+    {
+        display: block;
+        padding-top: 10px;
+    }
+
+    .textebouton
+    {
+        visibility: hidden;
+    }
+
+    .section-filtres
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+    }
+
+    .texte-filtre
+    {
+        font-size: 23px;
+    }
+
+    .section-filtres-2
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .filtre-economique
+    {
+        padding: 0px;
+        margin: 0px 10px 10px 0px;
+        width: 190px;
+        font-size: 19px;
+    }
+
+    .fa-money-bill-wave
+    {
+        font-size: 25px;
+        border-radius: 30px;
+    }
+
+    .filtre-familial
+    {
+        padding: 0px;
+        margin: 0px 10px 10px 0px;
+        width: 140px;
+        font-size: 19px;
+    }
+
+    .fa-child
+    {
+        font-size: 25px;
+        border-radius: 30px;
+    }
+
+    .filtre-romantique
+    {
+        padding: 0px;
+        margin: 0px 10px 10px 0px;
+        width: 180px;
+        font-size: 19px;
+    }
+
+    .fa-heart
+    {
+        font-size: 25px;
+        border-radius: 30px;
+    }
+    
+    .filtre-animauxautorisés
+    {
+        padding: 0px;
+        width: 240px;
+        margin: 0px 0px 10px 0px;
+        font-size: 19px;
+    }
+
+    .fa-dog
+    {
+        font-size: 25px;
+        border-radius: 30px;        
+    }
+    
+    #section-hébergements-les-plus-populaires
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0px;
+    }
+
+    .section-les-plus-populaires
+    {
+        padding: 20px 0px 0px 0px;
+        border-radius: 0px;
+        width: 117%;
+        height: 2500px;
+    }
+
+    .section-titre-les-plus-populaires
+    {
+        margin: 0px 30px 0px 20px;
+        font-size: 20px;
+    }
+
+    .fa-chart-line
+    {
+        font-size: 25px;
+    }
+
+    .cases-les-plus-populaires
+    {
+        height: 730px;
+        width: 94%;
+        margin: 0px 0px 10px 20px;
+        padding: 3px 5px 5px 3px;
+        box-shadow: 1px 1px 5px 3px #f2f2f2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    img[src="images/hebergements/small/emileguillemot.jpg"]
+    {
+        height: 600px;
+        width: 100%;
+        border: 1px solid white;
+        border-radius: 20px 20px 1px 1px;
+    }
+
+    img[src="images/hebergements/small/awcreative.jpg"]
+    {
+        height: 600px;
+        width: 100%;
+        border: 1px solid white;
+        border-radius: 20px 20px 1px 1px;
+    }
+
+    img[src="images/hebergements/small/febrianzakariaa.jpg"]
+    {
+        height: 600px;
+        width: 100%;
+        border: 1px solid white;
+        border-radius: 20px 20px 1px 1px;
+    }
+
+    a[href="liens-les-plus-populaires"]
+    {
+        font-size: 21px;
+    }
+
+    .textes-les-plus-populaires
+    {
+        margin: 5px 0px 5px 0px;
+        font-size: 19px;
+    }
+
+    .logo-5-étoiles-populaires
+    {
+        margin: 0px;
+        font-size: 20px;
+    }
+
+    .logo-4-étoiles-populaires
+    {
+        margin: 0px;
+        font-size: 20px;
+    }   
+
+    .section-titre-hébergements-à-Marseille
+    {
+        margin: 10px 0px 15px 20px;
+        font-size: 27px;
+    }
+
+    .section-hébergements
+    {
+        width: 100%;
+        background-color: white;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .première-ligne-hébergements
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cases-hébergements
+    {
+        height: 700px;
+        width: 111%;
+        margin: 0px 0px 10px 20px;
+        padding: 3px 5px 5px 3px;
+        box-shadow: 1px 1px 5px 3px #F2F2F2;
+    }
+
+    img[src="images/hebergements/small/marcusloke.jpg"]
+    {
+        height: 600px;
+        width: 100%;
+    }
+
+    img[src="images/hebergements/small/fredkleber.jpg"]
+    {
+        height: 600px;
+        width: 100%;
+    }
+
+    img[src="images/hebergements/small/reisetopia.jpg"]
+    {
+        height: 600px;
+        width: 100%;
+    }
+
+    .titres-hébergements
+    {
+        font-size: 22px;
+        margin-top: 5px;
+    }
+
+    .textes-hébergements
+    {
+        font-size: 20px;
+    }
+
+    .logo-4-étoiles
+    {
+        font-size: 20px;
+    }
+
+    .logo-5-étoiles
+    {
+        font-size: 20px;
+    }
+
+    .logo-3-étoiles
+    {
+        font-size: 20px;
+    }
+
+    .deuxième-ligne-hébergements
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    img[src="images/hebergements/small/anniespratt.jpg"]
+    {
+        height: 600px;
+        width: 100%;
+    }
+
+    img[src="images/hebergements/small/nicatelee.jpg"]
+    {
+        height: 600px;
+        width: 100%;
+    }
+
+    img[src="images/hebergements/small/febrianzakaria.jpg"]
+    {
+        height: 600px;
+        width: 100%;
+    }
+
+    .afficherplus
+    {
+        margin: 20px 0px 0px 20px;
+        font-size: 25px;
+    }
+
+    #section-activités-à-Marseille
+    {
+        margin: 4000px 0px 20px 0px;
+    }
+
+    .section-titre-activités-à-Marseille
+    {
+        margin: 0px 0px 20px 15px;
+        font-size: 28px;
+    }
+    
+    .ligne-horizontal-section-activités-à-Marseille
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    a[href="liens-section-activités-à-Marseille"]
+    {
+        font-size: 21px;
+        margin-top: 25px;
+    }
+
+    .case-vieux-port-et-parc-des-calanques
+    {
+        margin: 0px 0px 20px 20px;
+        width: 112%;
+        height: 620px;
+    }
+
+    img[src="images/activites/small/renolaithienne.jpg"]
+    {
+        height: 560px;
+        width: 100%;
+    }
+
+    .case-Fort-de-Pomègues
+    {
+        margin: 0px 0px 20px 20px;
+        width: 112%;
+        height: 620px;
+    }
+
+    img[src="images/activites/small/paulhermann.jpg"]
+    {
+        height: 560px;
+        width: 100%;
+    }
+
+    .case-îles-du-Frioul
+    {
+        margin: 0px 0px 20px 20px;
+        width: 112%;
+        height: 590px;
+    }
+
+    img[src="images/activites/small/kevinhikari.jpg"]
+    {
+        height: 540px;
+        width: 100%;
+    }
+
+    img[src="images/activites/small/kilyansockalingum.jpg"]
+    {
+        height: 560px;
+        width: 100%;
+    }
+
+    .case-notre-dame-de-la-garde
+    {
+        margin: 0px 0px 20px 20px;
+        width: 112%;
+        height: 620px;
+    }
+
+    img[src="images/activites/small/florianwehde.jpg"]
+    {
+        height: 560px;
+        width: 100%;
+    }
+
+    .case-parc-longchamp
+    {
+        margin: 0px 0px 20px 20px;
+        width: 112%;
+        height: 620px;
+    }
+
+    img[src="images/activites/small/lenapaulin.jpg"]
+    {
+        height: 560px;
+        width: 100%;
+    }
+
+    .pied-de-la-page
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 20px 0px 0px 20px;
+        width: 116%;
+    }
+
+    .sections-pied-de-la-page
+    {
+        padding-bottom: 20px;
+    }
+
+    .sections-titre-pied-de-la-page
+    {
+        font-size: 21px;
+    }
+
+    a[href="liens-pied-de-la-page"]
+    {
+        font-size: 19px;
+    }
+}
+*/
+/*
+@media all and (min-width: 1901px) and (max-width: 2560px)
+{
+    body
+    {
+        width: 100%;
+        margin: 0px;
+    }
+
+    #header-conteneur
+    {
+        margin: 20px 0px 10px 0px;
+        width: 100%;
+        display: block;
+    }
+
+    img[src="images/logo/Reservia.svg"]
+    {
+        margin-left: 15px;
+    }
+
+    a[href="inscription"]
+    {
+        margin: 0px;
+    }
+
+    a[href="#section-hébergements-les-plus-populaires"]
+    {
+        padding-right: 30%;
+    }
+
+    a[href="#section-hébergements-les-plus-populaires"]:hover
+    {
+        border-bottom: 2px blue solid;
+        border-top: none;
+        padding: 30px 40px 0px 40px;
+    }
+
+    a[href="#section-activités-à-Marseille"]
+    {
+        margin: 0px;
+    }
+
+    a[href="#section-activités-à-Marseille"]:hover
+    {
+        border-bottom: 2px blue solid;
+        border-top: none;
+        padding: 30px 40px 0px 40px;
+    }
+
+    .section-principale
+    {
+        margin: 0px;
+    }
+
+    .section-titre
+    {
+        font-size: 32px;
+        margin-left: 15px;
+    }
+
+    .section-texte
+    {
+        margin: 10px 0px 20px 15px;
+        font-size: 25px;
+    }
+
+    form
+    {
+        display: flex;
+        margin: 20px 0px 0px 15px;
+    }
+
+    input
+    {
+        width: 280px;
+    }
+
+    button
+    {
+        padding: 0px;
+        border: 0px;
+        width: 40px;
+        border-radius: 10px;
+    }
+
+    .logoloupe
+    {
+        display: block;
+        padding-top: 10px;
+    }
+
+    .textebouton
+    {
+        visibility: hidden;
+    }
+
+    .section-filtres
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+    }
+
+    .texte-filtre
+    {
+        font-size: 23px;
+    }
+
+    .section-filtres-2
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .filtre-economique
+    {
+        padding: 0px;
+        margin: 0px 10px 10px 0px;
+        width: 190px;
+        font-size: 19px;
+    }
+
+    .fa-money-bill-wave
+    {
+        font-size: 25px;
+        border-radius: 30px;
+    }
+
+    .filtre-familial
+    {
+        padding: 0px;
+        margin: 0px 10px 10px 0px;
+        width: 140px;
+        font-size: 19px;
+    }
+
+    .fa-child
+    {
+        font-size: 25px;
+        border-radius: 30px;
+    }
+
+    .filtre-romantique
+    {
+        padding: 0px;
+        margin: 0px 10px 10px 0px;
+        width: 180px;
+        font-size: 19px;
+    }
+
+    .fa-heart
+    {
+        font-size: 25px;
+        border-radius: 30px;
+    }
+    
+    .filtre-animauxautorisés
+    {
+        padding: 0px;
+        width: 240px;
+        margin: 0px 0px 10px 0px;
+        font-size: 19px;
+    }
+
+    .fa-dog
+    {
+        font-size: 25px;
+        border-radius: 30px;        
+    }
+    
+    #section-hébergements-les-plus-populaires
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0px;
+    }
+
+    .section-les-plus-populaires
+    {
+        padding: 20px 0px 0px 0px;
+        border-radius: 0px;
+        width: 117%;
+        height: 2500px;
+    }
+
+    .section-titre-les-plus-populaires
+    {
+        margin: 0px 30px 0px 20px;
+        font-size: 20px;
+    }
+
+    .fa-chart-line
+    {
+        font-size: 25px;
+    }
+
+    .cases-les-plus-populaires
+    {
+        height: 730px;
+        width: 94%;
+        margin: 0px 0px 10px 20px;
+        padding: 3px 5px 5px 3px;
+        box-shadow: 1px 1px 5px 3px #f2f2f2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    img[src="images/hebergements/small/emileguillemot.jpg"]
+    {
+        height: 600px;
+        width: 100%;
+        border: 1px solid white;
+        border-radius: 20px 20px 1px 1px;
+    }
+
+    img[src="images/hebergements/small/awcreative.jpg"]
+    {
+        height: 600px;
+        width: 100%;
+        border: 1px solid white;
+        border-radius: 20px 20px 1px 1px;
+    }
+
+    img[src="images/hebergements/small/febrianzakariaa.jpg"]
+    {
+        height: 600px;
+        width: 100%;
+        border: 1px solid white;
+        border-radius: 20px 20px 1px 1px;
+    }
+
+    a[href="liens-les-plus-populaires"]
+    {
+        font-size: 21px;
+    }
+
+    .textes-les-plus-populaires
+    {
+        margin: 5px 0px 5px 0px;
+        font-size: 19px;
+    }
+
+    .logo-5-étoiles-populaires
+    {
+        margin: 0px;
+        font-size: 20px;
+    }
+
+    .logo-4-étoiles-populaires
+    {
+        margin: 0px;
+        font-size: 20px;
+    }   
+
+    .section-titre-hébergements-à-Marseille
+    {
+        margin: 10px 0px 15px 20px;
+        font-size: 27px;
+    }
+
+    .section-hébergements
+    {
+        width: 100%;
+        background-color: white;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .première-ligne-hébergements
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cases-hébergements
+    {
+        height: 700px;
+        width: 111%;
+        margin: 0px 0px 10px 20px;
+        padding: 3px 5px 5px 3px;
+        box-shadow: 1px 1px 5px 3px #F2F2F2;
+    }
+
+    img[src="images/hebergements/small/marcusloke.jpg"]
+    {
+        height: 600px;
+        width: 100%;
+    }
+
+    img[src="images/hebergements/small/fredkleber.jpg"]
+    {
+        height: 600px;
+        width: 100%;
+    }
+
+    img[src="images/hebergements/small/reisetopia.jpg"]
+    {
+        height: 600px;
+        width: 100%;
+    }
+
+    .titres-hébergements
+    {
+        font-size: 22px;
+        margin-top: 5px;
+    }
+
+    .textes-hébergements
+    {
+        font-size: 20px;
+    }
+
+    .logo-4-étoiles
+    {
+        font-size: 20px;
+    }
+
+    .logo-5-étoiles
+    {
+        font-size: 20px;
+    }
+
+    .logo-3-étoiles
+    {
+        font-size: 20px;
+    }
+
+    .deuxième-ligne-hébergements
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    img[src="images/hebergements/small/anniespratt.jpg"]
+    {
+        height: 600px;
+        width: 100%;
+    }
+
+    img[src="images/hebergements/small/nicatelee.jpg"]
+    {
+        height: 600px;
+        width: 100%;
+    }
+
+    img[src="images/hebergements/small/febrianzakaria.jpg"]
+    {
+        height: 600px;
+        width: 100%;
+    }
+
+    .afficherplus
+    {
+        margin: 20px 0px 0px 20px;
+        font-size: 25px;
+    }
+
+    #section-activités-à-Marseille
+    {
+        margin: 4000px 0px 20px 0px;
+    }
+
+    .section-titre-activités-à-Marseille
+    {
+        margin: 0px 0px 20px 15px;
+        font-size: 28px;
+    }
+    
+    .ligne-horizontal-section-activités-à-Marseille
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    a[href="liens-section-activités-à-Marseille"]
+    {
+        font-size: 21px;
+        margin-top: 25px;
+    }
+
+    .case-vieux-port-et-parc-des-calanques
+    {
+        margin: 0px 0px 20px 20px;
+        width: 112%;
+        height: 620px;
+    }
+
+    img[src="images/activites/small/renolaithienne.jpg"]
+    {
+        height: 560px;
+        width: 100%;
+    }
+
+    .case-Fort-de-Pomègues
+    {
+        margin: 0px 0px 20px 20px;
+        width: 112%;
+        height: 620px;
+    }
+
+    img[src="images/activites/small/paulhermann.jpg"]
+    {
+        height: 560px;
+        width: 100%;
+    }
+
+    .case-îles-du-Frioul
+    {
+        margin: 0px 0px 20px 20px;
+        width: 112%;
+        height: 590px;
+    }
+
+    img[src="images/activites/small/kevinhikari.jpg"]
+    {
+        height: 540px;
+        width: 100%;
+    }
+
+    img[src="images/activites/small/kilyansockalingum.jpg"]
+    {
+        height: 560px;
+        width: 100%;
+    }
+
+    .case-notre-dame-de-la-garde
+    {
+        margin: 0px 0px 20px 20px;
+        width: 112%;
+        height: 620px;
+    }
+
+    img[src="images/activites/small/florianwehde.jpg"]
+    {
+        height: 560px;
+        width: 100%;
+    }
+
+    .case-parc-longchamp
+    {
+        margin: 0px 0px 20px 20px;
+        width: 112%;
+        height: 620px;
+    }
+
+    img[src="images/activites/small/lenapaulin.jpg"]
+    {
+        height: 560px;
+        width: 100%;
+    }
+
+    .pied-de-la-page
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 20px 0px 0px 20px;
+        width: 116%;
+    }
+
+    .sections-pied-de-la-page
+    {
+        padding-bottom: 20px;
+    }
+
+    .sections-titre-pied-de-la-page
+    {
+        font-size: 21px;
+    }
+
+    a[href="liens-pied-de-la-page"]
+    {
+        font-size: 19px;
+    }
+}
+*/
