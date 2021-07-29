@@ -679,7 +679,7 @@ a[href="liens-pied-de-la-page"]
     font-size: 12px;
 }
 
-@media all and (min-width: 320px) and (max-width: 450px)
+@media all and (min-width: 320px) and (max-width: 424px)
 {
     body
     {
@@ -699,21 +699,35 @@ a[href="liens-pied-de-la-page"]
         margin-left: 15px;
     }
 
+    nav
+    {
+        margin: 10px 0px 0px 0px;
+    }
+
     a[href="inscription"]
     {
         margin: 0px;
+        position: relative;
+        bottom: 60px;
+        left: 245px;
+    }
+
+    a[href="inscription"]:hover
+    {
+        padding: 0px;
+        border-top: 0px;
     }
 
     a[href="#section-hébergements-les-plus-populaires"]
     {
-        padding-right: 30%;
+        margin: 0px 90px 0px 30px;
     }
 
     a[href="#section-hébergements-les-plus-populaires"]:hover
     {
-        border-bottom: 2px blue solid;
-        border-top: none;
-        padding: 30px 40px 0px 40px;
+        border-top: 0px;
+        border-bottom: 2px solid blue;
+        padding: 0px;
     }
 
     a[href="#section-activités-à-Marseille"]
@@ -723,9 +737,9 @@ a[href="liens-pied-de-la-page"]
 
     a[href="#section-activités-à-Marseille"]:hover
     {
-        border-bottom: 2px blue solid;
-        border-top: none;
-        padding: 30px 40px 0px 40px;
+        border-top: 0px;
+        border-bottom: 2px solid blue;
+        padding: 0px;
     }
 
     .section-principale
@@ -1013,7 +1027,7 @@ a[href="liens-pied-de-la-page"]
         flex-direction: column;
         margin: 0px;
         padding: 20px 0px 0px 20px;
-        width: 100%;
+        width: 95%%;
     }
 
     .sections-pied-de-la-page
@@ -1022,7 +1036,7 @@ a[href="liens-pied-de-la-page"]
     }
 }
  
-@media all and (min-width: 451px) and (max-width: 768px)
+@media all and (min-width: 425px) and (max-width: 768px)
 {  
     body
     {
@@ -1042,33 +1056,47 @@ a[href="liens-pied-de-la-page"]
         margin-left: 15px;
     }
 
+    nav
+    {
+        margin: 10px 0px 0px 0px;
+    }
+
     a[href="inscription"]
     {
         margin: 0px;
+        font-size: 16px;
+    }
+
+    a[href="inscription"]:hover
+    {
+        padding: 0px;
+        border-top: 0px;
     }
 
     a[href="#section-hébergements-les-plus-populaires"]
     {
-        padding-right: 30%;
+        margin: 0px 170px 0px 30px;
+        font-size: 16px;
     }
 
     a[href="#section-hébergements-les-plus-populaires"]:hover
     {
-        border-bottom: 2px blue solid;
-        border-top: none;
-        padding: 30px 40px 0px 40px;
+        border-top: 0px;
+        border-bottom: 2px solid blue;
+        padding: 0px;
     }
 
     a[href="#section-activités-à-Marseille"]
     {
         margin: 0px;
+        font-size: 17px;
     }
 
     a[href="#section-activités-à-Marseille"]:hover
     {
-        border-bottom: 2px blue solid;
-        border-top: none;
-        padding: 30px 40px 0px 40px;
+        border-top: 0px;
+        border-bottom: 2px solid blue;
+        padding: 0px;
     }
 
     .section-principale
