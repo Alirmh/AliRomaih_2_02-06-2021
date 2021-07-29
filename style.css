@@ -812,7 +812,7 @@ a[href="liens-pied-de-la-page"]
     
     .section-texte
     {
-        font-size: 15px;
+        font-size: 14px;
         margin-left: 15px;
     }
 
@@ -866,8 +866,8 @@ a[href="liens-pied-de-la-page"]
     .cases-hébergements
     {
         height: 180px;
-        width: 97%;
-        margin: 0px 0px 10px 0px;
+        width: 85%;
+        margin: 0px 0px 10px 15px;
         padding: 3px 5px 5px 3px;
         box-shadow: 1px 1px 5px 3px #F2F2F2;
     }
@@ -917,7 +917,7 @@ a[href="liens-pied-de-la-page"]
 
     .afficherplus
     {
-        margin: 20px 0px 0px 20px;
+        margin: 20px 0px 0px 10px;
     }
 
     #section-activités-à-Marseille
