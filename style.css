@@ -827,19 +827,19 @@ a[href="liens-pied-de-la-page"]
     {
         padding: 0px;
         border-radius: 0px;
-        width: 111%;
+        width: 100%;
     }
 
     .section-titre-les-plus-populaires
     {
-        margin: 0px 30px 0px 20px;
+        margin: 10px 20px 10px 20px;
     }
 
     .cases-les-plus-populaires
     {
         width: 85%;
         height: 122px;
-        margin: 0px 0px 20px 20px;
+        margin: 0px 0px 20px 15px;
     }   
 
     .section-titre-hébergements-à-Marseille
@@ -867,7 +867,7 @@ a[href="liens-pied-de-la-page"]
     {
         height: 180px;
         width: 97%;
-        margin: 0px 0px 10px 16px;
+        margin: 0px 0px 10px 0px;
         padding: 3px 5px 5px 3px;
         box-shadow: 1px 1px 5px 3px #F2F2F2;
     }
@@ -1013,7 +1013,7 @@ a[href="liens-pied-de-la-page"]
         flex-direction: column;
         margin: 0px;
         padding: 20px 0px 0px 20px;
-        width: 105%;
+        width: 100%;
     }
 
     .sections-pied-de-la-page
