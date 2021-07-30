@@ -1065,6 +1065,9 @@ a[href="liens-pied-de-la-page"]
     {
         margin: 0px;
         font-size: 16px;
+        position: relative;
+        bottom: 60px;
+        left: 340px;
     }
 
     a[href="inscription"]:hover
@@ -1075,7 +1078,7 @@ a[href="liens-pied-de-la-page"]
 
     a[href="#section-hébergements-les-plus-populaires"]
     {
-        margin: 0px 170px 0px 30px;
+        margin: 0px 150px 0px 30px;
         font-size: 16px;
     }
 
@@ -1113,7 +1116,7 @@ a[href="liens-pied-de-la-page"]
     .section-texte
     {
         margin: 10px 0px 20px 15px;
-        font-size: 22px;
+        font-size: 20px;
     }
 
     form
@@ -1207,8 +1210,8 @@ a[href="liens-pied-de-la-page"]
     {
         padding: 20px 0px 0px 0px;
         border-radius: 0px;
-        width: 118%;
-        height: 1100px;
+        width: 100%;
+        height: 950px;
     }
 
     .section-titre-les-plus-populaires
@@ -1224,7 +1227,7 @@ a[href="liens-pied-de-la-page"]
 
     .cases-les-plus-populaires
     {
-        height: 315px;
+        height: 255px;
         width: 90%;
         margin: 0px 0px 10px 20px;
         padding: 3px 5px 5px 3px;
@@ -1235,7 +1238,7 @@ a[href="liens-pied-de-la-page"]
 
     img[src="images/hebergements/small/emileguillemot.jpg"]
     {
-        height: 220px;
+        height: 160px;
         width: 100%;
         border: 1px solid white;
         border-radius: 20px 20px 1px 1px;
@@ -1243,7 +1246,7 @@ a[href="liens-pied-de-la-page"]
 
     img[src="images/hebergements/small/awcreative.jpg"]
     {
-        height: 220px;
+        height: 160px;
         width: 100%;
         border: 1px solid white;
         border-radius: 20px 20px 1px 1px;
@@ -1251,7 +1254,7 @@ a[href="liens-pied-de-la-page"]
 
     img[src="images/hebergements/small/febrianzakariaa.jpg"]
     {
-        height: 220px;
+        height: 160px;
         width: 100%;
         border: 1px solid white;
         border-radius: 20px 20px 1px 1px;
@@ -1304,8 +1307,8 @@ a[href="liens-pied-de-la-page"]
 
     .cases-hébergements
     {
-        height: 280px;
-        width: 105%;
+        height: 235px;
+        width: 90%;
         margin: 0px 0px 10px 20px;
         padding: 3px 5px 5px 3px;
         box-shadow: 1px 1px 5px 3px #F2F2F2;
@@ -1313,19 +1316,19 @@ a[href="liens-pied-de-la-page"]
 
     img[src="images/hebergements/small/marcusloke.jpg"]
     {
-        height: 200px;
+        height: 160px;
         width: 100%;
     }
 
     img[src="images/hebergements/small/fredkleber.jpg"]
     {
-        height: 200px;
+        height: 160px;
         width: 100%;
     }
 
     img[src="images/hebergements/small/reisetopia.jpg"]
     {
-        height: 200px;
+        height: 160px;
         width: 100%;
     }
 
@@ -1364,19 +1367,19 @@ a[href="liens-pied-de-la-page"]
 
     img[src="images/hebergements/small/anniespratt.jpg"]
     {
-        height: 200px;
+        height: 160px;
         width: 100%;
     }
 
     img[src="images/hebergements/small/nicatelee.jpg"]
     {
-        height: 200px;
+        height: 160px;
         width: 100%;
     }
 
     img[src="images/hebergements/small/febrianzakaria.jpg"]
     {
-        height: 200px;
+        height: 160px;
         width: 100%;
     }
 
