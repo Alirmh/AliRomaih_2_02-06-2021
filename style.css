@@ -2152,8 +2152,8 @@ a[href="liens-pied-de-la-page"]
     {
         padding: 20px 0px 0px 0px;
         border-radius: 0px;
-        width: 118%;
-        height: 2000px;
+        width: 100%;
+        height: 1200px;
     }
 
     .section-titre-les-plus-populaires
@@ -2169,8 +2169,8 @@ a[href="liens-pied-de-la-page"]
 
     .cases-les-plus-populaires
     {
-        height: 580px;
-        width: 94%;
+        height: 340px;
+        width: 90%;
         margin: 0px 0px 10px 20px;
         padding: 3px 5px 5px 3px;
         box-shadow: 1px 1px 5px 3px #f2f2f2;
@@ -2180,7 +2180,7 @@ a[href="liens-pied-de-la-page"]
 
     img[src="images/hebergements/small/emileguillemot.jpg"]
     {
-        height: 470px;
+        height: 230px;
         width: 100%;
         border: 1px solid white;
         border-radius: 20px 20px 1px 1px;
@@ -2188,7 +2188,7 @@ a[href="liens-pied-de-la-page"]
 
     img[src="images/hebergements/small/awcreative.jpg"]
     {
-        height: 470px;
+        height: 230px;
         width: 100%;
         border: 1px solid white;
         border-radius: 20px 20px 1px 1px;
@@ -2196,7 +2196,7 @@ a[href="liens-pied-de-la-page"]
 
     img[src="images/hebergements/small/febrianzakariaa.jpg"]
     {
-        height: 470px;
+        height: 230px;
         width: 100%;
         border: 1px solid white;
         border-radius: 20px 20px 1px 1px;
@@ -2248,8 +2248,8 @@ a[href="liens-pied-de-la-page"]
 
     .cases-hébergements
     {
-        height: 545px;
-        width: 111%;
+        height: 315px;
+        width: 90%;
         margin: 0px 0px 10px 20px;
         padding: 3px 5px 5px 3px;
         box-shadow: 1px 1px 5px 3px #F2F2F2;
@@ -2257,19 +2257,19 @@ a[href="liens-pied-de-la-page"]
 
     img[src="images/hebergements/small/marcusloke.jpg"]
     {
-        height: 460px;
+        height: 230px;
         width: 100%;
     }
 
     img[src="images/hebergements/small/fredkleber.jpg"]
     {
-        height: 460px;
+        height: 230px;
         width: 100%;
     }
 
     img[src="images/hebergements/small/reisetopia.jpg"]
     {
-        height: 460px;
+        height: 230px;
         width: 100%;
     }
 
@@ -2308,19 +2308,19 @@ a[href="liens-pied-de-la-page"]
 
     img[src="images/hebergements/small/anniespratt.jpg"]
     {
-        height: 460px;
+        height: 230px;
         width: 100%;
     }
 
     img[src="images/hebergements/small/nicatelee.jpg"]
     {
-        height: 460px;
+        height: 230px;
         width: 100%;
     }
 
     img[src="images/hebergements/small/febrianzakaria.jpg"]
     {
-        height: 460px;
+        height: 230px;
         width: 100%;
     }
 
@@ -2332,7 +2332,7 @@ a[href="liens-pied-de-la-page"]
 
     #section-activités-à-Marseille
     {
-        margin: 3100px 0px 20px 0px;
+        margin: 1700px 0px 20px 0px;
     }
 
     .section-titre-activités-à-Marseille
@@ -2356,71 +2356,71 @@ a[href="liens-pied-de-la-page"]
     .case-vieux-port-et-parc-des-calanques
     {
         margin: 0px 0px 20px 20px;
-        width: 112%;
-        height: 510px;
+        width: 92%;
+        height: 280px;
     }
 
     img[src="images/activites/small/renolaithienne.jpg"]
     {
-        height: 460px;
+        height: 230px;
         width: 100%;
     }
 
     .case-Fort-de-Pomègues
     {
         margin: 0px 0px 20px 20px;
-        width: 112%;
-        height: 510px;
+        width: 92%;
+        height: 280px;
     }
 
     img[src="images/activites/small/paulhermann.jpg"]
     {
-        height: 460px;
+        height: 230px;
         width: 100%;
     }
 
     .case-îles-du-Frioul
     {
         margin: 0px 0px 20px 20px;
-        width: 112%;
-        height: 480px;
+        width: 92%;
+        height: 270px;
     }
 
     img[src="images/activites/small/kevinhikari.jpg"]
     {
-        height: 440px;
+        height: 230px;
         width: 100%;
     }
 
     img[src="images/activites/small/kilyansockalingum.jpg"]
     {
-        height: 460px;
+        height: 230px;
         width: 100%;
     }
 
     .case-notre-dame-de-la-garde
     {
         margin: 0px 0px 20px 20px;
-        width: 112%;
-        height: 510px;
+        width: 92%;
+        height: 280px;
     }
 
     img[src="images/activites/small/florianwehde.jpg"]
     {
-        height: 460px;
+        height: 230px;
         width: 100%;
     }
 
     .case-parc-longchamp
     {
         margin: 0px 0px 20px 20px;
-        width: 112%;
-        height: 510px;
+        width: 92%;
+        height: 280px;
     }
 
     img[src="images/activites/small/lenapaulin.jpg"]
     {
-        height: 460px;
+        height: 230px;
         width: 100%;
     }
 
@@ -2430,7 +2430,7 @@ a[href="liens-pied-de-la-page"]
         flex-direction: column;
         margin: 0px;
         padding: 20px 0px 0px 20px;
-        width: 116%;
+        width: 96%;
     }
 
     .sections-pied-de-la-page
@@ -2448,8 +2448,8 @@ a[href="liens-pied-de-la-page"]
         font-size: 16px;
     }
 }
-/*
-@media all and (min-width: 1300px) and (max-width: 1900px)
+
+@media all and (min-width: 768px) and (max-width: 1023px)
 {
     body
     {
@@ -2926,7 +2926,7 @@ a[href="liens-pied-de-la-page"]
         font-size: 19px;
     }
 }
-*/
+
 /*
 @media all and (min-width: 1901px) and (max-width: 2560px)
 {
