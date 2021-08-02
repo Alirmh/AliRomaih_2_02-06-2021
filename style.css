@@ -534,7 +534,13 @@ img[src="images/hebergements/small/febrianzakariaa.jpg"]
     justify-content: flex-start;
 }
 
-.case-vieux-port-et-parc-des-calanques
+.colonne-responsive-768px
+{
+    display: flex;
+}
+
+
+.case-vieux-port
 {
     border-radius: 20px;
     box-shadow: 1px 1px 5px 4px #F2F2F2;
@@ -601,6 +607,20 @@ img[src="images/activites/small/kevinhikari.jpg"]
     border-radius: 20px 20px 1px 1px;
     margin-bottom: 8px;
     object-fit: cover;
+}
+
+.deuxième-colonne-768px
+{
+    display: flex;
+}
+
+.case-parc-des-calanques
+{
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 4px #F2F2F2;
+    width: 243px;
+    height: 368px;
+    margin-right: 40px;
 }
 
 img[src="images/activites/small/kilyansockalingum.jpg"]
@@ -950,7 +970,12 @@ a[href="liens-pied-de-la-page"]
         flex-direction: column;
     }
 
-    .case-vieux-port-et-parc-des-calanques
+    .colonne-responsive-768px
+    {
+        display: block;
+    }
+
+    .case-vieux-port
     {
         margin: 0px 0px 20px 15px;
         width: 90%;
@@ -987,6 +1012,18 @@ a[href="liens-pied-de-la-page"]
     {
         height: 135px;
         width: 100%;
+    }
+
+    .deuxième-colonne-768px
+    {
+        display: block;
+    }
+
+    .case-parc-des-calanques
+    {
+        margin: 0px 0px 20px 15px;
+        width: 90%;
+        height: 180px;
     }
 
     img[src="images/activites/small/kilyansockalingum.jpg"]
@@ -1092,7 +1129,7 @@ a[href="liens-pied-de-la-page"]
     a[href="#section-activités-à-Marseille"]
     {
         margin: 0px;
-        font-size: 17px;
+        font-size: 16px;
     }
 
     a[href="#section-activités-à-Marseille"]:hover
@@ -1211,7 +1248,7 @@ a[href="liens-pied-de-la-page"]
         padding: 20px 0px 0px 0px;
         border-radius: 0px;
         width: 100%;
-        height: 950px;
+        height: 900px;
     }
 
     .section-titre-les-plus-populaires
@@ -1227,7 +1264,7 @@ a[href="liens-pied-de-la-page"]
 
     .cases-les-plus-populaires
     {
-        height: 255px;
+        height: 240px;
         width: 90%;
         margin: 0px 0px 10px 10px;
         padding: 3px 5px 5px 3px;
@@ -1238,7 +1275,7 @@ a[href="liens-pied-de-la-page"]
 
     img[src="images/hebergements/small/emileguillemot.jpg"]
     {
-        height: 160px;
+        height: 150px;
         width: 100%;
         border: 1px solid white;
         border-radius: 20px 20px 1px 1px;
@@ -1246,7 +1283,7 @@ a[href="liens-pied-de-la-page"]
 
     img[src="images/hebergements/small/awcreative.jpg"]
     {
-        height: 160px;
+        height: 150px;
         width: 100%;
         border: 1px solid white;
         border-radius: 20px 20px 1px 1px;
@@ -1254,7 +1291,7 @@ a[href="liens-pied-de-la-page"]
 
     img[src="images/hebergements/small/febrianzakariaa.jpg"]
     {
-        height: 160px;
+        height: 150px;
         width: 100%;
         border: 1px solid white;
         border-radius: 20px 20px 1px 1px;
@@ -1412,7 +1449,12 @@ a[href="liens-pied-de-la-page"]
         margin-top: 16px;
     }
 
-    .case-vieux-port-et-parc-des-calanques
+    .colonne-responsive-768px
+    {
+        display: block;
+    }
+
+    .case-vieux-port
     {
         margin: 0px 0px 20px 10px;
         width: 92%;
@@ -1449,6 +1491,18 @@ a[href="liens-pied-de-la-page"]
     {
         height: 160px;
         width: 100%;
+    }
+
+    .deuxième-colonne-768px
+    {
+        display: block;
+    }
+
+    .case-parc-des-calanques
+    {
+        margin: 0px 0px 20px 10px;
+        width: 92%;
+        height: 210px;
     }
 
     img[src="images/activites/small/kilyansockalingum.jpg"]
@@ -1526,7 +1580,7 @@ a[href="liens-pied-de-la-page"]
     img[src="images/logo/Reservia.svg"]
     {
         margin-left: 15px;
-        width: 130px;
+        width: 100px;
     }
     
     nav
@@ -1537,7 +1591,7 @@ a[href="liens-pied-de-la-page"]
     a[href="inscription"]
     {
         margin: 0px;
-        font-size: 20px;
+        font-size: 16px;
         position: absolute;
         bottom: 455px;
     }
@@ -1551,7 +1605,7 @@ a[href="liens-pied-de-la-page"]
     a[href="#section-hébergements-les-plus-populaires"]
     {
         margin: 0px 150px 0px 30px;
-        font-size: 20px;
+        font-size: 16px;
     }
 
     a[href="#section-hébergements-les-plus-populaires"]:hover
@@ -1564,7 +1618,7 @@ a[href="liens-pied-de-la-page"]
     a[href="#section-activités-à-Marseille"]
     {
         margin: 0px;
-        font-size: 21px;
+        font-size: 16px;
     }
 
     a[href="#section-activités-à-Marseille"]:hover
@@ -1581,14 +1635,14 @@ a[href="liens-pied-de-la-page"]
 
     .section-titre
     {
-        font-size: 33px;
+        font-size: 28px;
         margin-left: 15px;
     }
 
     .section-texte
     {
         margin: 10px 0px 20px 15px;
-        font-size: 22px;
+        font-size: 17px;
     }
 
     form
@@ -1630,7 +1684,7 @@ a[href="liens-pied-de-la-page"]
 
     .texte-filtre
     {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .section-filtres-2
@@ -1643,32 +1697,32 @@ a[href="liens-pied-de-la-page"]
     {
         padding: 0px;
         margin: 0px 10px 10px 0px;
-        width: 160px;
-        font-size: 16px;
+        width: 145px;
+        font-size: 14px;
     }
 
     .filtre-familial
     {
         padding: 0px;
         margin: 0px 10px 10px 0px;
-        width: 125px;
-        font-size: 16px;
+        width: 115px;
+        font-size: 14px;
     }
 
     .filtre-romantique
     {
         padding: 0px;
         margin: 0px 10px 10px 0px;
-        width: 155px;
-        font-size: 16px;
+        width: 145px;
+        font-size: 14px;
     }
     
     .filtre-animauxautorisés
     {
         padding: 0px;
-        width: 205px;
+        width: 190px;
         margin: 0px 0px 10px 0px;
-        font-size: 16px;
+        font-size: 14px;
     }
     
     #section-hébergements-les-plus-populaires
@@ -1683,12 +1737,12 @@ a[href="liens-pied-de-la-page"]
         padding: 20px 0px 0px 0px;
         border-radius: 0px;
         width: 100%;
-        height: 1200px;
+        height: 1000px;
     }
 
     .section-titre-les-plus-populaires
     {
-        margin: 0px 100px 0px 20px;
+        margin: 0px 40px 0px 20px;
         font-size: 15px;
     }
 
@@ -1699,7 +1753,7 @@ a[href="liens-pied-de-la-page"]
 
     .cases-les-plus-populaires
     {
-        height: 340px;
+        height: 275px;
         width: 90%;
         margin: 0px 0px 10px 20px;
         padding: 3px 5px 5px 3px;
@@ -1710,7 +1764,7 @@ a[href="liens-pied-de-la-page"]
 
     img[src="images/hebergements/small/emileguillemot.jpg"]
     {
-        height: 240px;
+        height: 180px;
         width: 100%;
         border: 1px solid white;
         border-radius: 20px 20px 1px 1px;
@@ -1718,7 +1772,7 @@ a[href="liens-pied-de-la-page"]
 
     img[src="images/hebergements/small/awcreative.jpg"]
     {
-        height: 240px;
+        height: 180px;
         width: 100%;
         border: 1px solid white;
         border-radius: 20px 20px 1px 1px;
@@ -1726,7 +1780,7 @@ a[href="liens-pied-de-la-page"]
 
     img[src="images/hebergements/small/febrianzakariaa.jpg"]
     {
-        height: 240px;
+        height: 180px;
         width: 100%;
         border: 1px solid white;
         border-radius: 20px 20px 1px 1px;
@@ -1740,19 +1794,19 @@ a[href="liens-pied-de-la-page"]
     .textes-les-plus-populaires
     {
         margin: 5px 0px 5px 0px;
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .logo-5-étoiles-populaires
     {
         margin: 0px;
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .logo-4-étoiles-populaires
     {
         margin: 0px;
-        font-size: 14px;
+        font-size: 13px;
     }   
 
     .section-titre-hébergements-à-Marseille
@@ -1778,7 +1832,7 @@ a[href="liens-pied-de-la-page"]
 
     .cases-hébergements
     {
-        height: 318px;
+        height: 255px;
         width: 90%;
         margin: 0px 0px 10px 20px;
         padding: 3px 5px 5px 3px;
@@ -1787,46 +1841,46 @@ a[href="liens-pied-de-la-page"]
 
     img[src="images/hebergements/small/marcusloke.jpg"]
     {
-        height: 240px;
+        height: 180px;
         width: 100%;
     }
 
     img[src="images/hebergements/small/fredkleber.jpg"]
     {
-        height: 240px;
+        height: 180px;
         width: 100%;
     }
 
     img[src="images/hebergements/small/reisetopia.jpg"]
     {
-        height: 240px;
+        height: 180px;
         width: 100%;
     }
 
     .titres-hébergements
     {
-        font-size: 16px;
+        font-size: 15px;
         margin-top: 5px;
     }
 
     .textes-hébergements
     {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .logo-4-étoiles
     {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .logo-5-étoiles
     {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .logo-3-étoiles
     {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .deuxième-ligne-hébergements
@@ -1838,31 +1892,31 @@ a[href="liens-pied-de-la-page"]
 
     img[src="images/hebergements/small/anniespratt.jpg"]
     {
-        height: 240px;
+        height: 180px;
         width: 100%;
     }
 
     img[src="images/hebergements/small/nicatelee.jpg"]
     {
-        height: 240px;
+        height: 180px;
         width: 100%;
     }
 
     img[src="images/hebergements/small/febrianzakaria.jpg"]
     {
-        height: 240px;
+        height: 180px;
         width: 100%;
     }
 
     .afficherplus
     {
         margin: 20px 0px 0px 20px;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     #section-activités-à-Marseille
     {
-        margin: 1700px 0px 20px 0px;
+        margin: 1300px 0px 20px 0px;
     }
 
     .section-titre-activités-à-Marseille
@@ -1879,20 +1933,25 @@ a[href="liens-pied-de-la-page"]
 
     a[href="liens-section-activités-à-Marseille"]
     {
-        font-size: 16px;
+        font-size: 15px;
         margin-top: 20px;
     }
 
-    .case-vieux-port-et-parc-des-calanques
+    .colonne-responsive-768px
+    {
+        display: block;
+    }
+
+    .case-vieux-port
     {
         margin: 0px 0px 20px 20px;
         width: 92%;
-        height: 285px;
+        height: 223px;
     }
 
     img[src="images/activites/small/renolaithienne.jpg"]
     {
-        height: 240px;
+        height: 180px;
         width: 100%;
     }
 
@@ -1900,12 +1959,12 @@ a[href="liens-pied-de-la-page"]
     {
         margin: 0px 0px 20px 20px;
         width: 92%;
-        height: 285px;
+        height: 223px;
     }
 
     img[src="images/activites/small/paulhermann.jpg"]
     {
-        height: 240px;
+        height: 180px;
         width: 100%;
     }
 
@@ -1913,18 +1972,30 @@ a[href="liens-pied-de-la-page"]
     {
         margin: 0px 0px 20px 20px;
         width: 92%;
-        height: 275px;
+        height: 213px;
     }
 
     img[src="images/activites/small/kevinhikari.jpg"]
     {
-        height: 240px;
+        height: 180px;
         width: 100%;
+    }
+
+    .deuxième-colonne-768px
+    {
+        display: block;
+    }
+
+    .case-parc-des-calanques
+    {
+        margin: 0px 0px 20px 20px;
+        width: 92%;
+        height: 223px;
     }
 
     img[src="images/activites/small/kilyansockalingum.jpg"]
     {
-        height: 240px;
+        height: 180px;
         width: 100%;
     }
 
@@ -1932,12 +2003,12 @@ a[href="liens-pied-de-la-page"]
     {
         margin: 0px 0px 20px 20px;
         width: 92%;
-        height: 285px;
+        height: 223px;
     }
 
     img[src="images/activites/small/florianwehde.jpg"]
     {
-        height: 240px;
+        height: 180px;
         width: 100%;
     }
 
@@ -1945,12 +2016,12 @@ a[href="liens-pied-de-la-page"]
     {
         margin: 0px 0px 20px 20px;
         width: 92%;
-        height: 285px;
+        height: 223px;
     }
 
     img[src="images/activites/small/lenapaulin.jpg"]
     {
-        height: 240px;
+        height: 180px;
         width: 100%;
     }
 
@@ -1960,7 +2031,7 @@ a[href="liens-pied-de-la-page"]
         flex-direction: column;
         margin: 0px;
         padding: 20px 0px 0px 20px;
-        width: 100%;
+        width: 95%;
     }
 
     .sections-pied-de-la-page
@@ -1970,12 +2041,12 @@ a[href="liens-pied-de-la-page"]
 
     .sections-titre-pied-de-la-page
     {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     a[href="liens-pied-de-la-page"]
     {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 
@@ -2007,7 +2078,7 @@ a[href="liens-pied-de-la-page"]
     a[href="inscription"]
     {
         margin: 0px;
-        font-size: 20px;
+        font-size: 16px;
         position: absolute;
         bottom: 455px;
     }
@@ -2021,7 +2092,7 @@ a[href="liens-pied-de-la-page"]
     a[href="#section-hébergements-les-plus-populaires"]
     {
         margin: 0px 150px 0px 30px;
-        font-size: 20px;
+        font-size: 16px;
     }
 
     a[href="#section-hébergements-les-plus-populaires"]:hover
@@ -2034,7 +2105,7 @@ a[href="liens-pied-de-la-page"]
     a[href="#section-activités-à-Marseille"]
     {
         margin: 0px;
-        font-size: 21px;
+        font-size: 16px;
     }
 
     a[href="#section-activités-à-Marseille"]:hover
@@ -2058,7 +2129,7 @@ a[href="liens-pied-de-la-page"]
     .section-texte
     {
         margin: 10px 0px 20px 15px;
-        font-size: 22px;
+        font-size: 18px;
     }
 
     form
@@ -2100,7 +2171,7 @@ a[href="liens-pied-de-la-page"]
 
     .texte-filtre
     {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .section-filtres-2
@@ -2113,32 +2184,32 @@ a[href="liens-pied-de-la-page"]
     {
         padding: 0px;
         margin: 0px 10px 10px 0px;
-        width: 160px;
-        font-size: 16px;
+        width: 150px;
+        font-size: 15px;
     }
 
     .filtre-familial
     {
         padding: 0px;
         margin: 0px 10px 10px 0px;
-        width: 125px;
-        font-size: 16px;
+        width: 115px;
+        font-size: 15px;
     }
 
     .filtre-romantique
     {
         padding: 0px;
         margin: 0px 10px 10px 0px;
-        width: 155px;
-        font-size: 16px;
+        width: 145px;
+        font-size: 15px;
     }
     
     .filtre-animauxautorisés
     {
         padding: 0px;
-        width: 205px;
+        width: 195px;
         margin: 0px 0px 10px 0px;
-        font-size: 16px;
+        font-size: 15px;
     }
     
     #section-hébergements-les-plus-populaires
@@ -2159,7 +2230,7 @@ a[href="liens-pied-de-la-page"]
     .section-titre-les-plus-populaires
     {
         margin: 0px 30px 0px 20px;
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .fa-chart-line
@@ -2210,19 +2281,19 @@ a[href="liens-pied-de-la-page"]
     .textes-les-plus-populaires
     {
         margin: 5px 0px 5px 0px;
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .logo-5-étoiles-populaires
     {
         margin: 0px;
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .logo-4-étoiles-populaires
     {
         margin: 0px;
-        font-size: 16px;
+        font-size: 15px;
     }   
 
     .section-titre-hébergements-à-Marseille
@@ -2275,28 +2346,28 @@ a[href="liens-pied-de-la-page"]
 
     .titres-hébergements
     {
-        font-size: 18px;
+        font-size: 16px;
         margin-top: 5px;
     }
 
     .textes-hébergements
     {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .logo-4-étoiles
     {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .logo-5-étoiles
     {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .logo-3-étoiles
     {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .deuxième-ligne-hébergements
@@ -2327,7 +2398,7 @@ a[href="liens-pied-de-la-page"]
     .afficherplus
     {
         margin: 20px 0px 0px 20px;
-        font-size: 22px;
+        font-size: 20px;
     }
 
     #section-activités-à-Marseille
@@ -2349,11 +2420,16 @@ a[href="liens-pied-de-la-page"]
 
     a[href="liens-section-activités-à-Marseille"]
     {
-        font-size: 18px;
+        font-size: 16px;
         margin-top: 20px;
     }
 
-    .case-vieux-port-et-parc-des-calanques
+    .colonne-responsive-768px
+    {
+        display: block;
+    }
+
+    .case-vieux-port
     {
         margin: 0px 0px 20px 20px;
         width: 92%;
@@ -2390,6 +2466,18 @@ a[href="liens-pied-de-la-page"]
     {
         height: 230px;
         width: 100%;
+    }
+
+    .deuxième-colonne-768px
+    {
+        display: block;
+    }
+
+    .case-parc-des-calanques
+    {
+        margin: 0px 0px 20px 20px;
+        width: 92%;
+        height: 280px;
     }
 
     img[src="images/activites/small/kilyansockalingum.jpg"]
@@ -2440,12 +2528,12 @@ a[href="liens-pied-de-la-page"]
 
     .sections-titre-pied-de-la-page
     {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     a[href="liens-pied-de-la-page"]
     {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
@@ -2461,41 +2549,51 @@ a[href="liens-pied-de-la-page"]
     {
         margin: 20px 0px 10px 0px;
         width: 100%;
-        display: block;
     }
 
     img[src="images/logo/Reservia.svg"]
     {
         margin-left: 15px;
     }
+    
+    nav
+    {
+        margin: 10px 0px 0px 0px;
+    }
 
     a[href="inscription"]
     {
-        margin: 0px;
+        font-size: 16px;
+    }
+
+    a[href="inscription"]:hover
+    {
+        padding: 0px;
+        border-top: 0px;
     }
 
     a[href="#section-hébergements-les-plus-populaires"]
     {
-        padding-right: 30%;
+        font-size: 16px;
     }
 
     a[href="#section-hébergements-les-plus-populaires"]:hover
     {
-        border-bottom: 2px blue solid;
-        border-top: none;
-        padding: 30px 40px 0px 40px;
+        border-top: 0px;
+        border-bottom: 2px solid blue;
+        padding: 0px;
     }
 
     a[href="#section-activités-à-Marseille"]
     {
-        margin: 0px;
+        font-size: 16px;
     }
 
     a[href="#section-activités-à-Marseille"]:hover
     {
-        border-bottom: 2px blue solid;
-        border-top: none;
-        padding: 30px 40px 0px 40px;
+        border-top: 0px;
+        border-bottom: 2px solid blue;
+        padding: 0px;
     }
 
     .section-principale
@@ -2505,14 +2603,14 @@ a[href="liens-pied-de-la-page"]
 
     .section-titre
     {
-        font-size: 32px;
+        font-size: 28px;
         margin-left: 15px;
     }
 
     .section-texte
     {
         margin: 10px 0px 20px 15px;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     form
@@ -2554,13 +2652,13 @@ a[href="liens-pied-de-la-page"]
 
     .texte-filtre
     {
-        font-size: 23px;
+        font-size: 18px;
     }
 
     .section-filtres-2
     {
         display: flex;
-        flex-wrap: wrap;
+        width: 99%;
     }
 
     .filtre-economique
@@ -2568,7 +2666,7 @@ a[href="liens-pied-de-la-page"]
         padding: 0px;
         margin: 0px 10px 10px 0px;
         width: 190px;
-        font-size: 19px;
+        font-size: 17px;
     }
 
     .fa-money-bill-wave
@@ -2582,7 +2680,7 @@ a[href="liens-pied-de-la-page"]
         padding: 0px;
         margin: 0px 10px 10px 0px;
         width: 140px;
-        font-size: 19px;
+        font-size: 17px;
     }
 
     .fa-child
@@ -2596,7 +2694,7 @@ a[href="liens-pied-de-la-page"]
         padding: 0px;
         margin: 0px 10px 10px 0px;
         width: 180px;
-        font-size: 19px;
+        font-size: 17px;
     }
 
     .fa-heart
@@ -2610,7 +2708,7 @@ a[href="liens-pied-de-la-page"]
         padding: 0px;
         width: 240px;
         margin: 0px 0px 10px 0px;
-        font-size: 19px;
+        font-size: 17px;
     }
 
     .fa-dog
@@ -2630,14 +2728,14 @@ a[href="liens-pied-de-la-page"]
     {
         padding: 20px 0px 0px 0px;
         border-radius: 0px;
-        width: 117%;
-        height: 2500px;
+        width: 100%;
+        height: 1500px;
     }
 
     .section-titre-les-plus-populaires
     {
         margin: 0px 30px 0px 20px;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .fa-chart-line
@@ -2647,7 +2745,7 @@ a[href="liens-pied-de-la-page"]
 
     .cases-les-plus-populaires
     {
-        height: 730px;
+        height: 425px;
         width: 94%;
         margin: 0px 0px 10px 20px;
         padding: 3px 5px 5px 3px;
@@ -2658,7 +2756,7 @@ a[href="liens-pied-de-la-page"]
 
     img[src="images/hebergements/small/emileguillemot.jpg"]
     {
-        height: 600px;
+        height: 300px;
         width: 100%;
         border: 1px solid white;
         border-radius: 20px 20px 1px 1px;
@@ -2666,7 +2764,7 @@ a[href="liens-pied-de-la-page"]
 
     img[src="images/hebergements/small/awcreative.jpg"]
     {
-        height: 600px;
+        height: 300px;
         width: 100%;
         border: 1px solid white;
         border-radius: 20px 20px 1px 1px;
@@ -2674,7 +2772,7 @@ a[href="liens-pied-de-la-page"]
 
     img[src="images/hebergements/small/febrianzakariaa.jpg"]
     {
-        height: 600px;
+        height: 300px;
         width: 100%;
         border: 1px solid white;
         border-radius: 20px 20px 1px 1px;
@@ -2688,25 +2786,25 @@ a[href="liens-pied-de-la-page"]
     .textes-les-plus-populaires
     {
         margin: 5px 0px 5px 0px;
-        font-size: 19px;
+        font-size: 14px;
     }
 
     .logo-5-étoiles-populaires
     {
         margin: 0px;
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .logo-4-étoiles-populaires
     {
         margin: 0px;
-        font-size: 20px;
+        font-size: 14px;
     }   
 
     .section-titre-hébergements-à-Marseille
     {
         margin: 10px 0px 15px 20px;
-        font-size: 27px;
+        font-size: 25px;
     }
 
     .section-hébergements
@@ -2721,13 +2819,14 @@ a[href="liens-pied-de-la-page"]
     .première-ligne-hébergements
     {
         display: flex;
-        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: wrap;
     }
 
     .cases-hébergements
     {
-        height: 700px;
-        width: 111%;
+        height: 240px;
+        width: 45%;
         margin: 0px 0px 10px 20px;
         padding: 3px 5px 5px 3px;
         box-shadow: 1px 1px 5px 3px #F2F2F2;
@@ -2735,88 +2834,89 @@ a[href="liens-pied-de-la-page"]
 
     img[src="images/hebergements/small/marcusloke.jpg"]
     {
-        height: 600px;
+        height: 150px;
         width: 100%;
     }
 
     img[src="images/hebergements/small/fredkleber.jpg"]
     {
-        height: 600px;
+        height: 150px;
         width: 100%;
     }
 
     img[src="images/hebergements/small/reisetopia.jpg"]
     {
-        height: 600px;
+        height: 150px;
         width: 100%;
     }
 
     .titres-hébergements
     {
-        font-size: 22px;
+        font-size: 18px;
         margin-top: 5px;
     }
 
     .textes-hébergements
     {
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .logo-4-étoiles
     {
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .logo-5-étoiles
     {
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .logo-3-étoiles
     {
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .deuxième-ligne-hébergements
     {
         display: flex;
-        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: wrap;
         margin: 0px;
     }
 
     img[src="images/hebergements/small/anniespratt.jpg"]
     {
-        height: 600px;
+        height: 150px;
         width: 100%;
     }
 
     img[src="images/hebergements/small/nicatelee.jpg"]
     {
-        height: 600px;
+        height: 150px;
         width: 100%;
     }
 
     img[src="images/hebergements/small/febrianzakaria.jpg"]
     {
-        height: 600px;
+        height: 150px;
         width: 100%;
     }
 
     .afficherplus
     {
         margin: 20px 0px 0px 20px;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     #section-activités-à-Marseille
     {
-        margin: 4000px 0px 20px 0px;
+        margin: 700px 0px 20px 0px;
     }
 
     .section-titre-activités-à-Marseille
     {
         margin: 0px 0px 20px 15px;
-        font-size: 28px;
+        font-size: 26px;
     }
     
     .ligne-horizontal-section-activités-à-Marseille
@@ -2827,78 +2927,104 @@ a[href="liens-pied-de-la-page"]
 
     a[href="liens-section-activités-à-Marseille"]
     {
-        font-size: 21px;
+        font-size: 16px;
         margin-top: 25px;
     }
 
-    .case-vieux-port-et-parc-des-calanques
+    .colonne-responsive-768px
+    {
+        display: block;
+    }
+
+    .case-vieux-port
     {
         margin: 0px 0px 20px 20px;
-        width: 112%;
-        height: 620px;
+        width: 45%;
+        height: 210px;
     }
 
     img[src="images/activites/small/renolaithienne.jpg"]
     {
-        height: 560px;
+        height: 170px;
         width: 100%;
     }
 
     .case-Fort-de-Pomègues
     {
         margin: 0px 0px 20px 20px;
-        width: 112%;
-        height: 620px;
+        width: 45%;
+        height: 210px;
     }
 
     img[src="images/activites/small/paulhermann.jpg"]
     {
-        height: 560px;
+        height: 170px;
         width: 100%;
     }
 
     .case-îles-du-Frioul
     {
         margin: 0px 0px 20px 20px;
-        width: 112%;
-        height: 590px;
+        width: 45%;
+        height: 200px;
     }
 
     img[src="images/activites/small/kevinhikari.jpg"]
     {
-        height: 540px;
+        height: 170px;
         width: 100%;
+    }
+
+    .deuxième-colonne-768px
+    {
+        display: block;
+    }
+
+    .case-parc-des-calanques
+    {
+        margin: 0px 0px 20px 20px;
+        width: 45%;
+        height: 212px;
+        position: absolute;
+        left: 380px;
+        top: 3290px;
     }
 
     img[src="images/activites/small/kilyansockalingum.jpg"]
     {
-        height: 560px;
+        height: 170px;
         width: 100%;
     }
 
     .case-notre-dame-de-la-garde
     {
         margin: 0px 0px 20px 20px;
-        width: 112%;
-        height: 620px;
+        width: 45%;
+        height: 210px;
+        position: absolute;
+        left: 380px;
+        top: 3522px;
     }
 
     img[src="images/activites/small/florianwehde.jpg"]
     {
-        height: 560px;
+        height: 170px;
         width: 100%;
     }
 
     .case-parc-longchamp
     {
         margin: 0px 0px 20px 20px;
-        width: 112%;
-        height: 620px;
+        width: 45%;
+        height: 210px;
+        position: absolute;
+        left: 380px;
+        top: 3752px;
     }
 
     img[src="images/activites/small/lenapaulin.jpg"]
     {
-        height: 560px;
+        height: 170px;
         width: 100%;
     }
 
@@ -2908,7 +3034,7 @@ a[href="liens-pied-de-la-page"]
         flex-direction: column;
         margin: 0px;
         padding: 20px 0px 0px 20px;
-        width: 116%;
+        width: 100%;
     }
 
     .sections-pied-de-la-page
@@ -2918,12 +3044,12 @@ a[href="liens-pied-de-la-page"]
 
     .sections-titre-pied-de-la-page
     {
-        font-size: 21px;
+        font-size: 18px;
     }
 
     a[href="liens-pied-de-la-page"]
     {
-        font-size: 19px;
+        font-size: 16px;
     }
 }
 
