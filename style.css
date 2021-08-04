@@ -1099,6 +1099,16 @@ a[href="liens-pied-de-la-page"]
     {
         padding-bottom: 20px;
     }
+
+    .sections-titre-pied-de-la-page
+    {
+        font-size: 16px;
+    }
+
+    a[href="liens-pied-de-la-page"]
+    {
+        font-size: 14px;
+    }
 }
  
 @media all and (min-width: 425px) and (max-width: 525px)
@@ -1766,7 +1776,7 @@ a[href="liens-pied-de-la-page"]
         padding: 20px 0px 0px 0px;
         border-radius: 0px;
         width: 100%;
-        height: 1000px;
+        height: 320px;
     }
 
     .section-titre-les-plus-populaires
@@ -1780,11 +1790,17 @@ a[href="liens-pied-de-la-page"]
         font-size: 20px;
     }
 
+    .ligne-les-plus-populaires
+    {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
     .cases-les-plus-populaires
     {
-        height: 275px;
-        width: 60%;
-        margin: 0px 0px 10px 100px;
+        height: 195px;
+        width: 30%;
+        margin: 0px;
         padding: 3px 5px 5px 3px;
         box-shadow: 1px 1px 5px 3px #f2f2f2;
         display: flex;
@@ -1793,7 +1809,7 @@ a[href="liens-pied-de-la-page"]
 
     img[src="images/hebergements/small/emileguillemot.jpg"]
     {
-        height: 180px;
+        height: 100px;
         width: 100%;
         border: 1px solid white;
         border-radius: 20px 20px 1px 1px;
@@ -1801,7 +1817,7 @@ a[href="liens-pied-de-la-page"]
 
     img[src="images/hebergements/small/awcreative.jpg"]
     {
-        height: 180px;
+        height: 100px;
         width: 100%;
         border: 1px solid white;
         border-radius: 20px 20px 1px 1px;
@@ -1809,7 +1825,7 @@ a[href="liens-pied-de-la-page"]
 
     img[src="images/hebergements/small/febrianzakariaa.jpg"]
     {
-        height: 180px;
+        height: 100px;
         width: 100%;
         border: 1px solid white;
         border-radius: 20px 20px 1px 1px;
@@ -2065,12 +2081,12 @@ a[href="liens-pied-de-la-page"]
 
     .sections-titre-pied-de-la-page
     {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     a[href="liens-pied-de-la-page"]
     {
-        font-size: 13px;
+        font-size: 14px;
     }
 }
 
@@ -2557,12 +2573,12 @@ a[href="liens-pied-de-la-page"]
 
     .sections-titre-pied-de-la-page
     {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     a[href="liens-pied-de-la-page"]
     {
-        font-size: 13px;
+        font-size: 14px;
     }
 }
 }
