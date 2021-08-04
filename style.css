@@ -118,12 +118,7 @@ button
     font-family: Raleway-SemiBold;
 }
 
-.textebouton
-{
-    margin: 0px;
-}
-
-.logoloupe
+.logo-loupe
 {
     display: none;
 }
@@ -775,13 +770,12 @@ a[href="liens-pied-de-la-page"]
         border-radius: 10px;
     }
 
-    .logoloupe
+    .logo-loupe
     {
         display: block;
-        font-size: 14px;
     }
 
-    .textebouton
+    .texte-rechercher
     {
         display: none;
     }
@@ -1217,13 +1211,12 @@ a[href="liens-pied-de-la-page"]
         border-radius: 10px;
     }
 
-    .logoloupe
+    .logo-loupe
     {
         display: block;
-        font-size: 14px;
     }
 
-    .textebouton
+    .texte-rechercher
     {
         display: none;
     }
@@ -1702,13 +1695,12 @@ a[href="liens-pied-de-la-page"]
         border-radius: 10px;
     }
 
-    .logoloupe
+    .logo-loupe
     {
         display: block;
-        font-size: 14px;
     }
 
-    .textebouton
+    .texte-rechercher
     {
         display: none;
     }
@@ -2194,13 +2186,12 @@ a[href="liens-pied-de-la-page"]
         border-radius: 10px;
     }
 
-    .logoloupe
+    .logo-loupe
     {
         display: block;
-        font-size: 14px;
     }
 
-    .textebouton
+    .texte-rechercher
     {
         display: none;
     }
