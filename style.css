@@ -2770,9 +2770,9 @@ a[href="liens-pied-de-la-page"]
 
     .pied-de-la-page
     {
-        width: 60%;
+        width: 63%;
         padding: 20px 287px 20px 30px;
-        margin: 0px 0px 0px 90px;
+        margin: 0px 0px 0px 75px;
     }
 
     .sections-titre-pied-de-la-page
@@ -2786,7 +2786,7 @@ a[href="liens-pied-de-la-page"]
     }
 }
 
-@media all and (min-width: 1701px) and (max-width: 2560px)
+@media all and (min-width: 1701px) and (max-width: 2100px)
 {
     body
     {
@@ -2823,17 +2823,42 @@ a[href="liens-pied-de-la-page"]
 
     .section-titre
     {
-        font-size: 22px;
+        font-size: 30px;
     }
 
     .section-texte
     {
-        font-size: 18px;
+        font-size: 25px;
     }
 
     input
     {
-        width: 255px;
+        width: 290px;
+    }
+
+    .texte-filtre
+    {
+        font-size: 25px;
+    }
+
+    .filtre-economique
+    {
+        font-size: 20px;
+    }
+
+    .filtre-familial
+    {
+        font-size: 20px;
+    }
+
+    .filtre-romantique
+    {
+        font-size: 20px;
+    }
+
+    .filtre-animauxautorisés
+    {
+        font-size: 20px;
     }
 
     #section-hébergements-les-plus-populaires
@@ -2849,13 +2874,19 @@ a[href="liens-pied-de-la-page"]
 
     .section-titre-hébergements-à-Marseille
     {
-        font-size: 20px;
-        margin: 13px 0px 15px 5px;
+        font-size: 23px;
+        margin: 13px 0px 15px 40px;
+    }
+
+    .ligne-hébergements
+    {
+        margin-left: 40px;
     }
 
     .cases-hébergements
     {
         width: 28%;
+        height: 165px;
     }
 
     .logo-4-étoiles
@@ -2880,7 +2911,8 @@ a[href="liens-pied-de-la-page"]
 
     .afficherplus
     {
-        margin: 30px 0px 0px 10px;
+        margin: 30px 0px 0px 45px;
+        font-size: 18px;
     
     }
 
@@ -2891,13 +2923,14 @@ a[href="liens-pied-de-la-page"]
 
     .section-titre-les-plus-populaires
     {
-        font-size: 14px;
+        font-size: 16px;
+        margin: 18px 25px 4px 25px;
     }
 
     .cases-les-plus-populaires
     {
-        margin: 0px 0px 10px 0px;
-        width: 100%;
+        margin: 0px 0px 10px 20px;
+        width: 90%;
     }
 
     #section-activités-à-Marseille
@@ -2951,7 +2984,225 @@ a[href="liens-pied-de-la-page"]
 
     .pied-de-la-page
     {
-        width: 81%;
+        width: 80%;
+        padding: 20px 287px 20px 10px;
+    }
+
+    .sections-pied-de-la-page
+    {
+        margin-left: 20px;
+    }
+
+    .sections-titre-pied-de-la-page
+    {
+        font-size: 16px;
+    }
+
+    a[href="liens-pied-de-la-page"]
+    {
+        font-size: 14px;
+    }
+}
+
+@media all and (min-width: 2101px) and (max-width: 2560px)
+{
+    body
+    {
+        width: 100%;
+        margin: 0px 0px 0px 50px;
+    }
+
+    #header-conteneur
+    {
+        margin: 40px 0px 20px 0px;
+        width: 94%;
+    }
+
+    img[src="images/logo/Reservia.svg"]
+    {
+        width: 200px;
+    }
+
+    nav a
+    {
+        font-size: 25px;
+    }
+
+    a[href="#section-activités-à-Marseille"]:hover
+    {
+        border-top: 2px solid blue;
+        padding: 40px 30px 0px 30px
+    }
+
+    .section-principale
+    {
+        margin: 20px 110px 0px 0px;
+    }
+
+    .section-titre
+    {
+        font-size: 30px;
+    }
+
+    .section-texte
+    {
+        font-size: 25px;
+    }
+
+    input
+    {
+        width: 290px;
+    }
+
+    .texte-filtre
+    {
+        font-size: 25px;
+    }
+
+    .filtre-economique
+    {
+        font-size: 20px;
+    }
+
+    .filtre-familial
+    {
+        font-size: 20px;
+    }
+
+    .filtre-romantique
+    {
+        font-size: 20px;
+    }
+
+    .filtre-animauxautorisés
+    {
+        font-size: 20px;
+    }
+
+    #section-hébergements-les-plus-populaires
+    {
+        width: 107%;
+    }
+
+    .section-hébergements
+    {
+        width: 55%;
+        margin: 20px 30px 50px 0px;
+    }
+
+    .section-titre-hébergements-à-Marseille
+    {
+        font-size: 23px;
+        margin: 13px 0px 15px 75px;
+    }
+
+    .ligne-hébergements
+    {
+        margin-left: 75px;
+    }
+
+    .cases-hébergements
+    {
+        width: 28%;
+        height: 165px;
+    }
+
+    .logo-4-étoiles
+    {
+        font-size: 12px;
+    }
+
+    .logo-étoile-grise
+    {
+        font-size: 12px;
+    }
+
+    .logo-5-étoiles
+    {
+        font-size: 12px;
+    }
+
+    .logo-3-étoiles
+    {
+        font-size: 12px;
+    }
+
+    .afficherplus
+    {
+        margin: 30px 0px 0px 85px;
+        font-size: 18px;
+    
+    }
+
+    .section-les-plus-populaires
+    {
+        width: 28%;
+    }
+
+    .section-titre-les-plus-populaires
+    {
+        font-size: 16px;
+        margin: 18px 80px 4px 70px;
+    }
+
+    .cases-les-plus-populaires
+    {
+        margin: 0px 0px 10px 65px;
+        width: 75%;
+    }
+
+    #section-activités-à-Marseille
+    {
+        margin: 0px 0px 50px 0px;
+    }
+
+    .section-titre-activités-à-Marseille
+    {
+        font-size: 21px;
+        margin: 0px 0px 20px 15px;
+    }
+
+    .ligne-horizontal-section-activités-à-Marseille
+    {
+        width: 104%;
+    }
+
+    .case-vieux-port-et-parc-des-calanques
+    {
+        width: 24%;
+        margin: 0px 0px 0px 10px;
+    }
+
+    .ligne-verticale-section-activités-à-Marseille
+    {
+        margin: 0px 10px 0px 25px;
+        width: 20%;
+    }
+
+    .case-Fort-de-Pomègues
+    {
+        width: 100%;
+        margin: 0px 0px 35px 0px;
+    }
+
+    .case-îles-du-Frioul
+    {
+        width: 100%;
+    }
+
+    .case-notre-dame-de-la-garde
+    {
+        width: 100%;
+    }
+
+    .case-parc-longchamp
+    {
+        width: 100%;
+    }
+
+    .pied-de-la-page
+    {
+        width: 82%;
         padding: 20px 287px 20px 10px;
     }
 
