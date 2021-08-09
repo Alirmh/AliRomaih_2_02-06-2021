@@ -2487,16 +2487,14 @@ a[href="liens-pied-de-la-page"]
 
     .pied-de-la-page
     {
-        display: flex;
-        flex-direction: column;
         margin: 0px;
-        padding: 20px 0px 0px 20px;
-        width: 97%;
+        padding: 0px;
+        width: 100%;
     }
 
     .sections-pied-de-la-page
     {
-        padding-bottom: 20px;
+        margin: 20px 20px 20px 20px;
     }
 
     .sections-titre-pied-de-la-page
@@ -2521,7 +2519,7 @@ a[href="liens-pied-de-la-page"]
     #header-conteneur
     {
         margin: 40px 0px 20px 10px;
-        width: 95%;
+        width: 100%;
     }
 
     img[src="images/logo/Reservia.svg"]
@@ -2670,8 +2668,13 @@ a[href="liens-pied-de-la-page"]
 
     .pied-de-la-page
     {
-        width: 81%;
-        padding: 20px 287px 20px 10px;
+        width: 100%;
+        padding: 0px;
+    }
+
+    .sections-pied-de-la-page
+    {
+        margin: 20px 20px 20px 20px;
     }
 
     .sections-titre-pied-de-la-page
@@ -2695,7 +2698,7 @@ a[href="liens-pied-de-la-page"]
 
     #header-conteneur
     {
-        margin: 40px 0px 20px 40px;
+        margin: 40px 0px 20px 100px;
         width: 85%;
     }
 
@@ -2711,7 +2714,7 @@ a[href="liens-pied-de-la-page"]
 
     .section-principale
     {
-        margin: 20px 110px 0px 40px;
+        margin: 20px 110px 0px 100px;
     }
 
     .section-titre
@@ -2731,13 +2734,13 @@ a[href="liens-pied-de-la-page"]
 
     #section-hébergements-les-plus-populaires
     {
-        width: 95%;
+        width: 93%;
     }
 
     .section-hébergements
     {
         width: 55%;
-        margin: 20px 30px 50px 40px;
+        margin: 20px 30px 50px 100px;
     }
 
     .section-titre-hébergements-à-Marseille
@@ -2795,7 +2798,7 @@ a[href="liens-pied-de-la-page"]
 
     #section-activités-à-Marseille
     {
-        margin: 0px 0px 50px 30px;
+        margin: 0px 0px 50px 100px;
     }
 
     .section-titre-activités-à-Marseille
@@ -2844,8 +2847,9 @@ a[href="liens-pied-de-la-page"]
 
     .pied-de-la-page
     {
-        width: 65%;
+        width: 60%;
         padding: 20px 287px 20px 30px;
+        margin: 0px 0px 0px 90px;
     }
 
     .sections-titre-pied-de-la-page
@@ -2864,13 +2868,13 @@ a[href="liens-pied-de-la-page"]
     body
     {
         width: 100%;
-        margin: 0px;
+        margin: 0px 0px 0px 50px;
     }
 
     #header-conteneur
     {
-        margin: 40px 0px 20px 10px;
-        width: 100%;
+        margin: 40px 0px 20px 0px;
+        width: 94%;
     }
 
     img[src="images/logo/Reservia.svg"]
@@ -2891,7 +2895,7 @@ a[href="liens-pied-de-la-page"]
 
     .section-principale
     {
-        margin: 20px 110px 0px 10px;
+        margin: 20px 110px 0px 0px;
     }
 
     .section-titre
@@ -2911,13 +2915,13 @@ a[href="liens-pied-de-la-page"]
 
     #section-hébergements-les-plus-populaires
     {
-        width: 100%;
+        width: 106%;
     }
 
     .section-hébergements
     {
         width: 55%;
-        margin: 20px 30px 50px 10px;
+        margin: 20px 30px 50px 0px;
     }
 
     .section-titre-hébergements-à-Marseille
@@ -2982,6 +2986,11 @@ a[href="liens-pied-de-la-page"]
     {
         font-size: 21px;
         margin: 0px 0px 20px 15px;
+    }
+
+    .ligne-horizontal-section-activités-à-Marseille
+    {
+        width: 104%;
     }
 
     .case-vieux-port-et-parc-des-calanques
